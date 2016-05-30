@@ -3,9 +3,12 @@
  */
 package variable;
 
-import java.util.Random;
+import java.util.Arrays;
 import org.junit.Before;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import variable.impl.ExponentialVariable;
 import variable.impl.GaussianVariable;
 import variable.impl.UniformVariable;
 import variable.registry.StochasticVariableRegistryImpl;
@@ -16,8 +19,9 @@ import variable.registry.StochasticVariableRegistryImpl;
  */
 public class VariableSamplingTestCase {
 
+    private static final Logger log = LoggerFactory.getLogger(VariableSamplingTestCase.class);
+    private static final int sampleSize = 20;
     private static StochasticVariableRegistryImpl variables;
-    private static final int sampleCount = 10;
 
     public VariableSamplingTestCase() {
     }
@@ -29,21 +33,26 @@ public class VariableSamplingTestCase {
 
     @Test
     public void gaussianSamplingTestCase() {
-        variables.putVariable(new GaussianVariable("X", 0.0, 100.0,
-                new Random(1L), 1.0));
-        doSampling("X");
+        variables.putVariable(new GaussianVariable("X", 1L));
+        doSampling("Gaussian", "X");
     }
 
     @Test
     public void uniformSamplingTestCase() {
-        variables.putVariable(new UniformVariable("Y", 0.0, 100.0,
-                new Random(1L)));
-        doSampling("Y");
+        variables.putVariable(new UniformVariable("Y", 1L));
+        doSampling("Uniform", "Y");
     }
 
-    public void doSampling(String id) {
-        for (int i = 0; i < sampleCount; i++) {
-//            variables.sampleAll();
-        }
+    @Test
+    public void exponentialSamplingTestCase() {
+        variables.putVariable(new ExponentialVariable("Z", 1L));
+        doSampling("Exponential", "Z");
     }
+
+    public void doSampling(String distribution, String id) {
+        StochasticVariable variable = variables.getVariables().get(0);
+        double[] samples = variable.sample(sampleSize);
+        log.info(distribution + ": " + Arrays.toString(samples));
+    }
+
 }

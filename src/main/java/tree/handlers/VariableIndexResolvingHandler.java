@@ -32,7 +32,7 @@ public class VariableIndexResolvingHandler implements NodeHandler<AbstractNode> 
             String variableName = variableNode.getName();
             for (Map.Entry<Integer, StochasticVariable> entry : variableIndex.entrySet()) {
                 if (entry.getValue().getId().equals(variableName)) {
-                    variableNode.setIndex(entry.getKey());
+                    variableNode.setVariableIndex(entry.getKey());
                     return;
                 }
             }

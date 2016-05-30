@@ -11,5 +11,7 @@ public interface StochasticVariable {
 
     public String getId();
 
-    public Double sample();
+    public double sample();
+
+    public double[] sample(int sampleSize);
 }

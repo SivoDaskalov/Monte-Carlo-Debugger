@@ -20,21 +20,19 @@ public class SampledVariableRegistry {
 
     public SampledVariableRegistry(StochasticVariableRegistry variableRegistry, int runs) {
         List<StochasticVariable> variables = variableRegistry.getVariables();
-        sampleRegistry = new double[variables.size()][runs];
         variableIndex = new HashMap<>();
+        sampleRegistry = new double[variables.size()][];
         for (int i = 0; i < variables.size(); i++) {
             StochasticVariable current = variables.get(i);
             variableIndex.put(i, current);
-            for (int j = 0; j < runs; j++) {
-                sampleRegistry[i][j] = current.sample();
-            }
+            sampleRegistry[i] = current.sample(runs);
         }
     }
 
     public Map<Integer, StochasticVariable> getVariableIndex() {
         return variableIndex;
     }
-    
+
     public double getVariableValue(int index, int run) {
         return sampleRegistry[index][run];
     }

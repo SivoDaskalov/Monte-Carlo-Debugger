@@ -3,9 +3,7 @@
  */
 package variable.impl;
 
-import java.util.Random;
 import variable.AbstractVariable;
-import variable.Distribution;
 
 /**
  *
@@ -13,18 +11,47 @@ import variable.Distribution;
  */
 public class UniformVariable extends AbstractVariable {
 
+    private static final double defaultLowerBound = 0.0;
+    private static final double defaultUpperBound = 1.0;
+
+    private double lowerBound;
+    private double upperBound;
+
     public UniformVariable() {
+        super();
+        lowerBound = defaultLowerBound;
+        upperBound = defaultUpperBound;
     }
 
-    public UniformVariable(String id, Double from, Double to, Random random) {
-        super(id, Distribution.UNIFORM, from, to, random);
+    public UniformVariable(String id, long seed) {
+        this(id, seed, defaultLowerBound, defaultUpperBound);
+    }
+
+    public UniformVariable(String id, long seed, double lowerBound, double upperBound) {
+        super(id, seed);
+        this.lowerBound = lowerBound;
+        this.upperBound = upperBound;
+    }
+
+    public double getLowerBound() {
+        return lowerBound;
+    }
+
+    public void setLowerBound(double lowerBound) {
+        this.lowerBound = lowerBound;
+    }
+
+    public double getUpperBound() {
+        return upperBound;
+    }
+
+    public void setUpperBound(double upperBound) {
+        this.upperBound = upperBound;
     }
 
     @Override
-    public Double sample() {
-        Double result = from + random.nextDouble() * (to - from);
-        log(result);
-        return result;
+    public double sample() {
+        return lowerBound + random.nextDouble() * (upperBound - lowerBound);
     }
 
 }

@@ -18,29 +18,29 @@ import tree.util.TreeUtilities;
  */
 public class ThreadWorkloadDivisionTestCase {
 
-	private static Logger log = LoggerFactory.getLogger(ThreadWorkloadDivisionTestCase.class);
+    private static final Logger log = LoggerFactory.getLogger(ThreadWorkloadDivisionTestCase.class);
 
-	public ThreadWorkloadDivisionTestCase() {
-	}
+    public ThreadWorkloadDivisionTestCase() {
+    }
 
-	private List<Pair<Integer, Integer>> doTest(Node root, int runs, int threadLoad) {
-		return doTest(TreeUtilities.getTreeSize(root), runs, threadLoad);
-	}
+    private List<Pair<Integer, Integer>> doTest(Node root, int runs, int threadLoad) {
+        return doTest(TreeUtilities.getTreeSize(root), runs, threadLoad);
+    }
 
-	private List<Pair<Integer, Integer>> doTest(int treeSize, int runs, int threadLoad) {
-		int totalWorkload = runs * treeSize;
-		int poolSize = ParallelSimulationManager.calculateThreadPoolSize(totalWorkload, threadLoad);
-		return ParallelSimulationManager.calculateSimulationRanges(runs, poolSize);
-	}
+    private List<Pair<Integer, Integer>> doTest(int treeSize, int runs, int threadLoad) {
+        int totalWorkload = runs * treeSize;
+        int poolSize = ParallelSimulationManager.calculateThreadPoolSize(totalWorkload, threadLoad);
+        return ParallelSimulationManager.calculateSimulationRanges(runs, poolSize);
+    }
 
-	private void printSimulationRanges(List<Pair<Integer, Integer>> ranges) {
-		for (Pair<Integer, Integer> range : ranges) {
-			log.info(range.getKey() + " - " + range.getValue());
-		}
-	}
+    private void printSimulationRanges(List<Pair<Integer, Integer>> ranges) {
+        for (Pair<Integer, Integer> range : ranges) {
+            log.info(range.getKey() + " - " + range.getValue());
+        }
+    }
 
-	@Test
-	public void testCorrectWorkloadDivision() {
-		printSimulationRanges(doTest(100, 1000, 10000));
-	}
+    @Test
+    public void testCorrectWorkloadDivision() {
+        printSimulationRanges(doTest(100, 1000, 10000));
+    }
 }

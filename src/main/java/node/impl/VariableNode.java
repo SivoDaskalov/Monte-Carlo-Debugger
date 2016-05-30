@@ -15,7 +15,7 @@ import simulation.context.SimulationContext;
 public class VariableNode extends AbstractNode {
 
     private final String name;
-    private int index;
+    private int variableIndex;
 
     public VariableNode(String name) {
         this.name = name;
@@ -24,14 +24,14 @@ public class VariableNode extends AbstractNode {
     public String getName() {
         return name;
     }
-    
-    public void setIndex(int index) {
-        this.index = index;
+
+    public void setVariableIndex(int index) {
+        this.variableIndex = index;
     }
-    
+
     @Override
     protected double calculate(SimulationContext context) {
-        return context.getVariableValue(index);
+        return context.getVariableValue(variableIndex);
     }
 
 }

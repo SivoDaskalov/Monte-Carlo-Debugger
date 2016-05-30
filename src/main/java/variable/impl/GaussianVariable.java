@@ -3,12 +3,9 @@
  */
 package variable.impl;
 
-import java.util.Random;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
 import variable.AbstractVariable;
-import variable.Distribution;
 
 /**
  *
@@ -17,33 +14,31 @@ import variable.Distribution;
 @XmlAccessorType(XmlAccessType.NONE)
 public class GaussianVariable extends AbstractVariable {
 
+    private static final double defaultMean = 0.5;
     // Default standard deviation set to a third of the mean
-    private static Double defaultStandardDeviation = 1.0 / 3.0;
+    private static final double defaultStandardDeviation = 1.0 / 3.0;
 
     private Double mean;
-    @XmlAttribute
     private Double deviation;
 
     public GaussianVariable() {
+        super();
+        this.mean = defaultMean;
+        this.deviation = defaultStandardDeviation;
     }
 
-    public GaussianVariable(String id, Double from, Double to, Random random) {
-        this(id, from, to, random, ((to - from) / 2) * defaultStandardDeviation);
+    public GaussianVariable(String id, long seed) {
+        this(id, seed, defaultMean, defaultStandardDeviation);
     }
 
-    public GaussianVariable(String id, Double from, Double to, Random random, Double deviation) {
-        super(id, Distribution.GAUSSIAN, from, to, random);
-        this.mean = (from + to) / 2;
+    public GaussianVariable(String id, long seed, double mean, double deviation) {
+        super(id, seed);
+        this.mean = mean;
         this.deviation = deviation;
     }
 
     @Override
-    public Double sample() {
-        Double result;
-        do {
-            result = random.nextGaussian() * deviation + mean;
-        } while (result < from || result > to);
-        log(result);
-        return result;
+    public double sample() {
+        return random.nextGaussian() * deviation + mean;
     }
 }

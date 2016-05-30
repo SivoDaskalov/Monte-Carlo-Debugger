@@ -3,7 +3,6 @@
  */
 package calculation;
 
-import java.util.Random;
 import node.Node;
 import node.impl.VariableNode;
 import node.impl.group.ProductNode;
@@ -15,6 +14,7 @@ import org.slf4j.LoggerFactory;
 import simulation.manager.ParallelSimulationManager;
 import simulation.manager.SimulationManager;
 import simulation.manager.SingleThreadSimulationManager;
+import variable.impl.ExponentialVariable;
 import variable.impl.GaussianVariable;
 import variable.impl.UniformVariable;
 import variable.registry.StochasticVariableRegistry;
@@ -34,9 +34,9 @@ public class SimulationManagerTestCase {
         for (int i = 0; i < TREE_SIZE_SCALE; i++) {
             double from = i * 10.0;
             double to = i * 10.0 + 10.0;
-            variables.putVariable(new GaussianVariable("X" + i, from, to, new Random(1L), 1.0));
-            variables.putVariable(new UniformVariable("Y" + i, from, to, new Random(1L)));
-            variables.putVariable(new GaussianVariable("Z" + i, from - 100, to - 100, new Random(1L)));
+            variables.putVariable(new GaussianVariable("X" + i, 1L, (from + to) / 2.0, 1.0 / 3.0));
+            variables.putVariable(new UniformVariable("Y" + i, 1L, from, to));
+            variables.putVariable(new ExponentialVariable("Z" + i, 1L, 1.0));
         }
         return variables;
     }
@@ -62,7 +62,8 @@ public class SimulationManagerTestCase {
     public void setUp() {
         root = buildNodeTree();
         registry = makeVariableRegistry();
-        runs = 100000;
+//        runs = 100000;
+        runs = 10000;
         threadload = 100000 * 1001 / 4;
     }
 

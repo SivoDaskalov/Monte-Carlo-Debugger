@@ -3,10 +3,7 @@
  */
 package variable.impl;
 
-import java.util.Random;
-
 import variable.AbstractVariable;
-import variable.Distribution;
 
 /**
  *
@@ -14,16 +11,27 @@ import variable.Distribution;
  */
 public class ExponentialVariable extends AbstractVariable {
 
+    private static final double defaultLambda = 1.0;
+
+    private final Double lambda;
+
     public ExponentialVariable() {
+        super();
+        this.lambda = defaultLambda;
     }
 
-    public ExponentialVariable(String id, Double from, Double to, Random random) {
-        super(id, Distribution.EXPONENTIAL, from, to, random);
+    public ExponentialVariable(String id, long seed) {
+        this(id, seed, defaultLambda);
+    }
+
+    public ExponentialVariable(String id, long seed, double lambda) {
+        super(id, seed);
+        this.lambda = lambda;
     }
 
     @Override
-    public Double sample() {
-        return null;
+    public double sample() {
+        return Math.log(1 - random.nextDouble()) / (-lambda);
     }
 
 }
