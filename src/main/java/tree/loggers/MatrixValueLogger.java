@@ -4,7 +4,7 @@
 package tree.loggers;
 
 import java.util.Map;
-import node.AbstractNode;
+import node.impl.AbstractNode;
 import node.Node;
 import simulation.context.SimulationContext;
 import tree.util.TreeUtilities;

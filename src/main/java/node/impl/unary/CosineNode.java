@@ -3,6 +3,7 @@
  */
 package node.impl.unary;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import node.Node;
 import simulation.context.SimulationContext;
 
@@ -10,7 +11,11 @@ import simulation.context.SimulationContext;
  *
  * @author sdaskalov
  */
+@XmlRootElement(name = "cosine")
 public class CosineNode extends AbstractUnaryNode {
+
+    public CosineNode() {
+    }
 
     public CosineNode(Node argument) {
         super(argument);

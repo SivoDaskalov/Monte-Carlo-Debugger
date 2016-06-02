@@ -3,16 +3,10 @@
  */
 package simulation.configuration;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-
 /**
  *
  * @author sdaskalov
  */
-@XmlRootElement(name = "configuration")
-@XmlAccessorType(XmlAccessType.FIELD)
 public class SimulationConfigurationImpl implements SimulationConfiguration {
 
     private String title;

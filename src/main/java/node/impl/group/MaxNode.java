@@ -4,7 +4,7 @@
 package node.impl.group;
 
 import java.util.List;
-
+import javax.xml.bind.annotation.XmlRootElement;
 import node.Node;
 import simulation.context.SimulationContext;
 
@@ -12,6 +12,7 @@ import simulation.context.SimulationContext;
  *
  * @author sdaskalov
  */
+@XmlRootElement(name = "max")
 public class MaxNode extends AbstractGroupNode {
 
     public MaxNode() {

@@ -64,7 +64,7 @@ public class SimulationRequestImpl implements SimulationRequest {
     public List<StochasticVariable> getVariables() {
         return variables;
     }
-    
+
     public void setFormula(Node formula) {
         this.formula = formula;
     }

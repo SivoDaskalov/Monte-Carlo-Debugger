@@ -5,7 +5,7 @@ package tree.handlers;
 
 import java.util.HashMap;
 import java.util.Map;
-import node.AbstractNode;
+import node.impl.AbstractNode;
 import node.Node;
 
 /**

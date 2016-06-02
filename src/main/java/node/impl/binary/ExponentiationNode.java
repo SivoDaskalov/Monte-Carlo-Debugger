@@ -3,21 +3,42 @@
  */
 package node.impl.binary;
 
-import node.AbstractNode;
+import javax.xml.bind.annotation.XmlRootElement;
 import node.Node;
+import node.impl.AbstractNode;
 import simulation.context.SimulationContext;
 
 /**
  *
  * @author sdaskalov
  */
+@XmlRootElement(name = "exponentiation")
 public class ExponentiationNode extends AbstractNode {
 
-    private final Node base;
-    private final Node exponent;
+    private Node base;
+    private Node exponent;
+
+    public ExponentiationNode() {
+    }
 
     public ExponentiationNode(Node base, Node exponent) {
         this.base = base;
+        this.exponent = exponent;
+    }
+
+    public Node getBase() {
+        return base;
+    }
+
+    public void setBase(Node base) {
+        this.base = base;
+    }
+
+    public Node getExponent() {
+        return exponent;
+    }
+
+    public void setExponent(Node exponent) {
         this.exponent = exponent;
     }
 

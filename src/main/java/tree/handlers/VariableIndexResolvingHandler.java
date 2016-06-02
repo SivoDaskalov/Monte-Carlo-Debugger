@@ -4,7 +4,7 @@
 package tree.handlers;
 
 import java.util.Map;
-import node.AbstractNode;
+import node.impl.AbstractNode;
 import node.impl.VariableNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

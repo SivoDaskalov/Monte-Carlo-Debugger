@@ -3,16 +3,20 @@
  */
 package node.impl;
 
-import node.AbstractNode;
+import javax.xml.bind.annotation.XmlRootElement;
 import simulation.context.SimulationContext;
 
 /**
  *
  * @author sdaskalov
  */
+@XmlRootElement(name = "constant")
 public class ConstantNode extends AbstractNode {
 
-    private final double value;
+    private double value;
+
+    public ConstantNode() {
+    }
 
     public ConstantNode(double value, String description) {
         super(description);
@@ -24,6 +28,14 @@ public class ConstantNode extends AbstractNode {
         this.value = value;
     }
 
+    public double getValue() {
+        return value;
+    }
+
+    public void setValue(double value) {
+        this.value = value;
+    }
+    
     @Override
     protected double calculate(SimulationContext context) {
         return value;

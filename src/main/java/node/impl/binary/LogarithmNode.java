@@ -3,22 +3,43 @@
  */
 package node.impl.binary;
 
-import node.AbstractNode;
+import javax.xml.bind.annotation.XmlRootElement;
 import node.Node;
+import node.impl.AbstractNode;
 import simulation.context.SimulationContext;
 
 /**
  *
  * @author sdaskalov
  */
+@XmlRootElement(name = "logarithm")
 public class LogarithmNode extends AbstractNode {
 
-    private final Node argument;
-    private final Node base;
+    private Node argument;
+    private Node base;
+
+    public LogarithmNode() {
+    }
 
     public LogarithmNode(Node argument, Node base) {
         super();
         this.argument = argument;
+        this.base = base;
+    }
+
+    public Node getArgument() {
+        return argument;
+    }
+
+    public void setArgument(Node argument) {
+        this.argument = argument;
+    }
+
+    public Node getBase() {
+        return base;
+    }
+
+    public void setBase(Node base) {
         this.base = base;
     }
 

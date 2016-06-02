@@ -3,22 +3,43 @@
  */
 package node.impl.binary;
 
-import node.AbstractNode;
+import javax.xml.bind.annotation.XmlRootElement;
 import node.Node;
+import node.impl.AbstractNode;
 import simulation.context.SimulationContext;
 
 /**
  *
  * @author sdaskalov
  */
+@XmlRootElement(name = "root")
 public class RootNode extends AbstractNode {
 
-    private final Node radicand;
-    private final Node index;
+    private Node radicand;
+    private Node index;
+
+    public RootNode() {
+    }
 
     public RootNode(Node radicant, Node index) {
         super();
         this.radicand = radicant;
+        this.index = index;
+    }
+
+    public Node getRadicand() {
+        return radicand;
+    }
+
+    public void setRadicand(Node radicand) {
+        this.radicand = radicand;
+    }
+
+    public Node getIndex() {
+        return index;
+    }
+
+    public void setIndex(Node index) {
         this.index = index;
     }
 
