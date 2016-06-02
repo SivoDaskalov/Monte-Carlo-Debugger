@@ -6,6 +6,7 @@ package jaxb;
 import node.Node;
 import org.junit.Before;
 import org.junit.Test;
+import simulation.NodeValuesWrapper;
 import simulation.configuration.SimulationConfigurationImpl;
 import simulation.manager.SimulationManager;
 import simulation.manager.SingleThreadSimulationManager;
@@ -46,7 +47,7 @@ public class SimulationResponseJaxbTestCase extends JaxbTestCase {
         response.setConfiguration(configuration);
         response.setVariables(variables);
         response.setFormula(manager.getRoot());
-        response.setValueRegistry(manager.getValueRegistry());
+        response.setNodeValues(new NodeValuesWrapper(manager));
     }
 
     @Test

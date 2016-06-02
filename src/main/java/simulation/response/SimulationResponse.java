@@ -3,6 +3,7 @@
  */
 package simulation.response;
 
+import simulation.NodeValuesWrapper;
 import simulation.request.SimulationRequest;
 
 /**
@@ -11,5 +12,5 @@ import simulation.request.SimulationRequest;
  */
 public interface SimulationResponse extends SimulationRequest {
 
-    public double[][] getValueRegistry();
+    public NodeValuesWrapper getNodeValues();
 }
