@@ -9,10 +9,10 @@ package simulation.configuration;
  */
 public interface SimulationConfiguration {
 
+    String getTitle();
+
     String getDescription();
 
     Integer getSimulationRuns();
 
-    String getTitle();
-    
 }

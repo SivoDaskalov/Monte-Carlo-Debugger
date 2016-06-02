@@ -6,6 +6,7 @@ package simulation;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAnyElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import node.Node;
 import node.impl.AbstractNode;
@@ -14,6 +15,7 @@ import node.impl.AbstractNode;
  *
  * @author sdaskalov
  */
+@XmlRootElement(name = "formula")
 @XmlSeeAlso({AbstractNode.class})
 @XmlAccessorType(XmlAccessType.NONE)
 public class NodeTreeWrapper {

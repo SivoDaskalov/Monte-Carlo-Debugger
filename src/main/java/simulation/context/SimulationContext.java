@@ -3,7 +3,7 @@
  */
 package simulation.context;
 
-import tree.loggers.ValueLogger;
+import simulation.loggers.ValueLogger;
 
 /**
  *

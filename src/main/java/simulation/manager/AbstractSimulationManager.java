@@ -9,14 +9,12 @@ import javafx.util.Pair;
 import node.Node;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import simulation.listeners.SimulationCompletionListener;
 import simulation.context.SimulationContextImpl;
-import tree.handlers.VariableIndexResolvingHandler;
-import tree.loggers.MatrixValueLogger;
-import tree.walkers.NodeWalker;
-import tree.walkers.ReflectiveNodeWalker;
+import simulation.listeners.SimulationCompletionListener;
+import simulation.loggers.MatrixValueLogger;
+import tree.util.TreeUtilities;
 import variable.registry.StochasticVariableRegistry;
-import variable.sampled.SampledVariableRegistry;
+import variable.registry.SampledVariableRegistry;
 
 /**
  *
@@ -37,7 +35,7 @@ public abstract class AbstractSimulationManager implements SimulationManager {
         this.root = root;
         this.nodeValueRegistry = new MatrixValueLogger(root, runs);
         SampledVariableRegistry sampledVariableRegistry = new SampledVariableRegistry(variables, runs);
-        resolveVariableNodeIndices(root, sampledVariableRegistry);
+        TreeUtilities.resolveVariableNodeIndices(root, sampledVariableRegistry);
         this.context = new SimulationContextImpl(sampledVariableRegistry, nodeValueRegistry);
         this.runs = new Pair<>(0, runs - 1);
     }
@@ -66,12 +64,6 @@ public abstract class AbstractSimulationManager implements SimulationManager {
 
     public void setCompletionListener(SimulationCompletionListener listener) {
         this.completionListener = listener;
-    }
-
-    private void resolveVariableNodeIndices(Node root, SampledVariableRegistry sampledVariableRegistry) {
-        VariableIndexResolvingHandler handler = new VariableIndexResolvingHandler(sampledVariableRegistry);
-        NodeWalker walker = new ReflectiveNodeWalker(handler);
-        walker.walk(root);
     }
 
     @Override

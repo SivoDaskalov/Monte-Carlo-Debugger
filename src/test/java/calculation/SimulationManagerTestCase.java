@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import simulation.manager.ParallelSimulationManager;
 import simulation.manager.SimulationManager;
 import simulation.manager.SingleThreadSimulationManager;
-import testutils.BuildHelper;
+import util.TestHelper;
 import variable.registry.StochasticVariableRegistry;
 
 /**
@@ -24,11 +24,11 @@ public class SimulationManagerTestCase {
     private static final int TREE_SIZE_SCALE = 250;
 
     private static StochasticVariableRegistry makeVariableRegistry() {
-        return BuildHelper.makeVariableRegistry(TREE_SIZE_SCALE);
+        return TestHelper.makeVariableRegistry(TREE_SIZE_SCALE);
     }
 
     private static Node buildNodeTree() {
-        return BuildHelper.buildNodeTree(TREE_SIZE_SCALE);
+        return TestHelper.buildNodeTree(TREE_SIZE_SCALE);
     }
 
     private Node root;

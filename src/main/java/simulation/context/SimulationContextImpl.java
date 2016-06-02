@@ -3,8 +3,8 @@
  */
 package simulation.context;
 
-import tree.loggers.ValueLogger;
-import variable.sampled.SampledVariableRegistry;
+import simulation.loggers.ValueLogger;
+import variable.registry.SampledVariableRegistry;
 
 /**
  *

@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package tree.loggers;
+package simulation.loggers;
 
 import node.Node;
 import simulation.context.SimulationContext;

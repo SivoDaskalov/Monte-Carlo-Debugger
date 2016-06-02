@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package testutils;
+package util;
 
 import node.Node;
 import node.impl.VariableNode;
@@ -16,7 +16,7 @@ import variable.registry.StochasticVariableRegistryImpl;
  *
  * @author sdaskalov
  */
-public class BuildHelper {
+public class TestHelper {
 
     public static StochasticVariableRegistryImpl makeVariableRegistry(int variableCount) {
         StochasticVariableRegistryImpl variables = new StochasticVariableRegistryImpl();

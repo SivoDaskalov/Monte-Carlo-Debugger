@@ -1,13 +1,12 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package variable.sampled;
+package variable.registry;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import variable.StochasticVariable;
-import variable.registry.StochasticVariableRegistry;
 
 /**
  *

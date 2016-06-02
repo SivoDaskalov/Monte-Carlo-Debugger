@@ -10,7 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 import simulation.configuration.SimulationConfigurationImpl;
 import simulation.request.SimulationRequestImpl;
-import testutils.BuildHelper;
+import util.TestHelper;
 
 /**
  *
@@ -43,13 +43,13 @@ public class SimulationRequestJaxbTestCase extends JaxbTestCase {
 
         request = new SimulationRequestImpl();
         request.setConfiguration(configuration);
-        request.setVariableRegistry(BuildHelper.makeVariableRegistry(TREE_SIZE));
-        request.setFormula(BuildHelper.buildNodeTree(TREE_SIZE));
+        request.setVariableRegistry(TestHelper.makeVariableRegistry(TREE_SIZE));
+        request.setFormula(TestHelper.buildNodeTree(TREE_SIZE));
     }
 
     @Test
     public void testRequestMarshalling() {
-        SimulationRequestImpl unmarshalled = doMarhshalUnmarshal(request, "target/SimulationRequest.xml");
+        SimulationRequestImpl unmarshaled = doMarhshalUnmarshal(request, "target/SimulationRequest.xml");
     }
 
 }

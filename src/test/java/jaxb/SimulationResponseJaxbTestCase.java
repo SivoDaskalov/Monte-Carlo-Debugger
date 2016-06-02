@@ -11,7 +11,7 @@ import simulation.configuration.SimulationConfigurationImpl;
 import simulation.manager.SimulationManager;
 import simulation.manager.SingleThreadSimulationManager;
 import simulation.response.SimulationResponseImpl;
-import testutils.BuildHelper;
+import util.TestHelper;
 import variable.registry.StochasticVariableRegistryImpl;
 
 /**
@@ -31,10 +31,10 @@ public class SimulationResponseJaxbTestCase extends JaxbTestCase {
         configuration.setTitle("Test simulation");
         configuration.setDescription(
                 "This configuration exists to test the marshaling and unmarshaling of requests");
-        configuration.setSimulationRuns(100);
+        configuration.setSimulationRuns(10);
 
-        Node formula = BuildHelper.buildNodeTree(TREE_SIZE);
-        StochasticVariableRegistryImpl variables = BuildHelper.makeVariableRegistry(TREE_SIZE);
+        Node formula = TestHelper.buildNodeTree(TREE_SIZE);
+        StochasticVariableRegistryImpl variables = TestHelper.makeVariableRegistry(TREE_SIZE);
 
         SimulationManager manager = new SingleThreadSimulationManager(
                 formula,
@@ -52,6 +52,6 @@ public class SimulationResponseJaxbTestCase extends JaxbTestCase {
 
     @Test
     public void testResponseMarshalling() {
-        SimulationResponseImpl unmarshalled = doMarhshalUnmarshal(response, "target/SimulationResponse.xml");
+        SimulationResponseImpl unmarshaled = doMarhshalUnmarshal(response, "target/SimulationResponse.xml");
     }
 }

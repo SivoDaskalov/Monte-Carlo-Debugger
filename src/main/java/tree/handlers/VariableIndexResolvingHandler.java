@@ -9,7 +9,7 @@ import node.impl.VariableNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import variable.StochasticVariable;
-import variable.sampled.SampledVariableRegistry;
+import variable.registry.SampledVariableRegistry;
 
 /**
  *

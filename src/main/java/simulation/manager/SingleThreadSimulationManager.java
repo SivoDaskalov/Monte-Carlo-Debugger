@@ -7,7 +7,7 @@ import java.util.concurrent.CountDownLatch;
 import javafx.util.Pair;
 import node.Node;
 import simulation.context.SimulationContextImpl;
-import tree.loggers.MatrixValueLogger;
+import simulation.loggers.MatrixValueLogger;
 import variable.registry.StochasticVariableRegistry;
 
 /**
