@@ -3,10 +3,9 @@
  */
 package simulation.request;
 
-import java.util.List;
 import node.Node;
 import simulation.configuration.SimulationConfiguration;
-import variable.StochasticVariable;
+import variable.registry.StochasticVariableRegistry;
 
 /**
  *
@@ -16,7 +15,7 @@ public interface SimulationRequest {
 
     public SimulationConfiguration getConfiguration();
 
-    public List<StochasticVariable> getVariables();
+    public StochasticVariableRegistry getVariableRegistry();
 
     public Node getFormula();
 }

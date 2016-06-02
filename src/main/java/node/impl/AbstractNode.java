@@ -33,7 +33,7 @@ public abstract class AbstractNode implements Node {
     protected static final Logger log = LoggerFactory.getLogger(AbstractNode.class);
     private static final AtomicLong idGenerator = new AtomicLong();
 
-    @XmlAttribute
+    @XmlAttribute(name = "nodeId")
     private String id;
     @XmlAttribute
     private String description;

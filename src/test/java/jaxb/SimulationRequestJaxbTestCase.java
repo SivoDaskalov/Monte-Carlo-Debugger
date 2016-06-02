@@ -18,7 +18,7 @@ import testutils.BuildHelper;
  */
 public class SimulationRequestJaxbTestCase extends JaxbTestCase {
 
-    private final int TREE_SIZE = 2;
+    private final int TREE_SIZE = 3;
     private SimulationRequestImpl request;
 
     public SimulationRequestJaxbTestCase() {
@@ -43,7 +43,7 @@ public class SimulationRequestJaxbTestCase extends JaxbTestCase {
 
         request = new SimulationRequestImpl();
         request.setConfiguration(configuration);
-        request.setVariables(BuildHelper.makeVariableRegistry(TREE_SIZE).getVariables());
+        request.setVariableRegistry(BuildHelper.makeVariableRegistry(TREE_SIZE));
         request.setFormula(BuildHelper.buildNodeTree(TREE_SIZE));
     }
 

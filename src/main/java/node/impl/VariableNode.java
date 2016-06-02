@@ -16,7 +16,6 @@ public class VariableNode extends AbstractNode {
 
     @XmlAttribute
     private String name;
-    @XmlAttribute(required = false)
     private int variableIndex;
 
     public VariableNode() {

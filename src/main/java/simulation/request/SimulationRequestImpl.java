@@ -3,46 +3,40 @@
  */
 package simulation.request;
 
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSeeAlso;
 import node.Node;
-import node.impl.AbstractNode;
+import simulation.NodeTreeWrapper;
+import simulation.configuration.SimulationConfiguration;
 import simulation.configuration.SimulationConfigurationImpl;
-import variable.AbstractVariable;
-import variable.StochasticVariable;
+import variable.registry.StochasticVariableRegistry;
+import variable.registry.StochasticVariableRegistryImpl;
 
 /**
  *
  * @author sdaskalov
  */
 @XmlRootElement(name = "simulation")
-@XmlSeeAlso({AbstractNode.class, AbstractVariable.class})
-@XmlAccessorType(XmlAccessType.NONE)
+@XmlAccessorType(XmlAccessType.FIELD)
 public class SimulationRequestImpl implements SimulationRequest {
 
-    @XmlElement(name = "configuration")
     private SimulationConfigurationImpl configuration;
 
-    @XmlElementWrapper(name = "variables")
-    @XmlAnyElement(lax = true)
-    private List<StochasticVariable> variables;
+    private StochasticVariableRegistryImpl variables;
 
-    @XmlAnyElement(lax = true)
-    private Node formula;
+    @XmlElement(name = "formula")
+    private final NodeTreeWrapper formulaWrapper;
 
     public SimulationRequestImpl() {
+        formulaWrapper = new NodeTreeWrapper();
     }
 
-    public SimulationRequestImpl(SimulationConfigurationImpl configuration, List<StochasticVariable> variables, Node formula) {
+    public SimulationRequestImpl(SimulationConfigurationImpl configuration, StochasticVariableRegistryImpl variables, Node formula) {
         this.configuration = configuration;
         this.variables = variables;
-        this.formula = formula;
+        this.formulaWrapper = new NodeTreeWrapper(formula);
     }
 
     public void setConfiguration(SimulationConfigurationImpl configuration) {
@@ -50,25 +44,25 @@ public class SimulationRequestImpl implements SimulationRequest {
     }
 
     @Override
-    public SimulationConfigurationImpl getConfiguration() {
+    public SimulationConfiguration getConfiguration() {
         return configuration;
     }
 
-    public void setVariables(List<StochasticVariable> variables) {
+    public void setVariableRegistry(StochasticVariableRegistryImpl variables) {
         this.variables = variables;
     }
 
     @Override
-    public List<StochasticVariable> getVariables() {
+    public StochasticVariableRegistry getVariableRegistry() {
         return variables;
     }
 
     public void setFormula(Node formula) {
-        this.formula = formula;
+        this.formulaWrapper.setRoot(formula);
     }
 
     @Override
     public Node getFormula() {
-        return formula;
+        return formulaWrapper.getRoot();
     }
 }
