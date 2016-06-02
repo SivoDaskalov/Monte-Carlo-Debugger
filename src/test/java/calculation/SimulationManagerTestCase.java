@@ -4,9 +4,6 @@
 package calculation;
 
 import node.Node;
-import node.impl.VariableNode;
-import node.impl.group.ProductNode;
-import node.impl.group.SumNode;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -14,11 +11,8 @@ import org.slf4j.LoggerFactory;
 import simulation.manager.ParallelSimulationManager;
 import simulation.manager.SimulationManager;
 import simulation.manager.SingleThreadSimulationManager;
-import variable.impl.ExponentialVariable;
-import variable.impl.GaussianVariable;
-import variable.impl.UniformVariable;
+import testutils.BuildHelper;
 import variable.registry.StochasticVariableRegistry;
-import variable.registry.StochasticVariableRegistryImpl;
 
 /**
  *
@@ -30,27 +24,11 @@ public class SimulationManagerTestCase {
     private static final int TREE_SIZE_SCALE = 250;
 
     private static StochasticVariableRegistry makeVariableRegistry() {
-        StochasticVariableRegistry variables = new StochasticVariableRegistryImpl();
-        for (int i = 0; i < TREE_SIZE_SCALE; i++) {
-            double from = i * 10.0;
-            double to = i * 10.0 + 10.0;
-            variables.putVariable(new GaussianVariable("X" + i, 1L, (from + to) / 2.0, 1.0 / 3.0));
-            variables.putVariable(new UniformVariable("Y" + i, 1L, from, to));
-            variables.putVariable(new ExponentialVariable("Z" + i, 1L, 1.0));
-        }
-        return variables;
+        return BuildHelper.makeVariableRegistry(TREE_SIZE_SCALE);
     }
 
     private static Node buildNodeTree() {
-        SumNode rootNode = new SumNode();
-        for (int i = 0; i < TREE_SIZE_SCALE; i++) {
-            ProductNode product = new ProductNode();
-            product.addNode(new VariableNode("X" + i));
-            product.addNode(new VariableNode("Y" + i));
-            product.addNode(new VariableNode("Z" + i));
-            rootNode.addNode(product);
-        }
-        return rootNode;
+        return BuildHelper.buildNodeTree(TREE_SIZE_SCALE);
     }
 
     private Node root;

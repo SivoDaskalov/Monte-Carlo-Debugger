@@ -5,6 +5,7 @@ package variable.impl;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import variable.AbstractVariable;
 
 /**
@@ -18,7 +19,9 @@ public class GaussianVariable extends AbstractVariable {
     // Default standard deviation set to a third of the mean
     private static final double defaultStandardDeviation = 1.0 / 3.0;
 
+    @XmlElement(name = "mean")
     private Double mean;
+    @XmlElement(name = "deviation")
     private Double deviation;
 
     public GaussianVariable() {

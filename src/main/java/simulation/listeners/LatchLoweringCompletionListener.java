@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package simulation.completion;
+package simulation.listeners;
 
 import java.util.concurrent.CountDownLatch;
 

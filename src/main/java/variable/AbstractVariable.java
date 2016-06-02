@@ -7,6 +7,7 @@ import java.util.Objects;
 import java.util.concurrent.atomic.AtomicLong;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
 import org.apache.commons.math3.random.JDKRandomGenerator;
 import org.apache.commons.math3.random.RandomGenerator;
 import org.slf4j.Logger;
@@ -22,6 +23,7 @@ public abstract class AbstractVariable implements StochasticVariable {
     protected static final Logger log = LoggerFactory.getLogger(AbstractVariable.class);
     protected static final AtomicLong idGenerator = new AtomicLong();
 
+    @XmlAttribute(name = "id")
     protected String id;
     protected RandomGenerator random;
 

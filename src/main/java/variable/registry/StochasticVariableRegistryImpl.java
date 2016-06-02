@@ -13,7 +13,7 @@ import variable.StochasticVariable;
  */
 public class StochasticVariableRegistryImpl implements StochasticVariableRegistry {
 
-    private final List<StochasticVariable> variables;
+    private List<StochasticVariable> variables;
 
     public StochasticVariableRegistryImpl() {
         variables = new ArrayList<>();
@@ -27,6 +27,11 @@ public class StochasticVariableRegistryImpl implements StochasticVariableRegistr
     @Override
     public List<StochasticVariable> getVariables() {
         return variables;
+    }
+
+    @Override
+    public void setVariables(List<StochasticVariable> variables) {
+        this.variables = variables;
     }
 
 }

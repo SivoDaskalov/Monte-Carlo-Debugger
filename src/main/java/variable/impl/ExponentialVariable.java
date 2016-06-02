@@ -3,6 +3,7 @@
  */
 package variable.impl;
 
+import javax.xml.bind.annotation.XmlElement;
 import variable.AbstractVariable;
 
 /**
@@ -13,6 +14,7 @@ public class ExponentialVariable extends AbstractVariable {
 
     private static final double defaultLambda = 1.0;
 
+    @XmlElement(name = "lambda")
     private final Double lambda;
 
     public ExponentialVariable() {

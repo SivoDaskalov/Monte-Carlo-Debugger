@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import javafx.util.Pair;
 import node.Node;
-import simulation.completion.CompositeCompletionListener;
-import simulation.completion.LatchLoweringCompletionListener;
+import simulation.listeners.CompositeCompletionListener;
+import simulation.listeners.LatchLoweringCompletionListener;
 import tree.util.TreeUtilities;
 import variable.registry.StochasticVariableRegistry;
 

@@ -9,7 +9,7 @@ import javafx.util.Pair;
 import node.Node;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import simulation.completion.SimulationCompletionListener;
+import simulation.listeners.SimulationCompletionListener;
 import simulation.context.SimulationContextImpl;
 import tree.handlers.VariableIndexResolvingHandler;
 import tree.loggers.MatrixValueLogger;

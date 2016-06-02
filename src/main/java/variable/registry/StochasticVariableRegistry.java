@@ -13,6 +13,8 @@ import variable.StochasticVariable;
 public interface StochasticVariableRegistry {
 
     public void putVariable(StochasticVariable variable);
+    
+    public void setVariables(List<StochasticVariable> variables);
 
     public List<StochasticVariable> getVariables();
 
