@@ -3,7 +3,6 @@
  */
 package variable.impl;
 
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import variable.AbstractVariable;
 
@@ -16,12 +15,16 @@ public class ExponentialVariable extends AbstractVariable {
 
     private static final double defaultLambda = 1.0;
 
-    @XmlElement(name = "lambda")
-    private final Double lambda;
+    private Double lambda;
 
     public ExponentialVariable() {
         super();
-        this.lambda = defaultLambda;
+        lambda = defaultLambda;
+    }
+
+    public ExponentialVariable(String id) {
+        super(id);
+        lambda = defaultLambda;
     }
 
     public ExponentialVariable(String id, long seed) {
@@ -30,6 +33,14 @@ public class ExponentialVariable extends AbstractVariable {
 
     public ExponentialVariable(String id, long seed, double lambda) {
         super(id, seed);
+        this.lambda = lambda;
+    }
+
+    public Double getLambda() {
+        return lambda;
+    }
+
+    public void setLambda(Double lambda) {
         this.lambda = lambda;
     }
 

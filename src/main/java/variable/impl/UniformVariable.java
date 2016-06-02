@@ -3,7 +3,6 @@
  */
 package variable.impl;
 
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import variable.AbstractVariable;
 
@@ -17,9 +16,7 @@ public class UniformVariable extends AbstractVariable {
     private static final double defaultLowerBound = 0.0;
     private static final double defaultUpperBound = 1.0;
 
-    @XmlElement(name = "lowerBound")
     private double lowerBound;
-    @XmlElement(name = "upperBound")
     private double upperBound;
 
     public UniformVariable() {
@@ -28,6 +25,12 @@ public class UniformVariable extends AbstractVariable {
         upperBound = defaultUpperBound;
     }
 
+    public UniformVariable(String id) {
+        super(id);
+        lowerBound = defaultLowerBound;
+        upperBound = defaultUpperBound;
+    }
+    
     public UniformVariable(String id, long seed) {
         this(id, seed, defaultLowerBound, defaultUpperBound);
     }

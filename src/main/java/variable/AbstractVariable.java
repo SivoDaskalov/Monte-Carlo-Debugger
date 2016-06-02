@@ -9,6 +9,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlSeeAlso;
+import javax.xml.bind.annotation.XmlTransient;
 import org.apache.commons.math3.random.JDKRandomGenerator;
 import org.apache.commons.math3.random.RandomGenerator;
 import org.slf4j.Logger;
@@ -25,20 +26,24 @@ import variable.impl.UniformVariable;
  */
 @XmlSeeAlso({ExponentialVariable.class, GammaVariable.class,
     GaussianVariable.class, LogNormalVariable.class, UniformVariable.class})
-@XmlAccessorType(XmlAccessType.NONE)
+@XmlAccessorType(XmlAccessType.FIELD)
 public abstract class AbstractVariable implements StochasticVariable {
 
+    @XmlTransient
     protected static final Logger log = LoggerFactory.getLogger(AbstractVariable.class);
+    @XmlTransient
     protected static final AtomicLong idGenerator = new AtomicLong();
-
-    @XmlAttribute(name = "id")
-    protected String id;
+    @XmlTransient
     protected RandomGenerator random;
+    @XmlAttribute
+    protected String id;
 
     public AbstractVariable() {
-        this.id = "" + idGenerator.getAndIncrement();
-        this.random = new JDKRandomGenerator();
-        random.setSeed(System.currentTimeMillis());
+        this("" + idGenerator.getAndIncrement());
+    }
+
+    public AbstractVariable(String id) {
+        this(id, System.currentTimeMillis());
     }
 
     public AbstractVariable(String id, long seed) {

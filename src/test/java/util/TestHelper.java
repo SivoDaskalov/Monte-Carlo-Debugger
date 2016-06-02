@@ -41,4 +41,8 @@ public class TestHelper {
         }
         return rootNode;
     }
+    
+    public static Node buildComplexNodeTree(){
+        return null;
+    }
 }

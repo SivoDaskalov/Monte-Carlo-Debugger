@@ -9,7 +9,9 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import variable.impl.ExponentialVariable;
+import variable.impl.GammaVariable;
 import variable.impl.GaussianVariable;
+import variable.impl.LogNormalVariable;
 import variable.impl.UniformVariable;
 import variable.registry.StochasticVariableRegistryImpl;
 
@@ -33,20 +35,32 @@ public class VariableSamplingTestCase {
 
     @Test
     public void gaussianSamplingTestCase() {
-        variables.putVariable(new GaussianVariable("X", 1L));
-        doSampling("Gaussian", "X");
+        variables.putVariable(new GaussianVariable("X0", 1L));
+        doSampling("Gaussian", "X0");
     }
 
     @Test
     public void uniformSamplingTestCase() {
-        variables.putVariable(new UniformVariable("Y", 1L));
-        doSampling("Uniform", "Y");
+        variables.putVariable(new UniformVariable("X1", 1L));
+        doSampling("Uniform", "X1");
     }
 
     @Test
     public void exponentialSamplingTestCase() {
-        variables.putVariable(new ExponentialVariable("Z", 1L));
-        doSampling("Exponential", "Z");
+        variables.putVariable(new ExponentialVariable("X2", 1L));
+        doSampling("Exponential", "X2");
+    }
+
+    @Test
+    public void logNormalSamplingTestCase() {
+        variables.putVariable(new LogNormalVariable("X3", 1L));
+        doSampling("LogNormal", "X3");
+    }
+
+    @Test
+    public void gammaSamplingTestCase() {
+        variables.putVariable(new GammaVariable("X4", 1L));
+        doSampling("Gamma", "X4");
     }
 
     public void doSampling(String distribution, String id) {
