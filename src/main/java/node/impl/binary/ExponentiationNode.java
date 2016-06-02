@@ -3,6 +3,7 @@
  */
 package node.impl.binary;
 
+import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import node.Node;
 import node.impl.AbstractNode;
@@ -15,7 +16,9 @@ import simulation.context.SimulationContext;
 @XmlRootElement(name = "exponentiation")
 public class ExponentiationNode extends AbstractNode {
 
+    @XmlAnyElement(lax = true)
     private Node base;
+    @XmlAnyElement(lax = true)
     private Node exponent;
 
     public ExponentiationNode() {

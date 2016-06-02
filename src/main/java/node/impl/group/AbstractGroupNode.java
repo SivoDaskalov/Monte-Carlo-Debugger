@@ -5,6 +5,7 @@ package node.impl.group;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import node.GroupNode;
 import node.Node;
@@ -18,6 +19,7 @@ import node.impl.AbstractNode;
     AverageNode.class, ProductNode.class, SumNode.class})
 public abstract class AbstractGroupNode extends AbstractNode implements GroupNode {
 
+    @XmlAnyElement(lax = true)
     protected List<Node> elements;
 
     public AbstractGroupNode() {

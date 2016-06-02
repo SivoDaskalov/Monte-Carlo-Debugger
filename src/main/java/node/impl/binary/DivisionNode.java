@@ -3,6 +3,7 @@
  */
 package node.impl.binary;
 
+import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import node.Node;
 import node.impl.AbstractNode;
@@ -15,7 +16,9 @@ import simulation.context.SimulationContext;
 @XmlRootElement(name = "division")
 public class DivisionNode extends AbstractNode {
 
+    @XmlAnyElement(lax = true)
     private Node dividend;
+    @XmlAnyElement(lax = true)
     private Node divisor;
 
     public DivisionNode() {

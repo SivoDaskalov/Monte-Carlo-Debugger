@@ -3,12 +3,14 @@
  */
 package variable.impl;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import variable.AbstractVariable;
 
 /**
  *
  * @author sdaskalov
  */
+@XmlRootElement(name = "gamma")
 public class GammaVariable extends AbstractVariable{
 
     @Override

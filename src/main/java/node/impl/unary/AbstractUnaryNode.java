@@ -3,6 +3,7 @@
  */
 package node.impl.unary;
 
+import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import node.Node;
 import node.impl.AbstractNode;
@@ -15,6 +16,7 @@ import node.impl.AbstractNode;
     InvertNode.class, SineNode.class, TangentNode.class})
 public abstract class AbstractUnaryNode extends AbstractNode {
 
+    @XmlAnyElement(lax = true)
     protected Node argument;
 
     public AbstractUnaryNode() {

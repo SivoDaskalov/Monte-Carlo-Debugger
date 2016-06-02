@@ -6,36 +6,34 @@ package simulation.request;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
-import javax.xml.bind.annotation.XmlElements;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.XmlSeeAlso;
 import node.Node;
+import node.impl.AbstractNode;
 import simulation.configuration.SimulationConfigurationImpl;
+import variable.AbstractVariable;
 import variable.StochasticVariable;
-import variable.impl.ExponentialVariable;
-import variable.impl.GaussianVariable;
-import variable.impl.UniformVariable;
 
 /**
  *
  * @author sdaskalov
  */
 @XmlRootElement(name = "simulation")
-@XmlAccessorType(XmlAccessType.FIELD)
+@XmlSeeAlso({AbstractNode.class, AbstractVariable.class})
+@XmlAccessorType(XmlAccessType.NONE)
 public class SimulationRequestImpl implements SimulationRequest {
 
+    @XmlElement(name = "configuration")
     private SimulationConfigurationImpl configuration;
 
     @XmlElementWrapper(name = "variables")
-    @XmlElements({
-        @XmlElement(name = "gaussian", type = GaussianVariable.class),
-        @XmlElement(name = "uniform", type = UniformVariable.class),
-        @XmlElement(name = "exponential", type = ExponentialVariable.class)})
+    @XmlAnyElement(lax = true)
     private List<StochasticVariable> variables;
 
-    @XmlTransient
+    @XmlAnyElement(lax = true)
     private Node formula;
 
     public SimulationRequestImpl() {

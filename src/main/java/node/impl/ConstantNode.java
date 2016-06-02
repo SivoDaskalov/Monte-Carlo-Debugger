@@ -3,6 +3,7 @@
  */
 package node.impl;
 
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import simulation.context.SimulationContext;
 
@@ -13,6 +14,7 @@ import simulation.context.SimulationContext;
 @XmlRootElement(name = "constant")
 public class ConstantNode extends AbstractNode {
 
+    @XmlAttribute
     private double value;
 
     public ConstantNode() {

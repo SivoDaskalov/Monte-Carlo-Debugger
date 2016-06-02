@@ -4,12 +4,14 @@
 package variable.impl;
 
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import variable.AbstractVariable;
 
 /**
  *
  * @author sdaskalov
  */
+@XmlRootElement(name = "uniform")
 public class UniformVariable extends AbstractVariable {
 
     private static final double defaultLowerBound = 0.0;

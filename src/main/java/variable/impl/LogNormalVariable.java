@@ -3,12 +3,14 @@
  */
 package variable.impl;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import variable.AbstractVariable;
 
 /**
  *
  * @author sdaskalov
  */
+@XmlRootElement(name = "logNormal")
 public class LogNormalVariable extends AbstractVariable{
 
     @Override

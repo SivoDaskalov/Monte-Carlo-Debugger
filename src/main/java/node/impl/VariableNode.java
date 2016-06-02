@@ -3,6 +3,7 @@
  */
 package node.impl;
 
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import simulation.context.SimulationContext;
 
@@ -13,7 +14,9 @@ import simulation.context.SimulationContext;
 @XmlRootElement(name = "variable")
 public class VariableNode extends AbstractNode {
 
+    @XmlAttribute
     private String name;
+    @XmlAttribute(required = false)
     private int variableIndex;
 
     public VariableNode() {

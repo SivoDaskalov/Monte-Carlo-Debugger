@@ -3,16 +3,15 @@
  */
 package variable.impl;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import variable.AbstractVariable;
 
 /**
  *
  * @author sdaskalov
  */
-@XmlAccessorType(XmlAccessType.NONE)
+@XmlRootElement(name = "gaussian")
 public class GaussianVariable extends AbstractVariable {
 
     private static final double defaultMean = 0.5;

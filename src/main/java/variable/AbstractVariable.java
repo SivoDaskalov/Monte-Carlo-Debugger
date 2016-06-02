@@ -8,15 +8,23 @@ import java.util.concurrent.atomic.AtomicLong;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlSeeAlso;
 import org.apache.commons.math3.random.JDKRandomGenerator;
 import org.apache.commons.math3.random.RandomGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import variable.impl.ExponentialVariable;
+import variable.impl.GammaVariable;
+import variable.impl.GaussianVariable;
+import variable.impl.LogNormalVariable;
+import variable.impl.UniformVariable;
 
 /**
  *
  * @author sdaskalov
  */
+@XmlSeeAlso({ExponentialVariable.class, GammaVariable.class,
+    GaussianVariable.class, LogNormalVariable.class, UniformVariable.class})
 @XmlAccessorType(XmlAccessType.NONE)
 public abstract class AbstractVariable implements StochasticVariable {
 

@@ -6,6 +6,7 @@ package node.impl;
 import java.util.concurrent.atomic.AtomicLong;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import node.Node;
 import node.impl.binary.DivisionNode;
@@ -32,12 +33,15 @@ public abstract class AbstractNode implements Node {
     protected static final Logger log = LoggerFactory.getLogger(AbstractNode.class);
     private static final AtomicLong idGenerator = new AtomicLong();
 
+    @XmlAttribute
     private String id;
+    @XmlAttribute
     private String description;
+    @XmlAttribute(name = "index")
     private Integer nodeIndex;
 
     public AbstractNode() {
-        this("");
+        this(null);
     }
 
     public AbstractNode(String description) {

@@ -12,12 +12,12 @@ import node.Node;
  *
  * @author sdaskalov
  */
-public class IndexMappingHandler implements NodeHandler<AbstractNode> {
+public class NodeIndexResolvingHandler implements NodeHandler<AbstractNode> {
 
     private final Map<Integer, Node> registry;
     private int nextIndex;
 
-    public IndexMappingHandler() {
+    public NodeIndexResolvingHandler() {
         registry = new HashMap<>();
         nextIndex = 0;
     }

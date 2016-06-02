@@ -5,7 +5,7 @@ package tree.util;
 
 import java.util.Map;
 import node.Node;
-import tree.handlers.IndexMappingHandler;
+import tree.handlers.NodeIndexResolvingHandler;
 import tree.handlers.NodeCountingHandler;
 import tree.walkers.NodeWalker;
 import tree.walkers.ReflectiveNodeWalker;
@@ -17,7 +17,7 @@ import tree.walkers.ReflectiveNodeWalker;
 public class TreeUtilities {
 
     public static Map<Integer, Node> resolveNodeIndices(Node root) {
-        IndexMappingHandler handler = new IndexMappingHandler();
+        NodeIndexResolvingHandler handler = new NodeIndexResolvingHandler();
         NodeWalker walker = new ReflectiveNodeWalker<>(handler);
         walker.walk(root);
         return handler.getNodeRegistry();
