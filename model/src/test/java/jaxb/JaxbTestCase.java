@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
  */
 public class JaxbTestCase {
 
-    protected static final Logger log = LoggerFactory.getLogger(SimulationRequestJaxbTestCase.class);
+    protected static final Logger log = LoggerFactory.getLogger(JaxbTestCase.class);
     protected Marshaller marshaller;
     protected Unmarshaller unmarshaller;
 
@@ -38,6 +38,16 @@ public class JaxbTestCase {
             unmarshaller = context.createUnmarshaller();
             marshaller = context.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+//            context.generateSchema(new SchemaOutputResolver() {
+//
+//                @Override
+//                public Result createOutput(String namespaceUri, String suggestedFileName) throws IOException {
+//                    File file = new File("target/" + clazz.getSimpleName() + ".xsd");
+//                    StreamResult result = new StreamResult(file);
+//                    result.setSystemId(file.toURI().toURL().toString());
+//                    return result;
+//                }
+//            });
         } catch (JAXBException ex) {
             log.error("JAXB context error", ex);
         }

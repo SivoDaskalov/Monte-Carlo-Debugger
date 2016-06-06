@@ -24,9 +24,11 @@ public class RootNode extends AbstractNode {
     public RootNode() {
     }
 
-    public RootNode(Node radicant, Node index) {
+    public RootNode(AbstractNode radicand, AbstractNode index) {
         super();
-        this.radicand = radicant;
+        radicand.setRole("radicand");
+        this.radicand = radicand;
+        index.setRole("index");
         this.index = index;
     }
 

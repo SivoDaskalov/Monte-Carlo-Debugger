@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simulation>
+    <configuration>
+        <title>Test simulation</title>
+        <description>This configuration exists to test the marshaling and unmarshaling of requests</description>
+        <simulationRuns>10</simulationRuns>
+    </configuration>
+    <variables>
+        <gaussian id="X0">
+            <mean>5.0</mean>
+            <deviation>0.3333333333333333</deviation>
+        </gaussian>
+        <uniform id="Y0">
+            <lowerBound>0.0</lowerBound>
+            <upperBound>10.0</upperBound>
+        </uniform>
+        <exponential id="Z0">
+            <lambda>1.0</lambda>
+        </exponential>
+        <gaussian id="X1">
+            <mean>15.0</mean>
+            <deviation>0.3333333333333333</deviation>
+        </gaussian>
+        <uniform id="Y1">
+            <lowerBound>10.0</lowerBound>
+            <upperBound>20.0</upperBound>
+        </uniform>
+        <exponential id="Z1">
+            <lambda>1.0</lambda>
+        </exponential>
+        <gaussian id="X2">
+            <mean>25.0</mean>
+            <deviation>0.3333333333333333</deviation>
+        </gaussian>
+        <uniform id="Y2">
+            <lowerBound>20.0</lowerBound>
+            <upperBound>30.0</upperBound>
+        </uniform>
+        <exponential id="Z2">
+            <lambda>1.0</lambda>
+        </exponential>
+    </variables>
+    <formula>
+        <sum nodeId="52">
+            <product nodeId="53">
+                <variable name="X0" nodeId="54"/>
+                <variable name="Y0" nodeId="55"/>
+                <variable name="Z0" nodeId="56"/>
+            </product>
+            <product nodeId="57">
+                <variable name="X1" nodeId="58"/>
+                <variable name="Y1" nodeId="59"/>
+                <variable name="Z1" nodeId="60"/>
+            </product>
+            <product nodeId="61">
+                <variable name="X2" nodeId="62"/>
+                <variable name="Y2" nodeId="63"/>
+                <variable name="Z2" nodeId="64"/>
+            </product>
+        </sum>
+    </formula>
+    <values/>
+</simulation>

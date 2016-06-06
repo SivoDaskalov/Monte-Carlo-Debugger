@@ -12,6 +12,8 @@ import simulation.context.SimulationContext;
 public interface Node {
 
 	String getId();
+        
+        String getRole();
 
 	String getDescription();
 

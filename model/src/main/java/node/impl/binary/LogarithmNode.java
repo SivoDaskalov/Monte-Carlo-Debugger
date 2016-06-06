@@ -24,9 +24,11 @@ public class LogarithmNode extends AbstractNode {
     public LogarithmNode() {
     }
 
-    public LogarithmNode(Node argument, Node base) {
+    public LogarithmNode(AbstractNode argument, AbstractNode base) {
         super();
+        argument.setRole("argument");
         this.argument = argument;
+        base.setRole("base");
         this.base = base;
     }
 

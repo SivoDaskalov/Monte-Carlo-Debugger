@@ -24,8 +24,11 @@ public class ExponentiationNode extends AbstractNode {
     public ExponentiationNode() {
     }
 
-    public ExponentiationNode(Node base, Node exponent) {
+    public ExponentiationNode(AbstractNode base, AbstractNode exponent) {
+        super();
+        base.setRole("base");
         this.base = base;
+        exponent.setRole("exponent");
         this.exponent = exponent;
     }
 

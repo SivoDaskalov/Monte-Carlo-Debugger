@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="simulation" type="simulationResponseImpl"/>
+    
+    <xs:element name="absolute" type="nodeImpl"/>
+    <xs:element name="average" type="nodeImpl"/>
+    <xs:element name="constant" type="nodeImpl"/>
+    <xs:element name="cosine" type="nodeImpl"/>
+    <xs:element name="cotangent" type="nodeImpl"/>
+    <xs:element name="division" type="nodeImpl"/>
+    <xs:element name="exponentiation" type="nodeImpl"/>
+    <xs:element name="formula" type="nodeTreeWrapper"/>
+    <xs:element name="invert" type="nodeImpl"/>
+    <xs:element name="logarithm" type="nodeImpl"/>
+    <xs:element name="max" type="nodeImpl"/>
+    <xs:element name="min" type="nodeImpl"/>
+    <xs:element name="product" type="nodeImpl"/>
+    <xs:element name="root" type="nodeImpl"/>
+    <xs:element name="sine" type="nodeImpl"/>
+    <xs:element name="sum" type="nodeImpl"/>
+    <xs:element name="tangent" type="nodeImpl"/>
+    <xs:element name="variable" type="nodeImpl"/>
+    
+    <xs:element name="exponential" type="exponentialVariable"/>
+    <xs:element name="gamma" type="gammaVariable"/>
+    <xs:element name="gaussian" type="gaussianVariable"/>
+    <xs:element name="logNormal" type="logNormalVariable"/>
+    <xs:element name="uniform" type="uniformVariable"/>
+  
+    <xs:complexType name="simulationResponseImpl">
+        <xs:sequence>
+            <xs:element name="configuration" type="simulationConfigurationImpl" minOccurs="0"/>
+            <xs:element name="variables" type="stochasticVariableRegistryImpl" minOccurs="0"/>
+            <xs:element ref="formula" minOccurs="0"/>
+            <xs:element name="values" type="nodeValuesWrapper" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="simulationConfigurationImpl">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string" minOccurs="0"/>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+            <xs:element name="simulationRuns" type="xs:int" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="stochasticVariableRegistryImpl">
+        <xs:sequence>
+            <xs:any processContents="lax" namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="abstractVariable" abstract="true">
+        <xs:sequence/>
+        <xs:attribute name="id" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="exponentialVariable">
+        <xs:complexContent>
+            <xs:extension base="abstractVariable">
+                <xs:sequence>
+                    <xs:element name="lambda" type="xs:double" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="gammaVariable">
+        <xs:complexContent>
+            <xs:extension base="abstractVariable">
+                <xs:sequence>
+                    <xs:element name="scale" type="xs:double"/>
+                    <xs:element name="shape" type="xs:double"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="gaussianVariable">
+        <xs:complexContent>
+            <xs:extension base="abstractVariable">
+                <xs:sequence>
+                    <xs:element name="mean" type="xs:double" minOccurs="0"/>
+                    <xs:element name="deviation" type="xs:double" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="logNormalVariable">
+        <xs:complexContent>
+            <xs:extension base="abstractVariable">
+                <xs:sequence>
+                    <xs:element name="scale" type="xs:double"/>
+                    <xs:element name="shape" type="xs:double"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="uniformVariable">
+        <xs:complexContent>
+            <xs:extension base="abstractVariable">
+                <xs:sequence>
+                    <xs:element name="lowerBound" type="xs:double"/>
+                    <xs:element name="upperBound" type="xs:double"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="nodeTreeWrapper">
+        <xs:sequence>
+            <xs:any processContents="lax" namespace="##other"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="nodeImpl">
+        <xs:sequence/>
+        <xs:attribute name="nodeId" type="xs:string"/>
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="role" type="xs:string"/>
+        <xs:attribute name="description" type="xs:string"/>
+        <xs:attribute name="index" type="xs:int"/>
+    </xs:complexType>
+
+    <xs:complexType name="nodeValuesWrapper">
+        <xs:sequence>
+            <xs:element name="node" type="nodeValues" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="nodeValues">
+        <xs:sequence>
+            <xs:element name="value" type="xs:double" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="nodeId" type="xs:string"/>
+    </xs:complexType>
+</xs:schema>
+

@@ -36,6 +36,8 @@ public abstract class AbstractNode implements Node {
     @XmlAttribute(name = "nodeId")
     private String id;
     @XmlAttribute
+    private String role;
+    @XmlAttribute
     private String description;
     @XmlAttribute(name = "index")
     private Integer nodeIndex;
@@ -56,6 +58,14 @@ public abstract class AbstractNode implements Node {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     @Override
