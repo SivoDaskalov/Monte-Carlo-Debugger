@@ -26,10 +26,10 @@ public class RootNode extends AbstractNode {
 
     public RootNode(AbstractNode radicand, AbstractNode index) {
         super();
-        radicand.setRole("radicand");
         this.radicand = radicand;
-        index.setRole("index");
+        this.radicand.setRole("radicand");
         this.index = index;
+        this.index.setRole("index");
     }
 
     public Node getRadicand() {
@@ -38,6 +38,7 @@ public class RootNode extends AbstractNode {
 
     public void setRadicand(Node radicand) {
         this.radicand = radicand;
+        this.radicand.setRole("radicand");
     }
 
     public Node getIndex() {
@@ -46,6 +47,7 @@ public class RootNode extends AbstractNode {
 
     public void setIndex(Node index) {
         this.index = index;
+        this.index.setRole("index");
     }
 
     @Override

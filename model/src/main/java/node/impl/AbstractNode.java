@@ -60,10 +60,12 @@ public abstract class AbstractNode implements Node {
         this.id = id;
     }
 
+    @Override
     public String getRole() {
         return role;
     }
 
+    @Override
     public void setRole(String role) {
         this.role = role;
     }
@@ -73,6 +75,7 @@ public abstract class AbstractNode implements Node {
         return description;
     }
 
+    @Override
     public void setDescription(String description) {
         this.description = description;
     }

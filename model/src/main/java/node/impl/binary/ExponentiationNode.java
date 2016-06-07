@@ -26,10 +26,10 @@ public class ExponentiationNode extends AbstractNode {
 
     public ExponentiationNode(AbstractNode base, AbstractNode exponent) {
         super();
-        base.setRole("base");
         this.base = base;
-        exponent.setRole("exponent");
+        this.base.setRole("base");
         this.exponent = exponent;
+        this.exponent.setRole("exponent");
     }
 
     public Node getBase() {
@@ -38,6 +38,7 @@ public class ExponentiationNode extends AbstractNode {
 
     public void setBase(Node base) {
         this.base = base;
+        this.base.setRole("base");
     }
 
     public Node getExponent() {
@@ -46,6 +47,7 @@ public class ExponentiationNode extends AbstractNode {
 
     public void setExponent(Node exponent) {
         this.exponent = exponent;
+        this.exponent.setRole("exponent");
     }
 
     @Override

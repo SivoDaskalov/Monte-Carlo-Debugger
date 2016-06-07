@@ -7,7 +7,7 @@ import simulation.loggers.MatrixValueLogger;
 import simulation.context.SimulationContextImpl;
 import tree.utils.TreeUtilities;
 import simulation.manager.SimulationManager;
-import simulation.listener.SimulationCompletionListener;
+import simulation.listeners.SimulationCompletionListener;
 import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 import javafx.util.Pair;

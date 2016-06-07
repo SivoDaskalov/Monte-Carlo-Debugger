@@ -41,21 +41,30 @@
         </exponential>
     </variables>
     <formula>
-        <sum nodeId="52">
-            <product nodeId="53">
-                <variable name="X0" nodeId="54"/>
-                <variable name="Y0" nodeId="55"/>
-                <variable name="Z0" nodeId="56"/>
+        <sum nodeId="76">
+            <product nodeId="77">
+                <variable name="X0" nodeId="78"/>
+                <variable name="Y0" nodeId="79"/>
+                <exponentiation nodeId="82">
+                    <variable name="Z0" nodeId="80" role="base"/>
+                    <constant value="2.0" nodeId="81" role="exponent"/>
+                </exponentiation>
             </product>
-            <product nodeId="57">
-                <variable name="X1" nodeId="58"/>
-                <variable name="Y1" nodeId="59"/>
-                <variable name="Z1" nodeId="60"/>
+            <product nodeId="83">
+                <variable name="X1" nodeId="84"/>
+                <variable name="Y1" nodeId="85"/>
+                <exponentiation nodeId="88">
+                    <variable name="Z1" nodeId="86" role="base"/>
+                    <constant value="2.0" nodeId="87" role="exponent"/>
+                </exponentiation>
             </product>
-            <product nodeId="61">
-                <variable name="X2" nodeId="62"/>
-                <variable name="Y2" nodeId="63"/>
-                <variable name="Z2" nodeId="64"/>
+            <product nodeId="89">
+                <variable name="X2" nodeId="90"/>
+                <variable name="Y2" nodeId="91"/>
+                <exponentiation nodeId="94">
+                    <variable name="Z2" nodeId="92" role="base"/>
+                    <constant value="2.0" nodeId="93" role="exponent"/>
+                </exponentiation>
             </product>
         </sum>
     </formula>

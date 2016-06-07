@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package simulation.listener;
+package simulation.listeners;
 
 import simulation.manager.SimulationManager;
 import simulation.manager.SimulationManager;

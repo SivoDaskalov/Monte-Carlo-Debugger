@@ -32,6 +32,7 @@ public class UnmarshalSimulationResponse {
     public void testResponseUnmarshaling(){
         SimulationResponseImpl response = doUnmarshal("src/main/resources/SimulationResponse.xml");
         Node formula = response.getFormula();
+        
     }
     
     protected SimulationResponseImpl doUnmarshal(String url) {

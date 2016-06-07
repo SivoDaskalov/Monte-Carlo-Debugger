@@ -4,7 +4,9 @@ package util;
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
 import node.Node;
+import node.impl.ConstantNode;
 import node.impl.VariableNode;
+import node.impl.binary.ExponentiationNode;
 import node.impl.group.ProductNode;
 import node.impl.group.SumNode;
 import variable.impl.ExponentialVariable;
@@ -36,7 +38,10 @@ public class TestHelper {
             ProductNode product = new ProductNode();
             product.addNode(new VariableNode("X" + i));
             product.addNode(new VariableNode("Y" + i));
-            product.addNode(new VariableNode("Z" + i));
+            product.addNode(new ExponentiationNode(
+                    new VariableNode("Z" + i),
+                    new ConstantNode(2.0)
+            ));
             rootNode.addNode(product);
         }
         return rootNode;

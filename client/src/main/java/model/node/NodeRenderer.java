@@ -8,8 +8,11 @@ import java.awt.Component;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTree;
+import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.TreeCellRenderer;
+import node.Node;
+import node.impl.AbstractNode;
 
 /**
  *
@@ -47,10 +50,11 @@ public class NodeRenderer implements TreeCellRenderer {
     public Component getTreeCellRendererComponent(JTree tree, Object value,
             boolean selected, boolean expanded, boolean leaf, int row, boolean hasFocus) {
         Component result = null;
-        if ((value != null) && (value instanceof Node)) {
-            Node node = (Node)value;
+        Object item = ((DefaultMutableTreeNode) value).getUserObject();
+        if ((item != null) && (AbstractNode.class.isAssignableFrom(item.getClass()))) {
+            Node node = (Node) item;
             id.setText(node.getId());
-                   
+
             result = renderer;
         }
         if (result == null) {

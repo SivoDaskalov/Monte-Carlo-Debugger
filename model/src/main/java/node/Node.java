@@ -11,11 +11,15 @@ import simulation.context.SimulationContext;
  */
 public interface Node {
 
-	String getId();
-        
-        String getRole();
+    String getId();
 
-	String getDescription();
+    String getRole();
 
-	double getValue(SimulationContext context);
+    void setRole(String role);
+
+    String getDescription();
+
+    void setDescription(String description);
+
+    double getValue(SimulationContext context);
 }

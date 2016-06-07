@@ -26,10 +26,10 @@ public class LogarithmNode extends AbstractNode {
 
     public LogarithmNode(AbstractNode argument, AbstractNode base) {
         super();
-        argument.setRole("argument");
         this.argument = argument;
-        base.setRole("base");
+        this.argument.setRole("argument");
         this.base = base;
+        this.base.setRole("base");
     }
 
     public Node getArgument() {
@@ -38,6 +38,7 @@ public class LogarithmNode extends AbstractNode {
 
     public void setArgument(Node argument) {
         this.argument = argument;
+        this.argument.setRole("argument");
     }
 
     public Node getBase() {
@@ -46,6 +47,7 @@ public class LogarithmNode extends AbstractNode {
 
     public void setBase(Node base) {
         this.base = base;
+        this.base.setRole("base");
     }
 
     @Override

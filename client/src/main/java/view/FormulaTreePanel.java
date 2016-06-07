@@ -5,8 +5,7 @@ package view;
 
 import javax.swing.JPanel;
 import javax.swing.JTree;
-import javax.swing.tree.DefaultTreeModel;
-import model.node.Node;
+import node.Node;
 
 /**
  *
@@ -17,8 +16,6 @@ public class FormulaTreePanel extends JPanel {
     private JTree formulaTree;
 
     public FormulaTreePanel(Node node) {
-        DefaultTreeModel model = new DefaultTreeModel(node);
-        formulaTree = new JTree(model);
     }
 
 }

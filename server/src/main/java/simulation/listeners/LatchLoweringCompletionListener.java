@@ -3,7 +3,6 @@
  */
 package simulation.listeners;
 
-import simulation.listener.SimulationCompletionListener;
 import java.util.concurrent.CountDownLatch;
 
 import simulation.manager.SimulationManager;

@@ -26,10 +26,10 @@ public class DivisionNode extends AbstractNode {
 
     public DivisionNode(AbstractNode dividend, AbstractNode divisor) {
         super();
-        dividend.setRole("dividend");
         this.dividend = dividend;
-        divisor.setRole("divisor");
+        this.dividend.setRole("dividend");
         this.divisor = divisor;
+        this.divisor.setRole("divisor");
     }
 
     public Node getDividend() {
@@ -38,6 +38,7 @@ public class DivisionNode extends AbstractNode {
 
     public void setDividend(Node dividend) {
         this.dividend = dividend;
+        this.dividend.setRole("dividend");
     }
 
     public Node getDivisor() {
@@ -46,6 +47,7 @@ public class DivisionNode extends AbstractNode {
 
     public void setDivisor(Node divisor) {
         this.divisor = divisor;
+        this.divisor.setRole("divisor");
     }
 
     @Override
