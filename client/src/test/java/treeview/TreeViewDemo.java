@@ -29,7 +29,8 @@ public class TreeViewDemo {
     public static void main(String argv[]) {
         SimulationResponse response = SimulationResponseUnmarshaler.unmarshal("src/main/resources/SimulationResponse.xml");
         JFrame frame = new JFrame("TreeViewDemo");
-        JPanel panel = new JPanel(new GridLayout(1, 0));
+        frame.setLayout(new GridLayout(1, 1));
+        JPanel panel = new JPanel(new GridLayout(1, 1));
         JTree tree = JTreeBuilder.buildTree(response.getFormula());
         tree.setCellRenderer(new NodeRendererResolver());
         tree.addTreeSelectionListener(new TreeSelectionListener() {
@@ -43,7 +44,7 @@ public class TreeViewDemo {
         panel.add(new JScrollPane(tree));
         frame.add(panel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 400);
+        frame.setSize(600, 400);
         frame.setVisible(true);
     }
 }

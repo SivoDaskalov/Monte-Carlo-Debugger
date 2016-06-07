@@ -28,7 +28,7 @@ public class ConstantNodeRenderer implements TreeCellRenderer {
         JPanel result = abstractNodeRenderer.getTreeCellRendererComponent(tree, value, selected, expanded, leaf, row, hasFocus);
         DefaultMutableTreeNode treeNode = (DefaultMutableTreeNode) value;
         ConstantNode node = (ConstantNode) treeNode.getUserObject();
-        result.add(new JLabel(" = "+node.getValue()));
+        result.add(new JLabel(" = "+node.getValue()), 1);
         return result;
     }
 

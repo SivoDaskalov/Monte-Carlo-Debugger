@@ -28,7 +28,7 @@ public class VariableNodeRenderer implements TreeCellRenderer {
         JPanel result = abstractNodeRenderer.getTreeCellRendererComponent(tree, value, selected, expanded, leaf, row, hasFocus);
         DefaultMutableTreeNode treeNode = (DefaultMutableTreeNode) value;
         VariableNode node = (VariableNode) treeNode.getUserObject();
-        result.add(new JLabel(node.getName()));
+        result.add(new JLabel(node.getName()), 1);
         return result;
     }
 
