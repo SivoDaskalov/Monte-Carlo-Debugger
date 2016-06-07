@@ -3,29 +3,26 @@
  */
 package view.tree.renderers;
 
-import java.awt.Component;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.TreeCellRenderer;
 import node.impl.VariableNode;
+import view.context.ViewContext;
 
 /**
  *
  * @author sdaskalov
  */
-public class VariableNodeRenderer implements TreeCellRenderer {
+public class VariableNodeRenderer extends AbstractNodeRenderer {
 
-    private final AbstractNodeRenderer abstractNodeRenderer;
-
-    public VariableNodeRenderer(AbstractNodeRenderer abstractNodeRenderer) {
-        this.abstractNodeRenderer = abstractNodeRenderer;
+    public VariableNodeRenderer(ViewContext context) {
+        super(context);
     }
 
     @Override
-    public Component getTreeCellRendererComponent(JTree tree, Object value, boolean selected, boolean expanded, boolean leaf, int row, boolean hasFocus) {
-        JPanel result = abstractNodeRenderer.getTreeCellRendererComponent(tree, value, selected, expanded, leaf, row, hasFocus);
+    public JPanel getTreeCellRendererComponent(JTree tree, Object value, boolean selected, boolean expanded, boolean leaf, int row, boolean hasFocus) {
+        JPanel result = super.getTreeCellRendererComponent(tree, value, selected, expanded, leaf, row, hasFocus);
         DefaultMutableTreeNode treeNode = (DefaultMutableTreeNode) value;
         VariableNode node = (VariableNode) treeNode.getUserObject();
         result.add(new JLabel(node.getName()), 1);

@@ -44,6 +44,7 @@ public class TestHelper {
             ));
             rootNode.addNode(product);
         }
+        rootNode.setDescription("This is the sum of all the trucks I give");
         return rootNode;
     }
 

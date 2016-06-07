@@ -11,8 +11,8 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.TreeCellRenderer;
 import node.impl.AbstractNode;
-import node.impl.ConstantNode;
 import node.impl.VariableNode;
+import view.context.ViewContext;
 
 /**
  *
@@ -20,19 +20,23 @@ import node.impl.VariableNode;
  */
 public class NodeRendererResolver implements TreeCellRenderer {
 
-    private static final Map<Class, TreeCellRenderer> renderers;
-    private static final AbstractNodeRenderer abstractNodeRenderer;
-    private static final TreeCellRenderer defaultNodeRenderer;
+    private final Map<Class, AbstractNodeRenderer> renderers;
+    private final AbstractNodeRenderer abstractNodeRenderer;
+    private final TreeCellRenderer defaultNodeRenderer;
 
-    static {
-        abstractNodeRenderer = new AbstractNodeRenderer();
+    public NodeRendererResolver(ViewContext context) {
+        abstractNodeRenderer = new AbstractNodeRenderer(context);
         defaultNodeRenderer = new DefaultTreeCellRenderer();
         renderers = new HashMap<>();
-        renderers.put(ConstantNode.class, new ConstantNodeRenderer(abstractNodeRenderer));
-        renderers.put(VariableNode.class, new VariableNodeRenderer(abstractNodeRenderer));
+        renderers.put(VariableNode.class, new VariableNodeRenderer(context));
     }
 
-    public static TreeCellRenderer getRenderer(Object object) {
+    public void setViewContext(ViewContext context) {
+        renderers.values().forEach(r -> r.setContext(context));
+        abstractNodeRenderer.setContext(context);
+    }
+
+    public TreeCellRenderer getRenderer(Object object) {
         TreeCellRenderer renderer = renderers.get(object.getClass());
         if (renderer != null) {
             return renderer;

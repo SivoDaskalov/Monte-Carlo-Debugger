@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package tree.builder;
+package view.tree;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

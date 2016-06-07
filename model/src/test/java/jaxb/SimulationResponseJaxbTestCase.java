@@ -4,6 +4,7 @@
 package jaxb;
 
 import node.Node;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import simulation.NodeValuesWrapper;
@@ -44,5 +45,10 @@ public class SimulationResponseJaxbTestCase extends JaxbTestCase {
     @Test
     public void testResponseMarshalling() {
         SimulationResponseImpl unmarshaled = doMarhshalUnmarshal(response, "target/SimulationResponse.xml");
+        Assert.assertNotNull(unmarshaled);
+        Assert.assertNotNull(unmarshaled.getConfiguration());
+        Assert.assertNotNull(unmarshaled.getVariableRegistry().getVariables());
+        Assert.assertNotNull(unmarshaled.getFormula());
+        Assert.assertNotNull(unmarshaled.getNodeValues());
     }
 }

@@ -12,7 +12,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import simulation.NodeValuesWrapper;
+import simulation.configuration.SimulationConfiguration;
 import simulation.response.SimulationResponseImpl;
+import variable.registry.StochasticVariableRegistryImpl;
 
 /**
  *
@@ -20,21 +23,23 @@ import simulation.response.SimulationResponseImpl;
  */
 public class UnmarshalSimulationResponse {
 
-    protected static final Logger log = LoggerFactory.getLogger(UnmarshalSimulationResponse.class);
-    protected Unmarshaller unmarshaller;
+    private static final Logger log = LoggerFactory.getLogger(UnmarshalSimulationResponse.class);
+    private Unmarshaller unmarshaller;
 
     @Before
     public void setUp() {
         setupJaxbContext(SimulationResponseImpl.class);
     }
-    
+
     @Test
-    public void testResponseUnmarshaling(){
+    public void testResponseUnmarshaling() {
         SimulationResponseImpl response = doUnmarshal("src/main/resources/SimulationResponse.xml");
+        SimulationConfiguration configuration = response.getConfiguration();
         Node formula = response.getFormula();
-        
+        StochasticVariableRegistryImpl variableRegistry = response.getVariableRegistry();
+        NodeValuesWrapper nodeValues = response.getNodeValues();
     }
-    
+
     protected SimulationResponseImpl doUnmarshal(String url) {
         try {
             return (SimulationResponseImpl) unmarshaller.unmarshal(new File(url));
