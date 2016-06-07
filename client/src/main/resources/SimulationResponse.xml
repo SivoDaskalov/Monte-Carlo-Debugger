@@ -46,24 +46,30 @@
                 <variable name="X0" nodeId="78"/>
                 <variable name="Y0" nodeId="79"/>
                 <exponentiation nodeId="82">
-                    <variable name="Z0" nodeId="80" role="base"/>
-                    <constant value="2.0" nodeId="81" role="exponent"/>
+                    <arguments>
+                        <variable name="Z0" nodeId="80" role="base"/>
+                        <constant value="2.0" nodeId="81" role="exponent"/>
+                    </arguments>
                 </exponentiation>
             </product>
             <product nodeId="83">
                 <variable name="X1" nodeId="84"/>
                 <variable name="Y1" nodeId="85"/>
                 <exponentiation nodeId="88">
-                    <variable name="Z1" nodeId="86" role="base"/>
-                    <constant value="2.0" nodeId="87" role="exponent"/>
+                    <arguments>
+                        <variable name="Z1" nodeId="86" role="base"/>
+                        <constant value="2.0" nodeId="87" role="exponent"/>
+                    </arguments>
                 </exponentiation>
             </product>
             <product nodeId="89">
                 <variable name="X2" nodeId="90"/>
                 <variable name="Y2" nodeId="91"/>
                 <exponentiation nodeId="94">
-                    <variable name="Z2" nodeId="92" role="base"/>
-                    <constant value="2.0" nodeId="93" role="exponent"/>
+                    <arguments>
+                        <variable name="Z2" nodeId="92" role="base"/>
+                        <constant value="2.0" nodeId="93" role="exponent"/>
+                    </arguments>
                 </exponentiation>
             </product>
         </sum>

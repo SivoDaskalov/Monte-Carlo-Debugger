@@ -42,8 +42,13 @@ public class JTreeBuilder {
             try {
                 field.setAccessible(true);
                 Object object = field.get(node);
+                if (object == null) {
+                    continue;
+                }
                 if (object instanceof Iterable) {
                     markCollectionForWalking(children, field.getName(), (Iterable) object);
+                } else if (object.getClass().isArray()) {
+                    markArrayForWalking(children, field.getName(), (Object[]) object);
                 } else {
                     markItemForWalking(children, field.getName(), field.get(node));
                 }
@@ -69,6 +74,10 @@ public class JTreeBuilder {
         if (fieldValue instanceof Node) {
             pending.put(name, (Node) fieldValue);
         }
+    }
+
+    private void markArrayForWalking(Map<String, Node> pending, String name, Object[] object) {
+        markCollectionForWalking(pending, name, Arrays.asList(object));
     }
 
     private void markCollectionForWalking(Map<String, Node> pending,

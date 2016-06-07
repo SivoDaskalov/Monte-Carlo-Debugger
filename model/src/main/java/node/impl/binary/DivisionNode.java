@@ -3,7 +3,6 @@
  */
 package node.impl.binary;
 
-import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import node.Node;
 import node.impl.AbstractNode;
@@ -14,45 +13,41 @@ import simulation.context.SimulationContext;
  * @author sdaskalov
  */
 @XmlRootElement(name = "division")
-public class DivisionNode extends AbstractNode {
-
-    @XmlAnyElement(lax = true)
-    private Node dividend;
-    @XmlAnyElement(lax = true)
-    private Node divisor;
+public class DivisionNode extends AbstractBinaryNode {
 
     public DivisionNode() {
+        super();
     }
 
     public DivisionNode(AbstractNode dividend, AbstractNode divisor) {
         super();
-        this.dividend = dividend;
-        this.dividend.setRole("dividend");
-        this.divisor = divisor;
-        this.divisor.setRole("divisor");
+        arguments[0] = dividend;
+        arguments[0].setRole("dividend");
+        arguments[1] = divisor;
+        arguments[1].setRole("divisor");
     }
 
     public Node getDividend() {
-        return dividend;
+        return arguments[0];
     }
 
     public void setDividend(Node dividend) {
-        this.dividend = dividend;
-        this.dividend.setRole("dividend");
+        arguments[0] = dividend;
+        arguments[0].setRole("dividend");
     }
 
     public Node getDivisor() {
-        return divisor;
+        return arguments[1];
     }
 
     public void setDivisor(Node divisor) {
-        this.divisor = divisor;
-        this.divisor.setRole("divisor");
+        arguments[1] = divisor;
+        arguments[1].setRole("divisor");
     }
 
     @Override
     protected double calculate(SimulationContext context) {
-        Double value = dividend.getValue(context) / divisor.getValue(context);
+        Double value = getDividend().getValue(context) / getDivisor().getValue(context);
         if (value.isInfinite()) {
             value = Double.NaN;
         }

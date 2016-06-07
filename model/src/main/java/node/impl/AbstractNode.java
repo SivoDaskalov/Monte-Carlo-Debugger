@@ -9,10 +9,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import node.Node;
-import node.impl.binary.DivisionNode;
-import node.impl.binary.ExponentiationNode;
-import node.impl.binary.LogarithmNode;
-import node.impl.binary.RootNode;
+import node.impl.binary.AbstractBinaryNode;
 import node.impl.group.AbstractGroupNode;
 import node.impl.unary.AbstractUnaryNode;
 import org.slf4j.Logger;
@@ -23,10 +20,8 @@ import simulation.context.SimulationContext;
  *
  * @author sdaskalov
  */
-@XmlSeeAlso({AbstractUnaryNode.class, AbstractGroupNode.class,
-    ConstantNode.class, VariableNode.class,
-    DivisionNode.class, ExponentiationNode.class,
-    LogarithmNode.class, RootNode.class})
+@XmlSeeAlso({AbstractUnaryNode.class, AbstractBinaryNode.class,
+    AbstractGroupNode.class, ConstantNode.class, VariableNode.class,})
 @XmlAccessorType(XmlAccessType.NONE)
 public abstract class AbstractNode implements Node {
 
