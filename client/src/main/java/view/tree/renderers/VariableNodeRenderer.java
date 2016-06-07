@@ -3,7 +3,6 @@
  */
 package view.tree.renderers;
 
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
@@ -25,7 +24,7 @@ public class VariableNodeRenderer extends AbstractNodeRenderer {
         JPanel result = super.getTreeCellRendererComponent(tree, value, selected, expanded, leaf, row, hasFocus);
         DefaultMutableTreeNode treeNode = (DefaultMutableTreeNode) value;
         VariableNode node = (VariableNode) treeNode.getUserObject();
-        result.add(new JLabel(node.getName()), 1);
+        result.add(makeLabel(node.getName(), valueFont, valueColor), 1);
         return result;
     }
 
