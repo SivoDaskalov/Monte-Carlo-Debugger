@@ -19,15 +19,15 @@ public class MinNode extends AbstractGroupNode {
         super();
     }
 
-    public MinNode(List<Node> elements) {
-        super(elements);
+    public MinNode(List<Node> children) {
+        super(children);
     }
 
     @Override
     protected double calculate(SimulationContext context) {
         double min = Double.MAX_VALUE;
-        for (Node element : elements) {
-            double current = element.getValue(context);
+        for (Node child : children) {
+            double current = child.getValue(context);
             if (current < min) {
                 min = current;
             }

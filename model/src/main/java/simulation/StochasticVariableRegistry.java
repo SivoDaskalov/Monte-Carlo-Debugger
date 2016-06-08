@@ -27,7 +27,7 @@ public class StochasticVariableRegistry {
         variables = new ArrayList<>();
     }
 
-    public void putVariable(StochasticVariable variable) {
+    public void addVariable(StochasticVariable variable) {
         variables.add(variable);
     }
 

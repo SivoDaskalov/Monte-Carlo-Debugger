@@ -9,5 +9,5 @@ package node;
  */
 public interface GroupNode extends Node {
 
-    void addNode(Node child);
+    void addChild(Node child);
 }

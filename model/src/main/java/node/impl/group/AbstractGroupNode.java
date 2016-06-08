@@ -20,28 +20,28 @@ import node.impl.AbstractNode;
 public abstract class AbstractGroupNode extends AbstractNode implements GroupNode {
 
     @XmlAnyElement(lax = true)
-    protected List<Node> elements;
+    protected List<Node> children;
 
     public AbstractGroupNode() {
         this(new ArrayList<>());
     }
 
-    public AbstractGroupNode(List<Node> elements) {
+    public AbstractGroupNode(List<Node> children) {
         super();
-        this.elements = elements;
+        this.children = children;
     }
 
     @Override
-    public void addNode(Node child) {
-        elements.add(child);
+    public void addChild(Node child) {
+        children.add(child);
     }
 
-    public List<Node> getElements() {
-        return elements;
+    public List<Node> getChildren() {
+        return children;
     }
 
-    public void setElements(List<Node> elements) {
-        this.elements = elements;
+    public void setChildren(List<Node> children) {
+        this.children = children;
     }
 
 }

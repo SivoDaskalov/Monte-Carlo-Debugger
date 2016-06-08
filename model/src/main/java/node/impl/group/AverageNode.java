@@ -19,17 +19,17 @@ public class AverageNode extends AbstractGroupNode {
         super();
     }
 
-    public AverageNode(List<Node> elements) {
-        super(elements);
+    public AverageNode(List<Node> children) {
+        super(children);
     }
 
     @Override
     protected double calculate(SimulationContext context) {
         double sum = 0;
-        for (Node child : elements) {
+        for (Node child : children) {
             sum += child.getValue(context);
         }
-        return sum / elements.size();
+        return sum / children.size();
     }
 
 }

@@ -19,15 +19,15 @@ public class MaxNode extends AbstractGroupNode {
         super();
     }
 
-    public MaxNode(List<Node> elements) {
-        super(elements);
+    public MaxNode(List<Node> children) {
+        super(children);
     }
 
     @Override
     protected double calculate(SimulationContext context) {
         double max = Double.MIN_VALUE;
-        for (Node element : elements) {
-            double current = element.getValue(context);
+        for (Node child : children) {
+            double current = child.getValue(context);
             if (current > max) {
                 max = current;
             }

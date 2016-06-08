@@ -25,9 +25,9 @@ public class TestHelper {
         for (int i = 0; i < variableCount; i++) {
             double from = i * 10.0;
             double to = i * 10.0 + 10.0;
-            variables.putVariable(new GaussianVariable("X" + i, 1L, (from + to) / 2.0, 1.0 / 3.0));
-            variables.putVariable(new UniformVariable("Y" + i, 1L, from, to));
-            variables.putVariable(new ExponentialVariable("Z" + i, 1L, 1.0));
+            variables.addVariable(new GaussianVariable("X" + i, 1L, (from + to) / 2.0, 1.0 / 3.0));
+            variables.addVariable(new UniformVariable("Y" + i, 1L, from, to));
+            variables.addVariable(new ExponentialVariable("Z" + i, 1L, 1.0));
         }
         return variables;
     }
@@ -36,13 +36,13 @@ public class TestHelper {
         SumNode rootNode = new SumNode();
         for (int i = 0; i < treeScale; i++) {
             ProductNode product = new ProductNode();
-            product.addNode(new VariableNode("X" + i));
-            product.addNode(new VariableNode("Y" + i));
-            product.addNode(new ExponentiationNode(
+            product.addChild(new VariableNode("X" + i));
+            product.addChild(new VariableNode("Y" + i));
+            product.addChild(new ExponentiationNode(
                     new VariableNode("Z" + i),
                     new ConstantNode(2.0)
             ));
-            rootNode.addNode(product);
+            rootNode.addChild(product);
         }
         rootNode.setDescription("This is the sum of all the trucks I give");
         return rootNode;

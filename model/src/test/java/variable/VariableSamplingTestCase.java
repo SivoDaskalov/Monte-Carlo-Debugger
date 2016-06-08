@@ -35,31 +35,31 @@ public class VariableSamplingTestCase {
 
     @Test
     public void gaussianSamplingTestCase() {
-        variables.putVariable(new GaussianVariable("X0", 1L));
+        variables.addVariable(new GaussianVariable("X0", 1L));
         doSampling("Gaussian", "X0");
     }
 
     @Test
     public void uniformSamplingTestCase() {
-        variables.putVariable(new UniformVariable("X1", 1L));
+        variables.addVariable(new UniformVariable("X1", 1L));
         doSampling("Uniform", "X1");
     }
 
     @Test
     public void exponentialSamplingTestCase() {
-        variables.putVariable(new ExponentialVariable("X2", 1L));
+        variables.addVariable(new ExponentialVariable("X2", 1L));
         doSampling("Exponential", "X2");
     }
 
     @Test
     public void logNormalSamplingTestCase() {
-        variables.putVariable(new LogNormalVariable("X3", 1L));
+        variables.addVariable(new LogNormalVariable("X3", 1L));
         doSampling("LogNormal", "X3");
     }
 
     @Test
     public void gammaSamplingTestCase() {
-        variables.putVariable(new GammaVariable("X4", 1L));
+        variables.addVariable(new GammaVariable("X4", 1L));
         doSampling("Gamma", "X4");
     }
 

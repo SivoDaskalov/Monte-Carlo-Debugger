@@ -20,13 +20,13 @@ public class ConstantNode extends AbstractNode {
     public ConstantNode() {
     }
 
-    public ConstantNode(double value, String description) {
-        super(description);
+    public ConstantNode(double value) {
+        super();
         this.value = value;
     }
 
-    public ConstantNode(double value) {
-        super();
+    public ConstantNode(double value, String description) {
+        super(description);
         this.value = value;
     }
 
@@ -37,7 +37,7 @@ public class ConstantNode extends AbstractNode {
     public void setValue(double value) {
         this.value = value;
     }
-    
+
     @Override
     protected double calculate(SimulationContext context) {
         return value;

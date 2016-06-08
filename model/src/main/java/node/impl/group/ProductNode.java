@@ -19,15 +19,15 @@ public class ProductNode extends AbstractGroupNode {
         super();
     }
 
-    public ProductNode(List<Node> elements) {
-        super(elements);
+    public ProductNode(List<Node> children) {
+        super(children);
     }
 
     @Override
     protected double calculate(SimulationContext context) {
         double product = 1;
-        for (Node element : elements) {
-            product *= element.getValue(context);
+        for (Node child : children) {
+            product *= child.getValue(context);
         }
         return product;
     }

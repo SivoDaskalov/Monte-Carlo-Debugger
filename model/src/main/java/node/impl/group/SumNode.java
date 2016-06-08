@@ -19,15 +19,15 @@ public class SumNode extends AbstractGroupNode {
         super();
     }
 
-    public SumNode(List<Node> elements) {
-        super(elements);
+    public SumNode(List<Node> children) {
+        super(children);
     }
 
     @Override
     protected double calculate(SimulationContext context) {
         double sum = 0;
-        for (Node element : elements) {
-            sum += element.getValue(context);
+        for (Node child : children) {
+            sum += child.getValue(context);
         }
         return sum;
     }
