@@ -3,7 +3,7 @@
  */
 package node;
 
-import simulation.context.SimulationContext;
+import simulation.interfaces.SimulationContext;
 
 /**
  *

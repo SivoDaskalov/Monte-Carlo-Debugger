@@ -5,7 +5,7 @@ package node.impl.unary;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import node.Node;
-import simulation.context.SimulationContext;
+import simulation.interfaces.SimulationContext;
 
 /**
  *

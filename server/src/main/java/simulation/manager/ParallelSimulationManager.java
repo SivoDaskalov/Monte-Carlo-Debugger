@@ -9,12 +9,9 @@ import java.util.concurrent.CountDownLatch;
 import javafx.util.Pair;
 import node.Node;
 import simulation.listeners.CompositeCompletionListener;
-import simulation.listeners.CompositeCompletionListener;
-import simulation.listeners.LatchLoweringCompletionListener;
 import simulation.listeners.LatchLoweringCompletionListener;
 import tree.utils.TreeUtilities;
-import tree.utils.TreeUtilities;
-import variable.registry.StochasticVariableRegistry;
+import simulation.StochasticVariableRegistry;
 
 /**
  *

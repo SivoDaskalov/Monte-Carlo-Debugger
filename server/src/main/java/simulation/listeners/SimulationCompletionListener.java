@@ -3,8 +3,8 @@
  */
 package simulation.listeners;
 
-import simulation.manager.SimulationManager;
-import simulation.manager.SimulationManager;
+import simulation.interfaces.SimulationManager;
+import simulation.interfaces.SimulationManager;
 
 /**
  *

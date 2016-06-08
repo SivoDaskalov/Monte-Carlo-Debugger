@@ -1,9 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package simulation.context;
-
-import simulation.logger.ValueLogger;
+package simulation.interfaces;
 
 /**
  *

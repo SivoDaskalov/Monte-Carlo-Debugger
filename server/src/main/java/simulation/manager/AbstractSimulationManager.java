@@ -6,7 +6,7 @@ package simulation.manager;
 import simulation.loggers.MatrixValueLogger;
 import simulation.context.SimulationContextImpl;
 import tree.utils.TreeUtilities;
-import simulation.manager.SimulationManager;
+import simulation.interfaces.SimulationManager;
 import simulation.listeners.SimulationCompletionListener;
 import java.util.Map;
 import java.util.concurrent.CountDownLatch;
@@ -14,7 +14,7 @@ import javafx.util.Pair;
 import node.Node;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import variable.registry.StochasticVariableRegistry;
+import simulation.StochasticVariableRegistry;
 
 /**
  *

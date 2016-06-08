@@ -14,7 +14,7 @@ import node.impl.group.AbstractGroupNode;
 import node.impl.unary.AbstractUnaryNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import simulation.context.SimulationContext;
+import simulation.interfaces.SimulationContext;
 
 /**
  *

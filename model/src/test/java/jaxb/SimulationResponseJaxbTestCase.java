@@ -8,10 +8,10 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import simulation.NodeValuesWrapper;
-import simulation.configuration.SimulationConfigurationImpl;
-import simulation.response.SimulationResponseImpl;
+import simulation.SimulationProperties;
+import simulation.SimulationResponse;
 import util.TestHelper;
-import variable.registry.StochasticVariableRegistryImpl;
+import simulation.StochasticVariableRegistry;
 
 /**
  *
@@ -20,33 +20,33 @@ import variable.registry.StochasticVariableRegistryImpl;
 public class SimulationResponseJaxbTestCase extends JaxbTestCase {
 
     private final int TREE_SIZE = 3;
-    private SimulationResponseImpl response;
+    private SimulationResponse response;
 
     @Before
     public void setUp() {
-        setupJaxbContext(SimulationResponseImpl.class);
+        setupJaxbContext(SimulationResponse.class);
 
-        SimulationConfigurationImpl configuration = new SimulationConfigurationImpl();
-        configuration.setTitle("Test simulation");
-        configuration.setDescription(
+        SimulationProperties properties = new SimulationProperties();
+        properties.setTitle("Test simulation");
+        properties.setDescription(
                 "This configuration exists to test the marshaling and unmarshaling of requests");
-        configuration.setSimulationRuns(10);
+        properties.setSimulationRuns(10);
 
         Node formula = TestHelper.buildNodeTree(TREE_SIZE);
-        StochasticVariableRegistryImpl variables = TestHelper.makeVariableRegistry(TREE_SIZE);
+        StochasticVariableRegistry variables = TestHelper.makeVariableRegistry(TREE_SIZE);
 
-        response = new SimulationResponseImpl();
-        response.setConfiguration(configuration);
-        response.setVariables(variables);
+        response = new SimulationResponse();
+        response.setProperties(properties);
+        response.setVariableRegistry(variables);
         response.setFormula(formula);
         response.setNodeValues(new NodeValuesWrapper());
     }
 
     @Test
     public void testResponseMarshalling() {
-        SimulationResponseImpl unmarshaled = doMarhshalUnmarshal(response, "target/SimulationResponse.xml");
+        SimulationResponse unmarshaled = doMarhshalUnmarshal(response, "target/SimulationResponse.xml");
         Assert.assertNotNull(unmarshaled);
-        Assert.assertNotNull(unmarshaled.getConfiguration());
+        Assert.assertNotNull(unmarshaled.getProperties());
         Assert.assertNotNull(unmarshaled.getVariableRegistry().getVariables());
         Assert.assertNotNull(unmarshaled.getFormula());
         Assert.assertNotNull(unmarshaled.getNodeValues());

@@ -12,7 +12,7 @@ import node.impl.group.SumNode;
 import variable.impl.ExponentialVariable;
 import variable.impl.GaussianVariable;
 import variable.impl.UniformVariable;
-import variable.registry.StochasticVariableRegistryImpl;
+import simulation.StochasticVariableRegistry;
 
 /**
  *
@@ -20,8 +20,8 @@ import variable.registry.StochasticVariableRegistryImpl;
  */
 public class TestHelper {
 
-    public static StochasticVariableRegistryImpl makeVariableRegistry(int variableCount) {
-        StochasticVariableRegistryImpl variables = new StochasticVariableRegistryImpl();
+    public static StochasticVariableRegistry makeVariableRegistry(int variableCount) {
+        StochasticVariableRegistry variables = new StochasticVariableRegistry();
         for (int i = 0; i < variableCount; i++) {
             double from = i * 10.0;
             double to = i * 10.0 + 10.0;

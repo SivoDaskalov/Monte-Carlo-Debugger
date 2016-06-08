@@ -5,7 +5,7 @@ package simulation.listeners;
 
 import java.util.concurrent.CountDownLatch;
 
-import simulation.manager.SimulationManager;
+import simulation.interfaces.SimulationManager;
 
 /**
  *

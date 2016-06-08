@@ -3,8 +3,9 @@
  */
 package simulation.context;
 
+import simulation.interfaces.SimulationContext;
 import simulation.manager.SampledVariableRegistry;
-import simulation.logger.ValueLogger;
+import simulation.interfaces.ValueLogger;
 
 /**
  *

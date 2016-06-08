@@ -3,16 +3,15 @@
  */
 package simulation;
 
-import util.TestHelper;
-import simulation.manager.ParallelSimulationManager;
-import simulation.manager.SingleThreadSimulationManager;
 import node.Node;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import simulation.manager.SimulationManager;
-import variable.registry.StochasticVariableRegistry;
+import simulation.interfaces.SimulationManager;
+import simulation.manager.ParallelSimulationManager;
+import simulation.manager.SingleThreadSimulationManager;
+import util.TestHelper;
 
 /**
  *

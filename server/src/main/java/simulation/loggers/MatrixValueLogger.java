@@ -3,11 +3,11 @@
  */
 package simulation.loggers;
 
-import simulation.logger.ValueLogger;
+import simulation.interfaces.ValueLogger;
 import java.util.Map;
 import node.impl.AbstractNode;
 import node.Node;
-import simulation.context.SimulationContext;
+import simulation.interfaces.SimulationContext;
 import tree.utils.TreeUtilities;
 import tree.utils.TreeUtilities;
 

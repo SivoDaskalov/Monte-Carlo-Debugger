@@ -3,12 +3,12 @@
  */
 package simulation.loggers;
 
-import simulation.logger.ValueLogger;
+import simulation.interfaces.ValueLogger;
 import java.util.HashMap;
 import java.util.Map;
 
 import node.Node;
-import simulation.context.SimulationContext;
+import simulation.interfaces.SimulationContext;
 
 /**
  *

@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package simulation.manager;
+package simulation.interfaces;
 
 import java.util.Map;
 import node.Node;

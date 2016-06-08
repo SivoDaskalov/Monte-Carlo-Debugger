@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package simulation.configuration;
+package simulation;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -11,16 +11,21 @@ import javax.xml.bind.annotation.XmlAccessorType;
  * @author sdaskalov
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-public class SimulationConfigurationImpl implements SimulationConfiguration {
+public class SimulationProperties {
 
     private String title;
     private String description;
     private Integer simulationRuns;
 
-    public SimulationConfigurationImpl() {
+    public SimulationProperties() {
     }
 
-    @Override
+    public SimulationProperties(String title, String description, Integer simulationRuns) {
+        this.title = title;
+        this.description = description;
+        this.simulationRuns = simulationRuns;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -29,7 +34,6 @@ public class SimulationConfigurationImpl implements SimulationConfiguration {
         this.title = title;
     }
 
-    @Override
     public String getDescription() {
         return description;
     }
@@ -38,7 +42,6 @@ public class SimulationConfigurationImpl implements SimulationConfiguration {
         this.description = description;
     }
 
-    @Override
     public Integer getSimulationRuns() {
         return simulationRuns;
     }

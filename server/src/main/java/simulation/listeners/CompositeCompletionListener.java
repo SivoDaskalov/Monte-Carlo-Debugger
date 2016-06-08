@@ -6,7 +6,7 @@ package simulation.listeners;
 import java.util.HashMap;
 import java.util.Map;
 
-import simulation.manager.SimulationManager;
+import simulation.interfaces.SimulationManager;
 
 /**
  *

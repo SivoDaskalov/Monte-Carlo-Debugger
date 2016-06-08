@@ -13,11 +13,11 @@ import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import simulation.configuration.SimulationConfigurationImpl;
+import simulation.SimulationProperties;
+import simulation.SimulationResponse;
+import simulation.StochasticVariableRegistry;
 import simulation.manager.ParallelSimulationManager;
-import simulation.response.SimulationResponseImpl;
 import util.TestHelper;
-import variable.registry.StochasticVariableRegistryImpl;
 
 /**
  *
@@ -28,26 +28,26 @@ public class MarshalSimulationResponse {
     private static final Logger log = LoggerFactory.getLogger(MarshalSimulationResponse.class);
     private final int TREE_SIZE = 3;
     private Marshaller marshaller;
-    private SimulationResponseImpl response;
+    private SimulationResponse response;
 
     @Before
     public void setUp() {
-        setupJaxbContext(SimulationResponseImpl.class);
+        setupJaxbContext(SimulationResponse.class);
 
-        SimulationConfigurationImpl configuration = new SimulationConfigurationImpl();
+        SimulationProperties configuration = new SimulationProperties();
         configuration.setTitle("Test simulation");
         configuration.setDescription(
                 "This configuration exists to test the marshaling and unmarshaling of requests");
         configuration.setSimulationRuns(10000);
 
         Node formula = TestHelper.buildNodeTree(TREE_SIZE);
-        StochasticVariableRegistryImpl variableRegistry = TestHelper.makeVariableRegistry(TREE_SIZE);
+        StochasticVariableRegistry variableRegistry = TestHelper.makeVariableRegistry(TREE_SIZE);
 
         ParallelSimulationManager simulationManager = new ParallelSimulationManager(formula, variableRegistry, 100, 10000);
         simulationManager.run();
         simulationManager.await();
 
-        response = new SimulationResponseImpl(configuration, variableRegistry, formula, simulationManager);
+        response = new SimulationResponse(configuration, variableRegistry, formula, simulationManager);
     }
 
     @Test
@@ -55,7 +55,7 @@ public class MarshalSimulationResponse {
         doMarshal(response, "target/SimulationResponse.xml");
     }
 
-    protected void doMarshal(SimulationResponseImpl response, String url) {
+    protected void doMarshal(SimulationResponse response, String url) {
         try {
             marshaller.marshal(response, new File(url));
         } catch (JAXBException ex) {

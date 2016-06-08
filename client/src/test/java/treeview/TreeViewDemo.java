@@ -17,7 +17,7 @@ import javax.swing.JTree;
 import node.Node;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import simulation.response.SimulationResponse;
+import simulation.SimulationResponse;
 import view.context.ViewContext;
 import view.tree.JTreeBuilder;
 import view.tree.JTreeUtils;

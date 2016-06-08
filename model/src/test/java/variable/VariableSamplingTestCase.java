@@ -13,7 +13,7 @@ import variable.impl.GammaVariable;
 import variable.impl.GaussianVariable;
 import variable.impl.LogNormalVariable;
 import variable.impl.UniformVariable;
-import variable.registry.StochasticVariableRegistryImpl;
+import simulation.StochasticVariableRegistry;
 
 /**
  *
@@ -23,14 +23,14 @@ public class VariableSamplingTestCase {
 
     private static final Logger log = LoggerFactory.getLogger(VariableSamplingTestCase.class);
     private static final int sampleSize = 20;
-    private static StochasticVariableRegistryImpl variables;
+    private static StochasticVariableRegistry variables;
 
     public VariableSamplingTestCase() {
     }
 
     @Before
     public void setUp() {
-        variables = new StochasticVariableRegistryImpl();
+        variables = new StochasticVariableRegistry();
     }
 
     @Test

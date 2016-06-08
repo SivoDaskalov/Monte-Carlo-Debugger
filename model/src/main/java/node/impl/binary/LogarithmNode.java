@@ -6,7 +6,7 @@ package node.impl.binary;
 import javax.xml.bind.annotation.XmlRootElement;
 import node.Node;
 import node.impl.AbstractNode;
-import simulation.context.SimulationContext;
+import simulation.interfaces.SimulationContext;
 
 /**
  *

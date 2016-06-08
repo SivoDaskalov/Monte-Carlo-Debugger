@@ -3,12 +3,12 @@
  */
 package simulation.loggers;
 
-import simulation.logger.ValueLogger;
+import simulation.interfaces.ValueLogger;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import node.Node;
-import simulation.context.SimulationContext;
+import simulation.interfaces.SimulationContext;
 
 /**
  *

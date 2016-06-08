@@ -13,9 +13,9 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import simulation.NodeValuesWrapper;
-import simulation.configuration.SimulationConfiguration;
-import simulation.response.SimulationResponseImpl;
-import variable.registry.StochasticVariableRegistryImpl;
+import simulation.SimulationProperties;
+import simulation.SimulationResponse;
+import simulation.StochasticVariableRegistry;
 
 /**
  *
@@ -28,21 +28,21 @@ public class UnmarshalSimulationResponse {
 
     @Before
     public void setUp() {
-        setupJaxbContext(SimulationResponseImpl.class);
+        setupJaxbContext(SimulationResponse.class);
     }
 
     @Test
     public void testResponseUnmarshaling() {
-        SimulationResponseImpl response = doUnmarshal("src/main/resources/SimulationResponse.xml");
-        SimulationConfiguration configuration = response.getConfiguration();
+        SimulationResponse response = doUnmarshal("src/main/resources/SimulationResponse.xml");
+        SimulationProperties properties = response.getProperties();
         Node formula = response.getFormula();
-        StochasticVariableRegistryImpl variableRegistry = response.getVariableRegistry();
+        StochasticVariableRegistry variableRegistry = response.getVariableRegistry();
         NodeValuesWrapper nodeValues = response.getNodeValues();
     }
 
-    protected SimulationResponseImpl doUnmarshal(String url) {
+    protected SimulationResponse doUnmarshal(String url) {
         try {
-            return (SimulationResponseImpl) unmarshaller.unmarshal(new File(url));
+            return (SimulationResponse) unmarshaller.unmarshal(new File(url));
         } catch (JAXBException ex) {
             log.error("Marshalling error", ex);
             return null;

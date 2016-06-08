@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import variable.StochasticVariable;
-import variable.registry.StochasticVariableRegistry;
+import simulation.StochasticVariableRegistry;
 
 /**
  *

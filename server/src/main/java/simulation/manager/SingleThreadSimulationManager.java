@@ -9,7 +9,7 @@ import node.Node;
 import simulation.loggers.MatrixValueLogger;
 import simulation.loggers.MatrixValueLogger;
 import simulation.context.SimulationContextImpl;
-import variable.registry.StochasticVariableRegistry;
+import simulation.StochasticVariableRegistry;
 
 /**
  *
