@@ -4,6 +4,7 @@
 package jaxb;
 
 import java.io.File;
+import java.util.List;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
@@ -12,7 +13,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import simulation.NodeValuesWrapper;
+import simulation.NodeValues;
 import simulation.SimulationProperties;
 import simulation.SimulationResponse;
 import simulation.StochasticVariableRegistry;
@@ -37,7 +38,7 @@ public class UnmarshalSimulationResponse {
         SimulationProperties properties = response.getProperties();
         Node formula = response.getFormula();
         StochasticVariableRegistry variableRegistry = response.getVariableRegistry();
-        NodeValuesWrapper nodeValues = response.getNodeValues();
+        List<NodeValues> values = response.getValues();
     }
 
     protected SimulationResponse doUnmarshal(String url) {

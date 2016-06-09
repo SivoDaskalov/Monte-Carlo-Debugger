@@ -62,7 +62,7 @@ public class TreeViewDemo implements ActionListener {
     }
 
     private ViewContext makeViewContext(SimulationResponse response) {
-        return new ViewContext(response.getNodeValues());
+        return new ViewContext(response.getValues());
     }
 
     private JPanel makeTreePanel(Node formula, ViewContext viewContext) {

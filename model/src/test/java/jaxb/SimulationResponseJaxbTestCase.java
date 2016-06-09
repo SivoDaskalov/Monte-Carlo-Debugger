@@ -3,15 +3,15 @@
  */
 package jaxb;
 
+import java.util.Collections;
 import node.Node;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import simulation.NodeValuesWrapper;
 import simulation.SimulationProperties;
 import simulation.SimulationResponse;
-import util.TestHelper;
 import simulation.StochasticVariableRegistry;
+import util.TestHelper;
 
 /**
  *
@@ -39,7 +39,7 @@ public class SimulationResponseJaxbTestCase extends JaxbTestCase {
         response.setProperties(properties);
         response.setVariableRegistry(variables);
         response.setFormula(formula);
-        response.setNodeValues(new NodeValuesWrapper());
+        response.setValues(Collections.EMPTY_LIST);
     }
 
     @Test
@@ -49,6 +49,6 @@ public class SimulationResponseJaxbTestCase extends JaxbTestCase {
         Assert.assertNotNull(unmarshaled.getProperties());
         Assert.assertNotNull(unmarshaled.getVariableRegistry().getVariables());
         Assert.assertNotNull(unmarshaled.getFormula());
-        Assert.assertNotNull(unmarshaled.getNodeValues());
+        Assert.assertNotNull(unmarshaled.getValues());
     }
 }

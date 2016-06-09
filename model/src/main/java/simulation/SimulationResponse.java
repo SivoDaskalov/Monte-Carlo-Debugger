@@ -3,8 +3,13 @@
  */
 package simulation;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import node.Node;
 import simulation.interfaces.SimulationManager;
@@ -17,7 +22,9 @@ import simulation.interfaces.SimulationManager;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class SimulationResponse extends SimulationConfiguration {
 
-    private NodeValuesWrapper values;
+    @XmlElementWrapper(name = "values")
+    @XmlElement(name = "node")
+    private List<NodeValues> values;
 
     public SimulationResponse() {
         super();
@@ -35,15 +42,24 @@ public class SimulationResponse extends SimulationConfiguration {
     public SimulationResponse(SimulationProperties configuration,
             StochasticVariableRegistry variables, Node formula, SimulationManager manager) {
         super(configuration, variables, formula);
-        this.values = new NodeValuesWrapper(manager);
+        values = new ArrayList<>();
+        double[][] valueRegistry = manager.getValueRegistry();
+        for (Map.Entry<Integer, Node> entry : manager.getNodeIndex().entrySet()) {
+            values.add(
+                    new NodeValues(
+                            entry.getValue().getId(),
+                            valueRegistry[entry.getKey()]
+                    )
+            );
+        }
     }
 
-    public NodeValuesWrapper getNodeValues() {
+    public List<NodeValues> getValues() {
         return values;
     }
 
-    public void setNodeValues(NodeValuesWrapper nodeValues) {
-        this.values = nodeValues;
+    public void setValues(List<NodeValues> values) {
+        this.values = values;
     }
 
 }

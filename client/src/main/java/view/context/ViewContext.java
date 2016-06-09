@@ -7,7 +7,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import simulation.NodeValues;
-import simulation.NodeValuesWrapper;
 
 /**
  *
@@ -25,16 +24,15 @@ public class ViewContext {
         currentRun = 1;
     }
 
-    public ViewContext(NodeValuesWrapper nodeValuesWrapper) {
+    public ViewContext(List<NodeValues> nodeValuesList) {
         values = new HashMap<>();
         debugged = new HashMap<>();
-        configure(nodeValuesWrapper);
+        configure(nodeValuesList);
     }
 
-    public final void configure(NodeValuesWrapper nodeValuesWrapper) {
+    public final void configure(List<NodeValues> nodeValuesList) {
         values.clear();
         debugged.clear();
-        List<NodeValues> nodeValuesList = nodeValuesWrapper.getValues();
         if (nodeValuesList == null) {
             return;
         }
