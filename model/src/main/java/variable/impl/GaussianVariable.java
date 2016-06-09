@@ -17,8 +17,8 @@ public class GaussianVariable extends AbstractVariable {
     // Default standard deviation set to a third of the mean
     private static final double defaultStandardDeviation = 1.0 / 3.0;
 
-    private Double mean;
-    private Double deviation;
+    private double mean;
+    private double deviation;
 
     public GaussianVariable() {
         super();

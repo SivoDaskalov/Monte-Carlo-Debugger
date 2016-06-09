@@ -15,7 +15,7 @@ public class ExponentialVariable extends AbstractVariable {
 
     private static final double defaultLambda = 1.0;
 
-    private Double lambda;
+    private double lambda;
 
     public ExponentialVariable() {
         super();
