@@ -3,7 +3,7 @@
  */
 package tree.utils;
 
-import simulation.manager.SampledVariableRegistry;
+import simulation.context.SampledVariableRegistry;
 import java.util.Map;
 import node.Node;
 import tree.handlers.NodeCountingHandler;

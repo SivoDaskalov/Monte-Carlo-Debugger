@@ -5,7 +5,6 @@ package simulation.context;
 
 import simulation.interfaces.SimulationContext;
 import simulation.interfaces.ValueLogger;
-import simulation.manager.SampledVariableRegistry;
 
 /**
  *

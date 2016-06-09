@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package simulation.manager;
+package simulation.context;
 
 import java.util.HashMap;
 import java.util.List;

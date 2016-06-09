@@ -4,7 +4,6 @@
 package simulation.listeners;
 
 import simulation.interfaces.SimulationManager;
-import simulation.interfaces.SimulationManager;
 
 /**
  *

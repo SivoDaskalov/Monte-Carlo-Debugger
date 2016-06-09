@@ -6,10 +6,9 @@ package simulation.manager;
 import java.util.concurrent.CountDownLatch;
 import javafx.util.Pair;
 import node.Node;
-import simulation.loggers.MatrixValueLogger;
-import simulation.loggers.MatrixValueLogger;
-import simulation.context.SimulationContextImpl;
 import simulation.StochasticVariableRegistry;
+import simulation.context.SimulationContextImpl;
+import simulation.loggers.MatrixValueLogger;
 
 /**
  *
@@ -23,10 +22,10 @@ public class SingleThreadSimulationManager extends AbstractSimulationManager {
 
     public SingleThreadSimulationManager(
             Node root,
-            MatrixValueLogger nodeValueRegistry,
+            MatrixValueLogger valueRegistry,
             SimulationContextImpl context,
             Pair<Integer, Integer> runs) {
-        super(root, nodeValueRegistry, context, runs);
+        super(root, valueRegistry, context, runs);
     }
 
     @Override

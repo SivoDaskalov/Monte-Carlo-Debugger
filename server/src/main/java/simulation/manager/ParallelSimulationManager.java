@@ -76,7 +76,7 @@ public class ParallelSimulationManager extends AbstractSimulationManager {
             for (Pair<Integer, Integer> simulationRange
                     : calculateSimulationRanges(runCount, poolSize)) {
                 SingleThreadSimulationManager worker = new SingleThreadSimulationManager(
-                        root, nodeValueRegistry, context, simulationRange);
+                        root, valueRegistry, context, simulationRange);
                 worker.setCompletionListener(compositeCompletionListener);
                 Thread thread = new Thread(worker);
                 thread.start();
