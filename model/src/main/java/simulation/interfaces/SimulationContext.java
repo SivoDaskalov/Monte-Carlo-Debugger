@@ -9,9 +9,9 @@ package simulation.interfaces;
  */
 public interface SimulationContext {
 
-    Integer getRunNumber();
+    int getRunNumber();
 
-    Double getVariableValue(int index);
+    double getVariableValue(int index);
 
     ValueLogger getValueLogger();
 }

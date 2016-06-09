@@ -4,8 +4,8 @@
 package simulation.context;
 
 import simulation.interfaces.SimulationContext;
-import simulation.manager.SampledVariableRegistry;
 import simulation.interfaces.ValueLogger;
+import simulation.manager.SampledVariableRegistry;
 
 /**
  *
@@ -27,12 +27,12 @@ public class SimulationContextImpl implements SimulationContext {
     }
 
     @Override
-    public Integer getRunNumber() {
+    public int getRunNumber() {
         return runNumber;
     }
 
     @Override
-    public Double getVariableValue(int index) {
+    public double getVariableValue(int index) {
         return registry.getVariableValue(index, runNumber);
     }
 
