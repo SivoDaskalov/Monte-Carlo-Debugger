@@ -11,17 +11,13 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 import javax.swing.JTextField;
-import javax.swing.JTree;
-import node.Node;
+import model.DebugContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import simulation.SimulationResponse;
-import view.context.ViewContext;
-import view.tree.JTreeBuilder;
-import view.tree.JTreeUtils;
-import view.tree.renderers.NodeRendererResolver;
+import view.ViewFactory;
+import view.tree.DebugTreePanel;
 
 /**
  *
@@ -31,7 +27,7 @@ public class TreeViewDemo implements ActionListener {
 
     private static final Logger log = LoggerFactory.getLogger(TreeViewDemo.class);
 
-    private final ViewContext viewContext;
+    private final DebugContext viewContext;
     private final JFrame frame;
     private final JLabel runLabel;
     private final JTextField runField;
@@ -40,7 +36,7 @@ public class TreeViewDemo implements ActionListener {
     public TreeViewDemo(String url) {
         SimulationResponse response = SimulationResponseUnmarshaler.unmarshal(url);
         viewContext = makeViewContext(response);
-        JPanel treePanel = makeTreePanel(response.getFormula(), viewContext);
+        DebugTreePanel treePanel = ViewFactory.getInstance().makeDebugTreePanel(viewContext);
 
         runLabel = new JLabel("Run 1");
         runField = new JTextField("1");
@@ -58,20 +54,12 @@ public class TreeViewDemo implements ActionListener {
         frame.add(treePanel, BorderLayout.CENTER);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(600, 600);
+        frame.pack();
         frame.setVisible(true);
     }
 
-    private ViewContext makeViewContext(SimulationResponse response) {
-        return new ViewContext(response.getValues());
-    }
-
-    private JPanel makeTreePanel(Node formula, ViewContext viewContext) {
-        JPanel panel = new JPanel(new GridLayout(1, 1));
-        JTree tree = JTreeBuilder.buildTree(formula);
-        JTreeUtils.expandAllNodes(tree);
-        tree.setCellRenderer(new NodeRendererResolver(viewContext));
-        panel.add(new JScrollPane(tree));
-        return panel;
+    private DebugContext makeViewContext(SimulationResponse response) {
+        return new DebugContext(response);
     }
 
     @Override

@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package view.tree;
+package tree;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -9,8 +9,9 @@ import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.TreeModel;
 import node.Node;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,13 +25,12 @@ public class JTreeBuilder {
     private static final JTreeBuilder INSTANCE = new JTreeBuilder();
     private static final Logger log = LoggerFactory.getLogger(JTreeBuilder.class);
 
-    public static JTree buildTree(Node node) {
-        DefaultMutableTreeNode root = INSTANCE.walk(node);
-        return new JTree(root);
+    public static TreeModel buildTreeModel(Node node) {
+        return new DefaultTreeModel(INSTANCE.walk(node));
     }
 
     public DefaultMutableTreeNode walk(Node node) {
-        DefaultMutableTreeNode treeNode = new DefaultMutableTreeNode(node);
+        DefaultMutableTreeNode treeNode = new DefaultMutableTreeNode(new DebuggedNode(node));
         getChildNodes(node).forEach((k, v) -> treeNode.add(walk(v)));
         return treeNode;
     }

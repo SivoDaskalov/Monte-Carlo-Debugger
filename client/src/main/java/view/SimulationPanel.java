@@ -15,4 +15,6 @@ public class SimulationPanel extends JPanel{
     private FormulaTreePanel formulaTreePanel;
     private NodeDetailsPanel nodePanel;
     
+    
+    
 }

@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package view.tree;
+package tree;
 
 import javax.swing.JTree;
 

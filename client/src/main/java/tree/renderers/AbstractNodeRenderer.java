@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package view.tree.renderers;
+package tree.renderers;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -11,8 +11,9 @@ import javax.swing.JPanel;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeCellRenderer;
+import model.DebugContext;
 import node.Node;
-import view.context.ViewContext;
+import tree.DebuggedNode;
 
 /**
  *
@@ -31,23 +32,23 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
     private static final Color defaultBackgroundColor = Color.WHITE;
     private static final Color selectedBackgroundColor = Color.LIGHT_GRAY;
 
-    protected ViewContext context;
+    protected DebugContext context;
     private final JLabel valueLabel;
     private final JLabel roleLabel;
     private final JLabel descriptionLabel;
 
-    public AbstractNodeRenderer(ViewContext context) {
+    public AbstractNodeRenderer(DebugContext context) {
         this.context = context;
         valueLabel = makeLabel("=", labelFont, labelColor);
         roleLabel = makeLabel("role =", labelFont, labelColor);
         descriptionLabel = makeLabel("description =", labelFont, labelColor);
     }
 
-    public void setContext(ViewContext context) {
+    public void setContext(DebugContext context) {
         this.context = context;
     }
 
-    protected JLabel makeLabel(String text, Font font, Color color) {
+    protected final JLabel makeLabel(String text, Font font, Color color) {
         JLabel label = new JLabel(text);
         if (font != null) {
             label.setFont(font);
@@ -92,13 +93,16 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
         return makeLabel(description, valueFont, valueColor);
     }
 
-    private void fillPanel(JPanel panel, Node node) {
+    private void fillPanel(JPanel panel, DebuggedNode debuggedNode) {
+        Node node = debuggedNode.getNode();
         panel.add(getName(node));
-        JLabel value = getValue(node);
-        if (value != null) {
-            panel.add(valueLabel);
-            panel.add(value);
-            panel.add(Box.createHorizontalStrut(strut));
+        if (debuggedNode.isValueVisible() == true) {
+            JLabel value = getValue(node);
+            if (value != null) {
+                panel.add(valueLabel);
+                panel.add(value);
+                panel.add(Box.createHorizontalStrut(strut));
+            }
         }
         JLabel role = getRole(node);
         if (role != null) {
@@ -117,7 +121,8 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
     @Override
     public JPanel getTreeCellRendererComponent(JTree tree, Object value, boolean selected, boolean expanded, boolean leaf, int row, boolean hasFocus) {
         DefaultMutableTreeNode treeNode = (DefaultMutableTreeNode) value;
-        Node node = (Node) treeNode.getUserObject();
+
+        DebuggedNode node = (DebuggedNode) treeNode.getUserObject();
         JPanel panel = new JPanel();
         if (selected) {
             panel.setBackground(selectedBackgroundColor);
@@ -125,6 +130,16 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
             panel.setBackground(defaultBackgroundColor);
         }
         fillPanel(panel, node);
+        DefaultMutableTreeNode currentlyDebuggedTreeNode = context.getCurrentlyDebuggedNode();
+        if (currentlyDebuggedTreeNode != null) {
+            String currentlyDebuggedNodeId
+                    = ((DebuggedNode) currentlyDebuggedTreeNode.getUserObject())
+                    .getNode()
+                    .getId();
+            if (node.getNode().getId().equals(currentlyDebuggedNodeId)) {
+                panel.setBackground(Color.CYAN);
+            }
+        }
         return panel;
     }
 
