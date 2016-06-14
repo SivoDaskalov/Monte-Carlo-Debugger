@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 import model.DebugContext;
-import view.tree.DebugTreePanel;
+import view.DebugTreePanel;
 
 /**
  *

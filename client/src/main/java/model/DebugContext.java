@@ -90,6 +90,10 @@ public class DebugContext {
         }
     }
 
+    public int getRunCount() {
+        return runCount;
+    }
+
     public NodeStatistics getSelectedNodeStatistics() {
         return selectedNode;
     }

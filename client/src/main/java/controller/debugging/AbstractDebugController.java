@@ -11,7 +11,7 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import model.DebugContext;
 import tree.DebuggedNode;
-import view.tree.DebugTreePanel;
+import view.DebugTreePanel;
 
 /**
  *

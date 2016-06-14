@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package tree.renderers;
+package view.renderers;
 
 import java.awt.Component;
 import java.util.HashMap;

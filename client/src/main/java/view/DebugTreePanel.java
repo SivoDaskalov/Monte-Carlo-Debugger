@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package view.tree;
+package view;
 
 import java.awt.Dimension;
 import java.awt.event.ActionListener;
@@ -13,7 +13,8 @@ import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.TreeModel;
 import model.DebugContext;
 import tree.JTreeUtils;
-import tree.renderers.NodeRendererResolver;
+import view.renderers.NodeRendererResolver;
+import view.styles.Styles;
 
 /**
  *
@@ -21,7 +22,7 @@ import tree.renderers.NodeRendererResolver;
  */
 public class DebugTreePanel extends JPanel {
 
-    private static final Dimension preferredSize = new Dimension(new Dimension(600, 600));
+    private static final Dimension preferredSize = new Dimension(new Dimension(650, 600));
     private final JButton resetButton;
     private final JButton stepOverButton;
     private final JButton stepIntoButton;
@@ -29,28 +30,32 @@ public class DebugTreePanel extends JPanel {
     private final JTree tree;
 
     public DebugTreePanel(DebugContext context) {
+        this.setBorder(Styles.padding);
+        this.setPreferredSize(preferredSize);
+
         resetButton = new JButton("Reset");
-        resetButton.setActionCommand("RESET");
+        resetButton.setFont(Styles.labelFont);
         this.add(resetButton);
 
         stepOverButton = new JButton("Step over");
-        stepOverButton.setActionCommand("OVER");
+        stepOverButton.setFont(Styles.labelFont);
         this.add(stepOverButton);
 
         stepIntoButton = new JButton("Step into");
-        stepIntoButton.setActionCommand("INTO");
+        stepIntoButton.setFont(Styles.labelFont);
         this.add(stepIntoButton);
 
         stepOutButton = new JButton("Step out");
-        stepOutButton.setActionCommand("OUT");
+        stepOutButton.setFont(Styles.labelFont);
         this.add(stepOutButton);
 
         tree = new JTree(context.getRoot());
         tree.setCellRenderer(new NodeRendererResolver(context));
         JTreeUtils.expandAllNodes(tree);
 
-        this.add(new JScrollPane(tree));
-        this.setPreferredSize(preferredSize);
+        JScrollPane scrollPane = new JScrollPane(tree);
+        scrollPane.setPreferredSize(preferredSize);
+        this.add(scrollPane);
     }
 
     public JTree getTree() {
@@ -60,8 +65,8 @@ public class DebugTreePanel extends JPanel {
     public final void setTreeModel(TreeModel model) {
         tree.setModel(model);
     }
-    
-    public void setTreeSelectionListener(TreeSelectionListener listener){
+
+    public void setTreeSelectionListener(TreeSelectionListener listener) {
         tree.addTreeSelectionListener(listener);
     }
 

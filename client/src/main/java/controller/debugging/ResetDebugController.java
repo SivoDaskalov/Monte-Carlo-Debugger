@@ -6,7 +6,7 @@ package controller.debugging;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import model.DebugContext;
-import view.tree.DebugTreePanel;
+import view.DebugTreePanel;
 
 /**
  *
