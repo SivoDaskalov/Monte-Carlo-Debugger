@@ -27,6 +27,7 @@ import view.styles.Styles;
 public class DebugTreePanel extends JPanel {
 
     private static final Dimension preferredSize = new Dimension(600, 600);
+    private final JLabel title;
     private final JButton resetButton;
     private final JButton stepOverButton;
     private final JButton stepIntoButton;
@@ -40,7 +41,7 @@ public class DebugTreePanel extends JPanel {
 
         JPanel heading = new JPanel(new BorderLayout());
         heading.setBackground(Styles.defaultPanelBackgroundColor);
-        JLabel title = new JLabel("Debugging");
+        title = new JLabel("Debugging run 1");
         title.setFont(Styles.titleFont);
         heading.add(title, BorderLayout.WEST);
 
@@ -71,7 +72,10 @@ public class DebugTreePanel extends JPanel {
         JScrollPane scrollPane = new JScrollPane(tree);
         scrollPane.setPreferredSize(preferredSize);
         this.add(scrollPane);
+    }
 
+    public void updateTitle(int run) {
+        title.setText("Debugging run " + run);
     }
 
     public JTree getTree() {

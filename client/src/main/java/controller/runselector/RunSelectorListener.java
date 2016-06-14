@@ -3,6 +3,7 @@
  */
 package controller.runselector;
 
+import javax.swing.JList;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import model.DebugContext;
@@ -30,9 +31,11 @@ public class RunSelectorListener implements ListSelectionListener {
 
     @Override
     public void valueChanged(ListSelectionEvent e) {
-        context.setCurrentRun(e.getFirstIndex() + 1);
+        JList list = (JList) e.getSource();
+        context.setCurrentRun(list.getSelectedIndex() + 1);
         context.resetDebugging();
         if (panel != null) {
+            panel.updateTitle(context.getCurrentRun());
             panel.repaint();
             JTreeUtils.expandAllNodes(panel.getTree());
         }

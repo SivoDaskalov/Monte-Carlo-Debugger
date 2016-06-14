@@ -11,6 +11,7 @@ import controller.debugging.StepOverDebugController;
 import controller.runselector.RunSelectorListener;
 import model.DebugContext;
 import view.DebugTreePanel;
+import view.MainMenuPanel;
 import view.NodeStatisticsPanel;
 import view.RunSelectorPanel;
 import view.SimulationFrame;
@@ -30,6 +31,12 @@ public class ViewFactory {
         return instance;
     }
 
+    public RunSelectorPanel makeRunSelectorPanel(DebugContext context, DebugTreePanel treePanel) {
+        RunSelectorPanel panel = new RunSelectorPanel(context);
+        panel.setListSelectionListener(new RunSelectorListener(context, treePanel));
+        return panel;
+    }
+
     public DebugTreePanel makeDebugTreePanel(DebugContext context, NodeStatisticsPanel statisticsPanel) {
         DebugTreePanel panel = new DebugTreePanel(context);
         panel.setTreeSelectionListener(new SelectionListener(context, statisticsPanel));
@@ -40,22 +47,22 @@ public class ViewFactory {
         return panel;
     }
 
-    public RunSelectorPanel makeRunSelectorPanel(DebugContext context, DebugTreePanel treePanel) {
-        RunSelectorPanel panel = new RunSelectorPanel(context);
-        panel.setListSelectionListener(new RunSelectorListener(context, treePanel));
-        return panel;
-    }
-
     public NodeStatisticsPanel makeNodeStatisticsPanel(DebugContext context) {
         return new NodeStatisticsPanel(context);
     }
 
+    public MainMenuPanel makeMainMenu(DebugContext context) {
+        return new MainMenuPanel(context);
+    }
+
     public SimulationFrame makeSimulationFrame(String title, DebugContext context) {
+        MainMenuPanel mainMenu = makeMainMenu(context);
         NodeStatisticsPanel nodeStatisticsPanel = makeNodeStatisticsPanel(context);
         DebugTreePanel debugTreePanel = makeDebugTreePanel(context, nodeStatisticsPanel);
         RunSelectorPanel runSelectorPanel = makeRunSelectorPanel(context, debugTreePanel);
         SimulationFrame panel = new SimulationFrame(
-                title, context, runSelectorPanel, debugTreePanel, nodeStatisticsPanel);
+                title, context, mainMenu, runSelectorPanel, debugTreePanel, nodeStatisticsPanel);
         return panel;
     }
+
 }
