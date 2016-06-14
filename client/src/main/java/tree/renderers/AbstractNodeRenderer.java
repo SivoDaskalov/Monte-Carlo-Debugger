@@ -14,6 +14,7 @@ import javax.swing.tree.TreeCellRenderer;
 import model.DebugContext;
 import node.Node;
 import tree.DebuggedNode;
+import view.styles.Styles;
 
 /**
  *
@@ -21,27 +22,16 @@ import tree.DebuggedNode;
  */
 public class AbstractNodeRenderer implements TreeCellRenderer {
 
-    private static final int strut = 30;
-    private static final String valueFormat = "%.5f";
-    protected static final Font valueFont = new Font("Arial", Font.PLAIN, 14);
-    protected static final Color valueColor = Color.BLACK;
-
-    protected static final Font labelFont = new Font("Arial", Font.ITALIC, 14);
-    protected static final Color labelColor = new Color(80, 80, 80);
-
-    private static final Color defaultBackgroundColor = Color.WHITE;
-    private static final Color selectedBackgroundColor = Color.LIGHT_GRAY;
-
-    protected DebugContext context;
+        protected DebugContext context;
     private final JLabel valueLabel;
     private final JLabel roleLabel;
     private final JLabel descriptionLabel;
 
     public AbstractNodeRenderer(DebugContext context) {
         this.context = context;
-        valueLabel = makeLabel("=", labelFont, labelColor);
-        roleLabel = makeLabel("role =", labelFont, labelColor);
-        descriptionLabel = makeLabel("description =", labelFont, labelColor);
+        valueLabel = makeLabel("=", Styles.labelFont, Styles.labelColor);
+        roleLabel = makeLabel("role =", Styles.labelFont, Styles.labelColor);
+        descriptionLabel = makeLabel("description =", Styles.labelFont, Styles.labelColor);
     }
 
     public void setContext(DebugContext context) {
@@ -65,7 +55,7 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
     }
 
     public JLabel getName(Node node) {
-        return makeLabel(getNodeName(node), valueFont, valueColor);
+        return makeLabel(getNodeName(node), Styles.valueFont, Styles.valueColor);
     }
 
     public JLabel getValue(Node node) {
@@ -74,7 +64,7 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
         if (value == null) {
             return null;
         }
-        return makeLabel(String.format(valueFormat, value), valueFont, valueColor);
+        return makeLabel(String.format(Styles.valueFormat, value), Styles.valueFont, Styles.valueColor);
     }
 
     public JLabel getRole(Node node) {
@@ -82,7 +72,7 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
         if (role == null || role.equals("")) {
             return null;
         }
-        return makeLabel(role, valueFont, valueColor);
+        return makeLabel(role, Styles.valueFont, Styles.valueColor);
     }
 
     public JLabel getDescription(Node node) {
@@ -90,7 +80,7 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
         if (description == null || description.equals("")) {
             return null;
         }
-        return makeLabel(description, valueFont, valueColor);
+        return makeLabel(description, Styles.valueFont, Styles.valueColor);
     }
 
     private void fillPanel(JPanel panel, DebuggedNode debuggedNode) {
@@ -101,20 +91,20 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
             if (value != null) {
                 panel.add(valueLabel);
                 panel.add(value);
-                panel.add(Box.createHorizontalStrut(strut));
+                panel.add(Box.createHorizontalStrut(Styles.strut));
             }
         }
         JLabel role = getRole(node);
         if (role != null) {
             panel.add(roleLabel);
             panel.add(role);
-            panel.add(Box.createHorizontalStrut(strut));
+            panel.add(Box.createHorizontalStrut(Styles.strut));
         }
         JLabel description = getDescription(node);
         if (description != null) {
             panel.add(descriptionLabel);
             panel.add(description);
-            panel.add(Box.createHorizontalStrut(strut));
+            panel.add(Box.createHorizontalStrut(Styles.strut));
         }
     }
 
@@ -124,12 +114,12 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
 
         DebuggedNode node = (DebuggedNode) treeNode.getUserObject();
         JPanel panel = new JPanel();
-        if (selected) {
-            panel.setBackground(selectedBackgroundColor);
-        } else {
-            panel.setBackground(defaultBackgroundColor);
-        }
         fillPanel(panel, node);
+        if (selected) {
+            panel.setBackground(Styles.selectedBackgroundColor);
+        } else {
+            panel.setBackground(Styles.defaultBackgroundColor);
+        }
         DefaultMutableTreeNode currentlyDebuggedTreeNode = context.getCurrentlyDebuggedNode();
         if (currentlyDebuggedTreeNode != null) {
             String currentlyDebuggedNodeId
@@ -137,7 +127,7 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
                     .getNode()
                     .getId();
             if (node.getNode().getId().equals(currentlyDebuggedNodeId)) {
-                panel.setBackground(Color.CYAN);
+                panel.setBackground(Styles.currentlyDebuggedBackgroundColor);
             }
         }
         return panel;

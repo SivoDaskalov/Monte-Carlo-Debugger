@@ -9,6 +9,7 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import model.DebugContext;
 import node.impl.VariableNode;
 import tree.DebuggedNode;
+import view.styles.Styles;
 
 /**
  *
@@ -26,7 +27,7 @@ public class VariableNodeRenderer extends AbstractNodeRenderer {
         DefaultMutableTreeNode treeNode = (DefaultMutableTreeNode) value;
         DebuggedNode node = (DebuggedNode) treeNode.getUserObject();
         VariableNode variable = (VariableNode) node.getNode();
-        result.add(makeLabel(variable.getName(), valueFont, valueColor), 1);
+        result.add(makeLabel(variable.getName(), Styles.valueFont, Styles.valueColor), 1);
         return result;
     }
 

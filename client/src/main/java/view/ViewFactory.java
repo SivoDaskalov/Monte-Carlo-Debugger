@@ -4,6 +4,7 @@
 package view;
 
 import controller.debugging.ResetDebugController;
+import controller.debugging.SelectionListener;
 import controller.debugging.StepIntoDebugController;
 import controller.debugging.StepOutDebugController;
 import controller.debugging.StepOverDebugController;
@@ -27,6 +28,7 @@ public class ViewFactory {
 
     public DebugTreePanel makeDebugTreePanel(DebugContext context) {
         DebugTreePanel panel = new DebugTreePanel(context);
+        panel.setTreeSelectionListener(new SelectionListener(context));
         panel.setResetButtonListener(new ResetDebugController(context, panel));
         panel.setStepIntoButtonListener(new StepIntoDebugController(context, panel));
         panel.setStepOutButtonListener(new StepOutDebugController(context, panel));

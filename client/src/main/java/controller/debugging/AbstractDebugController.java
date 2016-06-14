@@ -3,8 +3,12 @@
  */
 package controller.debugging;
 
+import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.List;
+import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
 import model.DebugContext;
 import tree.DebuggedNode;
 import view.tree.DebugTreePanel;
@@ -32,4 +36,18 @@ public abstract class AbstractDebugController {
     }
 
     abstract void hook();
+
+    protected void after(DefaultMutableTreeNode changedBranch) {
+        JTree tree = panel.getTree();
+        List<Integer> expandedRows = new ArrayList<>();
+        for (int i = 0; i < tree.getRowCount(); i++) {
+            if (tree.isExpanded(i)) {
+                expandedRows.add(i);
+            }
+        }
+        ((DefaultTreeModel) tree.getModel()).nodeStructureChanged(changedBranch);
+        for (int i = 0; i < expandedRows.size(); i++) {
+            tree.expandRow(expandedRows.get(i));
+        }
+    }
 }

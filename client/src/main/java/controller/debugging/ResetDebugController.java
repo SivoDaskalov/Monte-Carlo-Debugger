@@ -28,7 +28,7 @@ public class ResetDebugController extends AbstractDebugController implements Act
     @Override
     public void actionPerformed(ActionEvent e) {
         context.resetDebugging();
-        panel.repaint();
+        after(context.getRoot());
     }
     
 }

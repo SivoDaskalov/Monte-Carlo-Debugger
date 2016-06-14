@@ -3,6 +3,7 @@
  */
 package view.styles;
 
+import java.awt.Color;
 import java.awt.Font;
 
 /**
@@ -11,5 +12,15 @@ import java.awt.Font;
  */
 public class Styles {
 
-    public static Font defaultLabelFont = new Font(null, 0, 0);
+    public static final int strut = 30;
+    public static final String valueFormat = "%.5f";
+    public static final Font valueFont = new Font("Arial", Font.PLAIN, 14);
+    public static final Color valueColor = Color.BLACK;
+
+    public static final Font labelFont = new Font("Arial", Font.ITALIC, 14);
+    public static final Color labelColor = new Color(80, 80, 80);
+
+    public static final Color defaultBackgroundColor = Color.WHITE;
+    public static final Color selectedBackgroundColor = new Color(232, 239, 248);
+    public static final Color currentlyDebuggedBackgroundColor = new Color(189, 230, 170);
 }

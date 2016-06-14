@@ -29,14 +29,17 @@ public class StepOutDebugController extends AbstractDebugController implements A
     public void actionPerformed(ActionEvent e) {
         DefaultMutableTreeNode node = context.getCurrentlyDebuggedNode();
         if (node != null) {
+            DefaultMutableTreeNode parent = (DefaultMutableTreeNode) node.getParent();
             context.setCurrentlyDebuggedNode((DefaultMutableTreeNode) node.getParent());
             debugChildren(node);
             do {
                 debugChildren(node);
                 node = node.getNextSibling();
             } while (node != null);
+            if (parent != null) {
+                after((DefaultMutableTreeNode) parent);
+            }
         }
-        panel.repaint();
     }
 
 }

@@ -9,6 +9,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTree;
+import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.TreeModel;
 import model.DebugContext;
 import tree.JTreeUtils;
@@ -20,6 +21,7 @@ import tree.renderers.NodeRendererResolver;
  */
 public class DebugTreePanel extends JPanel {
 
+    private static final Dimension preferredSize = new Dimension(new Dimension(600, 600));
     private final JButton resetButton;
     private final JButton stepOverButton;
     private final JButton stepIntoButton;
@@ -48,11 +50,19 @@ public class DebugTreePanel extends JPanel {
         JTreeUtils.expandAllNodes(tree);
 
         this.add(new JScrollPane(tree));
-        this.setPreferredSize(new Dimension(600, 600));
+        this.setPreferredSize(preferredSize);
+    }
+
+    public JTree getTree() {
+        return tree;
     }
 
     public final void setTreeModel(TreeModel model) {
         tree.setModel(model);
+    }
+    
+    public void setTreeSelectionListener(TreeSelectionListener listener){
+        tree.addTreeSelectionListener(listener);
     }
 
     public void setResetButtonListener(ActionListener listener) {

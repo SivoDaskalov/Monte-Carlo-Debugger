@@ -37,7 +37,7 @@ public class StepOverDebugController extends AbstractDebugController implements 
                 context.setCurrentlyDebuggedNode((DefaultMutableTreeNode) node.getParent());
             }
         }
-        panel.repaint();
+        after(node);
     }
 
 }
