@@ -3,6 +3,7 @@
  */
 package model;
 
+import java.util.Collections;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
@@ -56,6 +57,7 @@ public class DebugContext {
         properties = request.getProperties();
         variables = request.getVariableRegistry();
         setupTree(request.getFormula());
+        setupStatistics(Collections.EMPTY_LIST);
     }
 
     public final void setup(SimulationResponse response) {
@@ -131,7 +133,8 @@ public class DebugContext {
 
     private void setupStatistics(List<NodeValues> nodeValuesList) {
         statistics.clear();
-        if (nodeValuesList == null) {
+        if (nodeValuesList == null || nodeValuesList.isEmpty()) {
+            runCount = 0;
             return;
         }
         for (NodeValues nodeValues : nodeValuesList) {
@@ -141,7 +144,12 @@ public class DebugContext {
                             nodeValues.getValues()));
         }
         currentRun = 1;
-        runCount = nodeValuesList.size();
+        NodeValues v = nodeValuesList.get(0);
+        if (v != null) {
+            runCount = v.getValues().length;
+        } else {
+            runCount = 0;
+        }
     }
 
     private void setupTree(Node formula) {

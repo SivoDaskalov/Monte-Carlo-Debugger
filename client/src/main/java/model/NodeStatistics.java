@@ -11,7 +11,7 @@ public class NodeStatistics {
 
     private final String id;
     private final double[] values;
-    private final double average;
+    private final double mean;
     private double min;
     private double max;
 
@@ -30,15 +30,15 @@ public class NodeStatistics {
                 max = value;
             }
         }
-        average = sum / values.length;
+        mean = sum / values.length;
     }
 
     public String getId() {
         return id;
     }
 
-    public double getAverage() {
-        return average;
+    public double getMean() {
+        return mean;
     }
 
     public double getMin() {

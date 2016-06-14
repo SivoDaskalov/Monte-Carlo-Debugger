@@ -22,7 +22,7 @@ import view.styles.Styles;
  */
 public class AbstractNodeRenderer implements TreeCellRenderer {
 
-        protected DebugContext context;
+    protected DebugContext context;
     private final JLabel valueLabel;
     private final JLabel roleLabel;
     private final JLabel descriptionLabel;
@@ -118,7 +118,7 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
         if (selected) {
             panel.setBackground(Styles.selectedBackgroundColor);
         } else {
-            panel.setBackground(Styles.defaultBackgroundColor);
+            panel.setBackground(Styles.defaultNodeBackgroundColor);
         }
         DefaultMutableTreeNode currentlyDebuggedTreeNode = context.getCurrentlyDebuggedNode();
         if (currentlyDebuggedTreeNode != null) {

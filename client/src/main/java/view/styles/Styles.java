@@ -16,7 +16,7 @@ public class Styles {
 
     public static final int strut = 30;
     public static Border padding = new EmptyBorder(10, 10, 10, 10);
-    
+
     public static final String valueFormat = "%.5f";
     public static final Font valueFont = new Font("Arial", Font.PLAIN, 14);
     public static final Color valueColor = Color.BLACK;
@@ -25,7 +25,12 @@ public class Styles {
     public static final Font labelFont = new Font("Arial", Font.ITALIC, 14);
     public static final Color labelColor = new Color(80, 80, 80);
 
-    public static final Color defaultBackgroundColor = Color.WHITE;
+    public static final Color defaultPanelBackgroundColor = new Color(249, 249, 249);
+
+    public static final Color defaultNodeBackgroundColor = Color.WHITE;
     public static final Color selectedBackgroundColor = new Color(232, 239, 248);
     public static final Color currentlyDebuggedBackgroundColor = new Color(189, 230, 170);
+
+    public static final Color chartBackgroundColor = new Color(240, 245, 247);
+    public static final Color chartLineColor = new Color(189, 230, 170);
 }

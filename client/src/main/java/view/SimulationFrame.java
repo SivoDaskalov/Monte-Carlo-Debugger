@@ -14,7 +14,7 @@ import model.DebugContext;
  */
 public class SimulationFrame extends JFrame {
 
-    private static final Dimension preferredSize = new Dimension(new Dimension(1000, 700));
+    private static final Dimension preferredSize = new Dimension(1200, 700);
     private final DebugContext context;
 
     public SimulationFrame(String title, DebugContext context,
@@ -28,10 +28,11 @@ public class SimulationFrame extends JFrame {
         this.add(debugTreePanel, BorderLayout.CENTER);
         this.add(nodeStatisticsPanel, BorderLayout.EAST);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setPreferredSize(preferredSize);
+//        this.setPreferredSize(preferredSize);
         this.pack();
         this.setVisible(true);
         this.repaint();
+        this.setResizable(false);
     }
 
     public DebugContext getContext() {

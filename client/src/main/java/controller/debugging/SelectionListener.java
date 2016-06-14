@@ -40,7 +40,7 @@ public class SelectionListener implements TreeSelectionListener {
                 String selectedNodeId = debuggedNode.getNode().getId();
                 context.setSelectedNode(selectedNodeId);
                 if (panel != null) {
-                    panel.updateFields();
+                    panel.update();
                     panel.repaint();
                 }
             }

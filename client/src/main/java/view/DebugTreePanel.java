@@ -3,9 +3,13 @@
  */
 package view;
 
+import java.awt.BorderLayout;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTree;
@@ -22,7 +26,7 @@ import view.styles.Styles;
  */
 public class DebugTreePanel extends JPanel {
 
-    private static final Dimension preferredSize = new Dimension(new Dimension(650, 600));
+    private static final Dimension preferredSize = new Dimension(600, 600);
     private final JButton resetButton;
     private final JButton stepOverButton;
     private final JButton stepIntoButton;
@@ -30,24 +34,35 @@ public class DebugTreePanel extends JPanel {
     private final JTree tree;
 
     public DebugTreePanel(DebugContext context) {
+        this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         this.setBorder(Styles.padding);
-        this.setPreferredSize(preferredSize);
+        this.setBackground(Styles.defaultPanelBackgroundColor);
+
+        JPanel heading = new JPanel(new BorderLayout());
+        heading.setBackground(Styles.defaultPanelBackgroundColor);
+        JLabel title = new JLabel("Debugging");
+        title.setFont(Styles.titleFont);
+        heading.add(title, BorderLayout.WEST);
+
+        JPanel controlPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
+        controlPanel.setBackground(Styles.defaultPanelBackgroundColor);
+        stepIntoButton = new JButton("Step into");// (F5)
+        stepIntoButton.setFont(Styles.labelFont);
+        controlPanel.add(stepIntoButton);
+
+        stepOverButton = new JButton("Step over");// (F6)
+        stepOverButton.setFont(Styles.labelFont);
+        controlPanel.add(stepOverButton);
+
+        stepOutButton = new JButton("Step out");// (F7)
+        stepOutButton.setFont(Styles.labelFont);
+        controlPanel.add(stepOutButton);
 
         resetButton = new JButton("Reset");
         resetButton.setFont(Styles.labelFont);
-        this.add(resetButton);
-
-        stepOverButton = new JButton("Step over");
-        stepOverButton.setFont(Styles.labelFont);
-        this.add(stepOverButton);
-
-        stepIntoButton = new JButton("Step into");
-        stepIntoButton.setFont(Styles.labelFont);
-        this.add(stepIntoButton);
-
-        stepOutButton = new JButton("Step out");
-        stepOutButton.setFont(Styles.labelFont);
-        this.add(stepOutButton);
+        controlPanel.add(resetButton);
+        heading.add(controlPanel, BorderLayout.EAST);
+        this.add(heading);
 
         tree = new JTree(context.getRoot());
         tree.setCellRenderer(new NodeRendererResolver(context));
@@ -56,6 +71,7 @@ public class DebugTreePanel extends JPanel {
         JScrollPane scrollPane = new JScrollPane(tree);
         scrollPane.setPreferredSize(preferredSize);
         this.add(scrollPane);
+
     }
 
     public JTree getTree() {
