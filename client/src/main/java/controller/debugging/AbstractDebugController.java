@@ -9,6 +9,7 @@ import java.util.List;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.TreePath;
 import model.DebugContext;
 import tree.DebuggedNode;
 import view.DebugTreePanel;
@@ -45,7 +46,9 @@ public abstract class AbstractDebugController {
                 expandedRows.add(i);
             }
         }
+        TreePath selectionPath = tree.getSelectionPath();
         ((DefaultTreeModel) tree.getModel()).nodeStructureChanged(changedBranch);
+        tree.setSelectionPath(selectionPath);
         for (int i = 0; i < expandedRows.size(); i++) {
             tree.expandRow(expandedRows.get(i));
         }

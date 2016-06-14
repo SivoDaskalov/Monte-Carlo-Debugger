@@ -52,7 +52,7 @@ public class ViewFactory {
     }
 
     public MainMenuPanel makeMainMenu(DebugContext context) {
-        return new MainMenuPanel(context);
+        return new MainMenuPanel();
     }
 
     public SimulationFrame makeSimulationFrame(String title, DebugContext context) {
