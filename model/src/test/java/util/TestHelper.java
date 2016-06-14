@@ -9,10 +9,10 @@ import node.impl.VariableNode;
 import node.impl.binary.ExponentiationNode;
 import node.impl.group.ProductNode;
 import node.impl.group.SumNode;
+import simulation.StochasticVariableRegistry;
 import variable.impl.ExponentialVariable;
 import variable.impl.GaussianVariable;
 import variable.impl.UniformVariable;
-import simulation.StochasticVariableRegistry;
 
 /**
  *
@@ -48,7 +48,23 @@ public class TestHelper {
         return rootNode;
     }
 
-    public static Node buildComplexNodeTree() {
-        return null;
+    public static Node buildDeepNodeTree(int depth, int breadth) {
+        return buildDeepNodeTree(depth, breadth, 0);
+    }
+
+    private static Node buildDeepNodeTree(int depth, int breadth, int variableIndex) {
+        if (depth == 0) {
+            return new VariableNode("X" + variableIndex);
+        } else {
+            SumNode sum = new SumNode();
+            for (int i = 0; i < breadth; i++) {
+                ProductNode product = new ProductNode();
+                product.addChild(buildDeepNodeTree(depth - 1, breadth, 0));
+                product.addChild(buildDeepNodeTree(depth - 1, breadth, 1));
+                product.addChild(buildDeepNodeTree(depth - 1, breadth, 2));
+                sum.addChild(product);
+            }
+            return sum;
+        }
     }
 }

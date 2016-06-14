@@ -8,6 +8,7 @@ import controller.debugging.SelectionListener;
 import controller.debugging.StepIntoDebugController;
 import controller.debugging.StepOutDebugController;
 import controller.debugging.StepOverDebugController;
+import controller.mainmenu.OpenButtonListener;
 import controller.runselector.RunSelectorListener;
 import model.DebugContext;
 import view.DebugTreePanel;
@@ -52,7 +53,8 @@ public class ViewFactory {
     }
 
     public MainMenuPanel makeMainMenu(DebugContext context) {
-        return new MainMenuPanel();
+        MainMenuPanel panel = new MainMenuPanel();
+        return panel;
     }
 
     public SimulationFrame makeSimulationFrame(String title, DebugContext context) {
@@ -60,9 +62,10 @@ public class ViewFactory {
         NodeStatisticsPanel nodeStatisticsPanel = makeNodeStatisticsPanel(context);
         DebugTreePanel debugTreePanel = makeDebugTreePanel(context, nodeStatisticsPanel);
         RunSelectorPanel runSelectorPanel = makeRunSelectorPanel(context, debugTreePanel);
-        SimulationFrame panel = new SimulationFrame(
+        SimulationFrame simulationFrame = new SimulationFrame(
                 title, context, mainMenu, runSelectorPanel, debugTreePanel, nodeStatisticsPanel);
-        return panel;
+        mainMenu.setOpenButtonListener(new OpenButtonListener(simulationFrame));
+        return simulationFrame;
     }
 
 }

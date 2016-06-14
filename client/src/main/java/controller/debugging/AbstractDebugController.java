@@ -52,5 +52,8 @@ public abstract class AbstractDebugController {
         for (int i = 0; i < expandedRows.size(); i++) {
             tree.expandRow(expandedRows.get(i));
         }
+        if (context.getCurrentlyDebuggedNode() != null) {
+            tree.scrollPathToVisible(new TreePath(context.getCurrentlyDebuggedNode().getPath()));
+        }
     }
 }

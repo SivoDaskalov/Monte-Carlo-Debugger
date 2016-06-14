@@ -27,8 +27,11 @@ public class MarshalSimulationResponse {
 
     private static final Logger log = LoggerFactory.getLogger(MarshalSimulationResponse.class);
     private final int TREE_SIZE = 3;
+    private final int TREE_DEPTH = 3;
+    private final int RUNS = 100;
     private Marshaller marshaller;
-    private SimulationResponse response;
+    private SimulationResponse defaultResponse;
+    private SimulationResponse deepTreeResponse;
 
     @Before
     public void setUp() {
@@ -38,26 +41,32 @@ public class MarshalSimulationResponse {
         configuration.setTitle("Test simulation");
         configuration.setDescription(
                 "This configuration exists to test the marshaling and unmarshaling of requests");
-        configuration.setSimulationRuns(10000);
+        configuration.setSimulationRuns(RUNS);
 
-        Node formula = TestHelper.buildNodeTree(TREE_SIZE);
         StochasticVariableRegistry variableRegistry = TestHelper.makeVariableRegistry(TREE_SIZE);
 
-        ParallelSimulationManager simulationManager = new ParallelSimulationManager(formula, variableRegistry, 100, 10000);
-        simulationManager.run();
-        simulationManager.await();
+        Node defaultFormula = TestHelper.buildNodeTree(TREE_SIZE);
+        Node deepTreeFormula = TestHelper.buildDeepNodeTree(TREE_DEPTH, TREE_SIZE);
 
-        response = new SimulationResponse(configuration, variableRegistry, formula, simulationManager);
+        defaultResponse = doSimulate(configuration, defaultFormula, variableRegistry);
+        deepTreeResponse = doSimulate(configuration, deepTreeFormula, variableRegistry);
     }
 
     @Test
     public void testResponseMarshaling() {
-        doMarshal(response, "target/SimulationResponse.xml");
+        doMarshal(defaultResponse, "target/DefaultTreeResponse.xml");
+        doMarshal(deepTreeResponse, "target/DeepTreeResponse.xml");
+    }
+
+    protected SimulationResponse doSimulate(SimulationProperties configuration, Node root, StochasticVariableRegistry variables) {
+        ParallelSimulationManager simulationManager = new ParallelSimulationManager(root, variables, configuration.getSimulationRuns(), 10000);
+        simulationManager.run();
+        simulationManager.await();
+        return new SimulationResponse(configuration, variables, root, simulationManager);
     }
 
     protected void doMarshal(SimulationResponse response, String url) {
         try {
-            marshaller.marshal(response, System.out);
             marshaller.marshal(response, new File(url));
         } catch (JAXBException ex) {
             log.error("Marshalling error", ex);

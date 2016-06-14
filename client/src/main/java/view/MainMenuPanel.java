@@ -5,6 +5,7 @@ package view;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.event.ActionListener;
 import javax.swing.Box;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -19,7 +20,7 @@ import view.styles.Styles;
 public class MainMenuPanel extends JPanel {
 
     private static final Dimension preferredSize = new Dimension(800, 40);
-    private static final Dimension preferredFilenameSize = new Dimension(375, 30);
+    private static final Dimension preferredFilenameSize = new Dimension(770, 30);
     private static final int strut = 5;
 
     private final JTextField filename;
@@ -41,11 +42,13 @@ public class MainMenuPanel extends JPanel {
         simulate.setFont(Styles.labelFont);
         this.add(simulate);
         this.add(Box.createHorizontalStrut(strut));
+        simulate.setEnabled(false);
 
         save = new JButton("Save");
         save.setFont(Styles.labelFont);
         this.add(save);
         this.add(Box.createHorizontalStrut(strut));
+        save.setEnabled(false);
 
         JLabel label = new JLabel("Loaded configuration:");
         label.setFont(Styles.labelFont);
@@ -57,6 +60,22 @@ public class MainMenuPanel extends JPanel {
         filename.setFont(Styles.labelFont);
         filename.setPreferredSize(preferredFilenameSize);
         this.add(filename);
+    }
+
+    public void setFilename(String filename) {
+        this.filename.setText(filename);
+    }
+
+    public void setOpenButtonListener(ActionListener listener) {
+        open.addActionListener(listener);
+    }
+
+    public void setSimulateButtonListener(ActionListener listener) {
+        simulate.addActionListener(listener);
+    }
+
+    public void setSaveButtonListener(ActionListener listener) {
+        save.addActionListener(listener);
     }
 
 }

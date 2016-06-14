@@ -73,7 +73,6 @@ public class NodeStatisticsPanel extends JPanel {
                 PlotOrientation.VERTICAL, false, false, false);
         XYPlot plot = (XYPlot) valueChart.getPlot();
         plot.setBackgroundPaint(Styles.chartBackgroundColor);
-        plot.getDomainAxis().setRange(0, context.getRunCount());
         plot.getDomainAxis().setStandardTickUnits(NumberAxis.createIntegerTickUnits());
 
         ChartPanel chartPanel = new ChartPanel(valueChart);
@@ -122,6 +121,9 @@ public class NodeStatisticsPanel extends JPanel {
 
     public void update() {
         NodeStatistics statistics = context.getSelectedNodeStatistics();
+        if (statistics == null) {
+            return;
+        }
         minField.setText(String.format(Styles.valueFormat, statistics.getMin()));
         maxField.setText(String.format(Styles.valueFormat, statistics.getMax()));
         meanField.setText(String.format(Styles.valueFormat, statistics.getMean()));
@@ -141,6 +143,7 @@ public class NodeStatisticsPanel extends JPanel {
 
     private void updateRangeAxis() {
         XYPlot plot = (XYPlot) valueChart.getPlot();
+        plot.getDomainAxis().setRange(0, context.getRunCount());
         Range dataRange = plot.getDataRange(plot.getRangeAxis());
         if (dataRange.getLowerBound() == dataRange.getUpperBound()) {
             plot.getRangeAxis().setRange(

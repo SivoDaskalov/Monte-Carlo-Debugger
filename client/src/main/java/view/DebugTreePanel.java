@@ -84,6 +84,7 @@ public class DebugTreePanel extends JPanel {
 
     public final void setTreeModel(TreeModel model) {
         tree.setModel(model);
+        JTreeUtils.expandAllNodes(tree);
     }
 
     public void setTreeSelectionListener(TreeSelectionListener listener) {
