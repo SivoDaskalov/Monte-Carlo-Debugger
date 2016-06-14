@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package treeview;
+package jaxb;
 
 import java.io.File;
 import javax.xml.bind.JAXBContext;
