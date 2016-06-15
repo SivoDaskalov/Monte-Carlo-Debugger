@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package treeview;
+package demo;
 
 import jaxb.SimulationResponseUnmarshaler;
 import model.DebugContext;
