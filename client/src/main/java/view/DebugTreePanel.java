@@ -118,4 +118,8 @@ public class DebugTreePanel extends JPanel {
         }
     }
 
+    public void reset() {
+        resetButton.doClick();
+    }
+
 }

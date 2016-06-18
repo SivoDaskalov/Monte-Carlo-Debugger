@@ -7,11 +7,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.tree.DefaultTreeModel;
 import jaxb.SimulationUnmarshaller;
 import model.DebugContext;
-import simulation.SimulationConfiguration;
-import simulation.SimulationRequest;
 import simulation.SimulationResponse;
 import view.SimulationFrame;
 
@@ -33,21 +32,19 @@ public class OpenButtonListener implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (fileChooser.showDialog(frame, "Select simulation") == JFileChooser.APPROVE_OPTION) {
             File file = fileChooser.getSelectedFile();
-            SimulationConfiguration unboxed
+            SimulationResponse unboxed
                     = SimulationUnmarshaller
                     .getInstance()
                     .unmarshal(file.getPath());
             if (unboxed != null) {
                 frame.getMainMenuPanel().setFilename(file.getPath());
                 DebugContext context = frame.getContext();
-                if (SimulationResponse.class.isAssignableFrom(unboxed.getClass())) {
-                    context.setup((SimulationResponse) unboxed);
-                } else {
-                    context.setup((SimulationRequest) unboxed);
-                }
+                context.setup(unboxed);
                 frame.getRunSelectorPanel().updateRunList();
                 frame.getDebugTreePanel().setTreeModel(new DefaultTreeModel(context.getRoot()));
                 frame.getNodeStatisticsPanel().update();
+            } else {
+                JOptionPane.showMessageDialog(frame, "Selected file is not a simulation");
             }
         }
     }

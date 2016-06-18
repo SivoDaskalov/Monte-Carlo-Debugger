@@ -9,7 +9,6 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import simulation.SimulationConfiguration;
 import simulation.SimulationResponse;
 
 /**
@@ -30,18 +29,17 @@ public class SimulationUnmarshaller {
 
     public SimulationUnmarshaller() {
         try {
-            JAXBContext context = JAXBContext.newInstance(SimulationResponse.class/*, SimulationRequest.class*/);
+            JAXBContext context = JAXBContext.newInstance(SimulationResponse.class);
             unmarshaller = context.createUnmarshaller();
         } catch (JAXBException ex) {
-            log.error("JAXB context error", ex);
+            log.error("JAXB context creation error", ex);
         }
     }
 
-    public SimulationConfiguration unmarshal(String url) {
+    public SimulationResponse unmarshal(String url) {
         try {
-            return (SimulationConfiguration) unmarshaller.unmarshal(new File(url));
+            return (SimulationResponse) unmarshaller.unmarshal(new File(url));
         } catch (JAXBException ex) {
-            log.error("Marshalling error", ex);
             return null;
         }
     }

@@ -19,7 +19,7 @@ import view.styles.Styles;
  */
 public class MainMenuPanel extends JPanel {
 
-    private static final Dimension preferredSize = new Dimension(800, 40);
+    private static final Dimension preferredSize = new Dimension(1200, 40);
     private static final Dimension preferredFilenameSize = new Dimension(770, 30);
     private static final int strut = 5;
 

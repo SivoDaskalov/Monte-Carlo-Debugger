@@ -3,7 +3,6 @@
  */
 package model;
 
-import java.util.Collections;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
@@ -11,10 +10,7 @@ import java.util.Map;
 import javax.swing.tree.DefaultMutableTreeNode;
 import node.Node;
 import simulation.NodeValues;
-import simulation.SimulationProperties;
-import simulation.SimulationRequest;
 import simulation.SimulationResponse;
-import simulation.StochasticVariableRegistry;
 import tree.DebuggedNode;
 import tree.JTreeBuilder;
 
@@ -30,8 +26,7 @@ public class DebugContext {
     private NodeStatistics selectedNode;
     private DefaultMutableTreeNode currentlyDebuggedNode;
 
-    private SimulationProperties properties;
-    private StochasticVariableRegistry variables;
+    private SimulationResponse currentSimulation;
     private DefaultMutableTreeNode root;
 
     private final Map<String, NodeStatistics> statistics;
@@ -43,36 +38,19 @@ public class DebugContext {
         currentRun = 1;
     }
 
-    public DebugContext(SimulationRequest request) {
-        this();
-        setup(request);
-    }
-
     public DebugContext(SimulationResponse response) {
         this();
         setup(response);
     }
 
-    public final void setup(SimulationRequest request) {
-        properties = request.getProperties();
-        variables = request.getVariableRegistry();
-        setupTree(request.getFormula());
-        setupStatistics(Collections.EMPTY_LIST);
-    }
-
     public final void setup(SimulationResponse response) {
-        properties = response.getProperties();
-        variables = response.getVariableRegistry();
+        currentSimulation = response;
         setupTree(response.getFormula());
         setupStatistics(response.getValues());
     }
 
-    public SimulationProperties getProperties() {
-        return properties;
-    }
-
-    public StochasticVariableRegistry getVariables() {
-        return variables;
+    public SimulationResponse getCurrentSimulation() {
+        return currentSimulation;
     }
 
     public DefaultMutableTreeNode getRoot() {
@@ -133,7 +111,9 @@ public class DebugContext {
 
     private void setupStatistics(List<NodeValues> nodeValuesList) {
         statistics.clear();
+        selectedNode = null;
         if (nodeValuesList == null || nodeValuesList.isEmpty()) {
+            statistics.clear();
             runCount = 0;
             return;
         }

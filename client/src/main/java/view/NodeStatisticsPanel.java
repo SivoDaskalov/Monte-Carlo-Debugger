@@ -82,8 +82,8 @@ public class NodeStatisticsPanel extends JPanel {
         histogramPanel = new JPanel();
         histogramPanel.setPreferredSize(preferredChartSize);
         histogramPanel.setBackground(Styles.defaultPanelBackgroundColor);
-        recreateHistogramChartPanel();
         this.add(histogramPanel, BorderLayout.SOUTH);
+        update();
     }
 
     private JPanel packTitleAndFields(JPanel fieldPanel) {
@@ -122,8 +122,10 @@ public class NodeStatisticsPanel extends JPanel {
     public void update() {
         NodeStatistics statistics = context.getSelectedNodeStatistics();
         if (statistics == null) {
+            this.setVisible(false);
             return;
         }
+        this.setVisible(true);
         minField.setText(String.format(Styles.valueFormat, statistics.getMin()));
         maxField.setText(String.format(Styles.valueFormat, statistics.getMax()));
         meanField.setText(String.format(Styles.valueFormat, statistics.getMean()));

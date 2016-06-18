@@ -7,7 +7,6 @@ import javax.swing.JList;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import model.DebugContext;
-import tree.JTreeUtils;
 import view.DebugTreePanel;
 
 /**
@@ -36,8 +35,7 @@ public class RunSelectorListener implements ListSelectionListener {
         context.resetDebugging();
         if (panel != null) {
             panel.updateTitle(context.getCurrentRun());
-            panel.repaint();
-            JTreeUtils.expandAllNodes(panel.getTree());
+            panel.reset();
         }
     }
 
