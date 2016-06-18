@@ -64,8 +64,3 @@ public class SimulationManagerTestCase {
         return manager.getValueRegistry();
     }
 }
-
-// Before refactoring:
-// Parallel TreeSize = 31; Runs = 10000; ThreadLoad = 100000; Time = 225 ms
-// SingleThreaded Time = 198 ms
-// After refactoring: Parallel 24 ms; SingleThreaded 4 ms

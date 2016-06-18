@@ -23,9 +23,9 @@ import util.TestHelper;
  *
  * @author sdaskalov
  */
-public class MarshalSimulationResponse {
+public class MarshalSimulatedResponse {
 
-    private static final Logger log = LoggerFactory.getLogger(MarshalSimulationResponse.class);
+    private static final Logger log = LoggerFactory.getLogger(MarshalSimulatedResponse.class);
     private final int TREE_SIZE = 3;
     private final int TREE_DEPTH = 3;
     private final int RUNS = 100;
