@@ -41,8 +41,5 @@ public class SimulationServicePublisher {
         endpoint.stop();
         logger.info("Simulation service stopped");
     }
-    
-    public static void main(String[] args){
-        SimulationServicePublisher.getInstance().publish();
-    }
+
 }

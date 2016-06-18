@@ -1,9 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package demo;
-
-import simulation.service.SimulationServicePublisher;
+package simulation.service;
 
 /**
  *

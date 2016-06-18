@@ -27,6 +27,9 @@ public class SimulateButtonListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(!service.isConnected()){
+            service.reconnect();
+        }
         SimulationResponse currentSimulation = frame.getContext().getCurrentSimulation();
         if (currentSimulation != null && service.isConnected()) {
             SimulationResponse response = service.simulate(currentSimulation);

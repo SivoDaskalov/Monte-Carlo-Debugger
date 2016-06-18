@@ -28,6 +28,10 @@ public class SimulationServiceClient {
     }
 
     public SimulationServiceClient(String host, String port) {
+        setup(host, port);
+    }
+
+    private void setup(String host, String port) {
         try {
             URL url = new URL("http://" + host + ":" + port + "/SimulationService?wsdl");
             QName qname = new QName("http://service.simulation/", "SimulationServiceImplService");
@@ -42,6 +46,14 @@ public class SimulationServiceClient {
 
     public boolean isConnected() {
         return simulationService != null;
+    }
+
+    public void reconnect() {
+        try {
+            setup(defaultHost, defaultPort);
+        } catch (Exception ex) {
+            // Nothing meaningful to do here
+        }
     }
 
     public SimulationResponse simulate(SimulationRequest request) {
