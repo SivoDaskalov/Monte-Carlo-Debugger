@@ -9,6 +9,8 @@ import controller.debugging.StepIntoDebugController;
 import controller.debugging.StepOutDebugController;
 import controller.debugging.StepOverDebugController;
 import controller.mainmenu.OpenButtonListener;
+import controller.mainmenu.SaveButtonListener;
+import controller.mainmenu.SimulateButtonListener;
 import controller.runselector.RunSelectorListener;
 import model.DebugContext;
 import view.DebugTreePanel;
@@ -65,6 +67,8 @@ public class ViewFactory {
         SimulationFrame simulationFrame = new SimulationFrame(
                 title, context, mainMenu, runSelectorPanel, debugTreePanel, nodeStatisticsPanel);
         mainMenu.setOpenButtonListener(new OpenButtonListener(simulationFrame));
+        mainMenu.setSimulateButtonListener(new SimulateButtonListener(simulationFrame));
+        mainMenu.setSaveButtonListener(new SaveButtonListener(simulationFrame));
         return simulationFrame;
     }
 

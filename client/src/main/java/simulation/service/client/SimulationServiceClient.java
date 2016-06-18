@@ -3,7 +3,6 @@
  */
 package simulation.service.client;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
@@ -34,13 +33,30 @@ public class SimulationServiceClient {
             QName qname = new QName("http://service.simulation/", "SimulationServiceImplService");
             Service service = Service.create(url, qname);
             simulationService = service.getPort(SimulationService.class);
-        } catch (MalformedURLException ex) {
-            logger.error("Malformed URL", ex);
+        } catch (Exception ex) {
+            logger.info("Unable to connect to service");
+//            logger.error("Unable to connect to service", ex);
+            simulationService = null;
         }
+    }
+
+    public boolean isConnected() {
+        return simulationService != null;
     }
 
     public SimulationResponse simulate(SimulationRequest request) {
         if (simulationService != null) {
+            return simulationService.simulate(request);
+        }
+        return null;
+    }
+
+    public SimulationResponse simulate(SimulationResponse response) {
+        if (simulationService != null) {
+            SimulationRequest request = new SimulationRequest(
+                    response.getProperties(),
+                    response.getVariableRegistry(),
+                    response.getFormula());
             return simulationService.simulate(request);
         }
         return null;

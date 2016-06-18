@@ -10,7 +10,7 @@ import view.factory.ViewFactory;
  *
  * @author sdaskalov
  */
-public class ApplicationDemo {
+public class RunApplication {
 
     public static void main(String argv[]) {
         ViewFactory.getInstance().makeSimulationFrame("Monte Carlo simulation debugger", new DebugContext());

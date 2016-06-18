@@ -3,7 +3,7 @@
     <properties>
         <title>Test simulation</title>
         <description>This configuration exists to test the marshaling and unmarshaling of requests</description>
-        <simulationRuns>10000</simulationRuns>
+        <simulationRuns>1000</simulationRuns>
     </properties>
     <variables>
         <gaussian id="X0">

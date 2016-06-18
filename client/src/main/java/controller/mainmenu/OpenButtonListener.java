@@ -9,7 +9,7 @@ import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.tree.DefaultTreeModel;
-import jaxb.SimulationUnmarshaller;
+import jaxb.JaxbUtils;
 import model.DebugContext;
 import simulation.SimulationResponse;
 import view.SimulationFrame;
@@ -33,7 +33,7 @@ public class OpenButtonListener implements ActionListener {
         if (fileChooser.showDialog(frame, "Select simulation") == JFileChooser.APPROVE_OPTION) {
             File file = fileChooser.getSelectedFile();
             SimulationResponse unboxed
-                    = SimulationUnmarshaller
+                    = JaxbUtils
                     .getInstance()
                     .unmarshal(file.getPath());
             if (unboxed != null) {

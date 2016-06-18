@@ -4,6 +4,8 @@
 package view;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 import model.DebugContext;
 
@@ -43,6 +45,12 @@ public class SimulationFrame extends JFrame {
         this.setVisible(true);
         this.repaint();
         this.setResizable(false);
+        
+        // Center frame on screen
+        Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = (int) ((dimension.getWidth() - this.getWidth()) / 2);
+        int y = (int) ((dimension.getHeight() - this.getHeight()) / 2);
+        this.setLocation(x, y);
     }
 
     public MainMenuPanel getMainMenuPanel() {

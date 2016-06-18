@@ -42,13 +42,11 @@ public class MainMenuPanel extends JPanel {
         simulate.setFont(Styles.labelFont);
         this.add(simulate);
         this.add(Box.createHorizontalStrut(strut));
-        simulate.setEnabled(false);
 
         save = new JButton("Save");
         save.setFont(Styles.labelFont);
         this.add(save);
         this.add(Box.createHorizontalStrut(strut));
-        save.setEnabled(false);
 
         JLabel label = new JLabel("Loaded configuration:");
         label.setFont(Styles.labelFont);
