@@ -25,7 +25,7 @@ public class SimulationServiceClientTestCase {
     private static final Logger logger = LoggerFactory.getLogger(SimulationServiceClientTestCase.class);
     private SimulationServiceClient client;
     private SimulationRequest request;
-    private final int runs = 2000;
+    private final int runs = 20000;
 
     @Before
     public void setUp() {

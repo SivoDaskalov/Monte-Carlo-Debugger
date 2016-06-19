@@ -21,6 +21,11 @@ public class SimulationContextImpl implements SimulationContext {
         this.logger = logger;
     }
 
+    public SimulationContextImpl(SimulationContextImpl context) {
+        this.registry = context.getRegistry();
+        this.logger = context.getValueLogger();
+    }
+
     public void setRunNumber(int runNumber) {
         this.runNumber = runNumber;
     }
@@ -38,6 +43,10 @@ public class SimulationContextImpl implements SimulationContext {
     @Override
     public ValueLogger getValueLogger() {
         return logger;
+    }
+
+    public SampledVariableRegistry getRegistry() {
+        return registry;
     }
 
 }

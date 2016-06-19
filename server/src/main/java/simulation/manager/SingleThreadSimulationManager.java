@@ -37,10 +37,10 @@ public class SingleThreadSimulationManager extends AbstractSimulationManager {
                 context.setRunNumber(i);
                 root.getValue(context);
             }
+            progressLatch.countDown();
             if (completionListener != null) {
                 completionListener.notify(this);
             }
-            progressLatch.countDown();
         }
     }
 

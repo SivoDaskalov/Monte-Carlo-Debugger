@@ -184,40 +184,40 @@
     <values>
         <node id="0">
             <value>8694382.852782324</value>
-            <value>0.0</value>
-            <value>2723050.8230373566</value>
-            <value>4228766.85549498</value>
-            <value>4486955.2408729065</value>
-            <value>2175461.235547603</value>
-            <value>6287664.458821684</value>
-            <value>6722899.8835314885</value>
-            <value>4682378.398263799</value>
-            <value>9366371.418981992</value>
-            <value>3518288.972011908</value>
-            <value>6367925.103559395</value>
-            <value>1903768.921311333</value>
-            <value>9148763.297814758</value>
-            <value>6940813.077882354</value>
-            <value>6979174.84135174</value>
-            <value>5269049.906182451</value>
-            <value>9121806.852000905</value>
-            <value>2471793.787334891</value>
-            <value>1.0180376844809864E7</value>
-            <value>5354654.480329564</value>
-            <value>4031936.223293827</value>
-            <value>5099745.489743925</value>
-            <value>3616301.43202329</value>
-            <value>4641270.147298813</value>
-            <value>5803668.3769248035</value>
-            <value>2998869.1683167405</value>
-            <value>5686194.877753316</value>
-            <value>7993885.534153686</value>
-            <value>6011857.90950929</value>
-            <value>6803916.700921104</value>
-            <value>5874509.2148543075</value>
-            <value>4518908.726425055</value>
-            <value>2978087.5916468003</value>
-            <value>6908846.287594494</value>
+            <value>4812538.239454416</value>
+            <value>2579213.7212443375</value>
+            <value>4667943.987391619</value>
+            <value>7661233.376179213</value>
+            <value>5826001.003859391</value>
+            <value>6456493.633941817</value>
+            <value>1.0058471829404065E7</value>
+            <value>3506012.656865811</value>
+            <value>1.0708197822093718E7</value>
+            <value>1967773.2571137974</value>
+            <value>6414534.904208023</value>
+            <value>2360936.5126773026</value>
+            <value>1.0620929745247822E7</value>
+            <value>7985913.579766237</value>
+            <value>7345840.807753775</value>
+            <value>5320443.406153288</value>
+            <value>9374869.350254927</value>
+            <value>2460114.340851466</value>
+            <value>1.0508144965993222E7</value>
+            <value>4576127.628457041</value>
+            <value>3168977.6271211775</value>
+            <value>5419772.057436034</value>
+            <value>3953465.575945854</value>
+            <value>4493470.416564352</value>
+            <value>5761147.17474423</value>
+            <value>3003144.663731678</value>
+            <value>5754529.078626595</value>
+            <value>8259719.408674451</value>
+            <value>6069095.559084081</value>
+            <value>6807717.129845081</value>
+            <value>5756141.171503862</value>
+            <value>4497337.725070471</value>
+            <value>2964442.390954701</value>
+            <value>6863468.754939403</value>
             <value>2584980.0755421137</value>
             <value>5765842.9218140105</value>
             <value>7481205.386365155</value>
@@ -232,7 +232,7 @@
             <value>7798709.86551128</value>
             <value>5294197.203930311</value>
             <value>2448772.269668593</value>
-            <value>7365046.207980655</value>
+            <value>7783146.393357845</value>
             <value>4150450.7696716394</value>
             <value>7035337.33396639</value>
             <value>3290561.7621993273</value>
@@ -283,15 +283,15 @@
             <value>2681757.1053420743</value>
             <value>7291917.612086232</value>
             <value>9782568.625097021</value>
-            <value>6373997.690394991</value>
+            <value>6228898.59431348</value>
             <value>6337481.612479675</value>
             <value>4578997.345382669</value>
             <value>5634680.222386166</value>
-            <value>4258897.379987544</value>
-            <value>4485674.957113567</value>
+            <value>4240489.792983963</value>
+            <value>4486955.2408729065</value>
             <value>2175461.235547603</value>
             <value>4495736.41854262</value>
-            <value>4968569.016345212</value>
+            <value>3333806.572458562</value>
             <value>6893185.31322117</value>
             <value>8168768.685248334</value>
             <value>9306227.679255823</value>
@@ -327,38 +327,38 @@
             <value>2069819.5665171023</value>
             <value>7231358.824575182</value>
             <value>9168136.188220315</value>
-            <value>1353347.0788729843</value>
-            <value>4535896.821791254</value>
-            <value>9261350.562652888</value>
-            <value>5667691.5116084125</value>
-            <value>2792508.208296463</value>
-            <value>8832846.043934954</value>
-            <value>2039278.0682294215</value>
-            <value>9527566.82218195</value>
-            <value>8259912.132725451</value>
-            <value>7533027.90324893</value>
-            <value>5338873.675876843</value>
-            <value>6783526.753826036</value>
-            <value>3970817.087269721</value>
-            <value>4248259.168009061</value>
-            <value>8592273.607091656</value>
-            <value>9865366.74463044</value>
-            <value>6442861.698873992</value>
-            <value>4579156.1373957265</value>
-            <value>1.5482735475017551E7</value>
-            <value>7949253.293342527</value>
-            <value>6460060.814866484</value>
-            <value>6143864.497369032</value>
-            <value>7285894.483781621</value>
-            <value>4521105.576804644</value>
-            <value>3419874.4481956577</value>
-            <value>8766158.077652711</value>
-            <value>6988670.372279489</value>
-            <value>2378656.116434821</value>
-            <value>7023475.9039354045</value>
-            <value>0.0</value>
-            <value>5765842.9218140105</value>
-            <value>7477054.859493758</value>
+            <value>1101262.0189041612</value>
+            <value>4228856.705550304</value>
+            <value>9236303.408852171</value>
+            <value>5559041.340081809</value>
+            <value>2810277.2871741606</value>
+            <value>8886269.004660554</value>
+            <value>1425695.4243796766</value>
+            <value>8042190.408253299</value>
+            <value>7468668.42766237</value>
+            <value>5334860.776750019</value>
+            <value>7841491.839209899</value>
+            <value>4608802.496754636</value>
+            <value>3811521.602298934</value>
+            <value>5543957.704224956</value>
+            <value>9229581.746958563</value>
+            <value>9695448.260600634</value>
+            <value>6883164.025033688</value>
+            <value>4949783.645771142</value>
+            <value>1.6210106962640055E7</value>
+            <value>9464971.594026664</value>
+            <value>7441604.62831512</value>
+            <value>7796521.99252135</value>
+            <value>8109307.146035457</value>
+            <value>6222360.779946843</value>
+            <value>5818626.572031638</value>
+            <value>1.1229411428456524E7</value>
+            <value>7253783.331938941</value>
+            <value>1962880.7838646416</value>
+            <value>5406961.78855863</value>
+            <value>8330020.570273928</value>
+            <value>4866305.896078649</value>
+            <value>6840441.79772884</value>
             <value>5531648.43085961</value>
             <value>5270081.76705567</value>
             <value>6357118.682925369</value>
@@ -387,10 +387,10 @@
         <node id="1">
             <value>60614.12751944066</value>
             <value>47168.40084190501</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>22924.007072390774</value>
+            <value>47757.49114089774</value>
+            <value>40084.21019743038</value>
+            <value>47658.03127162466</value>
             <value>8837.747787820645</value>
             <value>4841.782348453674</value>
             <value>42846.74794610996</value>
@@ -538,7 +538,7 @@
             <value>16690.81492562911</value>
             <value>33220.49821830028</value>
             <value>32783.072617251724</value>
-            <value>0.0</value>
+            <value>6595.850258467092</value>
             <value>28731.396072143652</value>
             <value>12443.218213270771</value>
             <value>11620.083709603596</value>
@@ -556,11 +556,11 @@
             <value>1480.1782813083641</value>
             <value>21.628161722240463</value>
             <value>23616.592260711222</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>46979.220736742165</value>
+            <value>67513.5811496077</value>
+            <value>7512.18347025413</value>
+            <value>20387.56862385889</value>
+            <value>6304.203232852258</value>
             <value>8778.919434652391</value>
             <value>24257.09608094449</value>
             <value>39813.397614791575</value>
@@ -589,9 +589,9 @@
         <node id="2">
             <value>14.622938720398116</value>
             <value>18.028952480601088</value>
-            <value>0.0</value>
+            <value>9.936451868617816</value>
             <value>19.71753866472403</value>
-            <value>0.0</value>
+            <value>17.142480886913727</value>
             <value>19.74841667796853</value>
             <value>4.563158607468354</value>
             <value>1.4958765626889248</value>
@@ -690,7 +690,7 @@
             <value>14.784228161221984</value>
             <value>17.45815067015509</value>
             <value>18.07883481321538</value>
-            <value>9.936451868617816</value>
+            <value>5.380435315999003</value>
             <value>6.5463589857738835</value>
             <value>18.117036461934767</value>
             <value>13.037434275173217</value>
@@ -760,8 +760,8 @@
             <value>9.3067994832799</value>
             <value>14.982987901552844</value>
             <value>18.608253354123473</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>3.130362985085373</value>
+            <value>7.921388183073219</value>
             <value>1.9470155244907073</value>
             <value>3.065275727002934</value>
             <value>9.907657247986567</value>
@@ -791,10 +791,10 @@
         <node id="3">
             <value>31.01021254387163</value>
             <value>29.660698797736156</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>29.068558821667448</value>
+            <value>27.55520490079256</value>
+            <value>29.641884821439298</value>
+            <value>34.68142630968546</value>
             <value>29.38972571844896</value>
             <value>31.987317954632452</value>
             <value>31.334717543451163</value>
@@ -961,10 +961,10 @@
             <value>29.284189855025648</value>
             <value>29.31605618929145</value>
             <value>30.26468130768734</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>30.18795924307933</value>
+            <value>29.812050501913948</value>
+            <value>29.75634266000948</value>
+            <value>30.235906174276554</value>
             <value>32.89509386643172</value>
             <value>31.650775635033664</value>
             <value>28.67653539158639</value>
@@ -993,9 +993,9 @@
         <node id="4">
             <value>1.3132571903365797</value>
             <value>0.07363796620282838</value>
-            <value>0.0</value>
+            <value>0.06947871383619848</value>
             <value>1.4616947918594514</value>
-            <value>0.0</value>
+            <value>0.25790926213612114</value>
             <value>1.0797501525761621</value>
             <value>1.6433751072815508</value>
             <value>0.030271262999490137</value>
@@ -1164,8 +1164,8 @@
             <value>0.0208317304688526</value>
             <value>0.19443271449768515</value>
             <value>0.10731870262046436</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.4077464784518303</value>
+            <value>0.1868174496529602</value>
             <value>1.0716314080931626</value>
             <value>0.7583104577059178</value>
             <value>0.29756204716342893</value>
@@ -1195,10 +1195,10 @@
         <node id="5">
             <value>1.0049633682284758</value>
             <value>1.1068007364234487</value>
-            <value>0.0</value>
+            <value>1.2679116372865353</value>
             <value>1.506763964040296</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>1.1716397185127745</value>
+            <value>0.6637670667527178</value>
             <value>0.5360282995680217</value>
             <value>0.4711795519758219</value>
             <value>1.0104322974163398</value>
@@ -1366,9 +1366,9 @@
             <value>0.3172308817524379</value>
             <value>0.9055740757781543</value>
             <value>0.7503054464550732</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>2.0227224482211925</value>
+            <value>1.6620866145907522</value>
+            <value>0.47185659844683503</value>
             <value>1.1244747518792877</value>
             <value>0.7992146013881444</value>
             <value>0.8985677255517793</value>
@@ -1397,10 +1397,10 @@
         <node id="6">
             <value>21.72262961692147</value>
             <value>17.462356488318346</value>
-            <value>0.0</value>
+            <value>14.936844935547061</value>
             <value>7.25236084727049</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>17.13799030510829</value>
+            <value>36.98218801941297</value>
             <value>15.379499466946276</value>
             <value>27.447821003554505</value>
             <value>22.661529111465754</value>
@@ -1568,9 +1568,9 @@
             <value>16.92616214494451</value>
             <value>19.95871844047353</value>
             <value>19.894212823241787</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>16.817733080982773</value>
+            <value>17.176466575794205</value>
+            <value>19.40013669056622</value>
             <value>29.69759025614168</value>
             <value>25.50632589158308</value>
             <value>12.93490566017718</value>
@@ -1599,10 +1599,7 @@
         <node id="7">
             <value>100.0</value>
             <value>100.0</value>
-            <value>0.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
@@ -1770,9 +1767,12 @@
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
@@ -1801,10 +1801,10 @@
         <node id="10">
             <value>133.6701561488567</value>
             <value>88.20623394332846</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>79.36622063362181</value>
+            <value>87.89924765385035</value>
+            <value>78.88489313322673</value>
+            <value>69.58359554047486</value>
             <value>65.89925518975376</value>
             <value>101.18862110213325</value>
             <value>91.99857324010682</value>
@@ -1952,7 +1952,7 @@
             <value>107.9614091484749</value>
             <value>104.20057860683868</value>
             <value>116.06032996776713</value>
-            <value>0.0</value>
+            <value>86.13042460225098</value>
             <value>76.11291180083562</value>
             <value>95.70375931748111</value>
             <value>124.6254183149399</value>
@@ -1970,11 +1970,11 @@
             <value>97.35361801662194</value>
             <value>100.96962537588813</value>
             <value>86.55882035010877</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>103.60274795529386</value>
+            <value>120.18541838906533</value>
+            <value>80.49698945717725</value>
+            <value>86.49372248434541</value>
+            <value>107.08725886353709</value>
             <value>87.06435506289561</value>
             <value>77.35412487160484</value>
             <value>77.98730220867897</value>
@@ -2003,10 +2003,10 @@
         <node id="8">
             <value>11.561581040188955</value>
             <value>9.39181739299314</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>8.90877211705529</value>
+            <value>9.375459863593377</value>
+            <value>8.881716789744353</value>
+            <value>8.341678220866282</value>
             <value>8.117835622242776</value>
             <value>10.059255494425681</value>
             <value>9.591588671336298</value>
@@ -2154,7 +2154,7 @@
             <value>10.390447976313384</value>
             <value>10.207868465396617</value>
             <value>10.773129998647892</value>
-            <value>0.0</value>
+            <value>9.280647854662464</value>
             <value>8.724271419484587</value>
             <value>9.782829821553737</value>
             <value>11.16357551660488</value>
@@ -2173,10 +2173,10 @@
             <value>10.048364313453614</value>
             <value>9.303699283086743</value>
             <value>10.178543508542559</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>10.9629110362652</value>
+            <value>8.97201144990226</value>
+            <value>9.300200131413593</value>
+            <value>10.348297389596855</value>
             <value>9.330828208840607</value>
             <value>8.795119377905273</value>
             <value>8.831041966193965</value>
@@ -2205,10 +2205,6 @@
         <node id="9">
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
@@ -2356,7 +2352,6 @@
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
@@ -2375,10 +2370,15 @@
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
@@ -2406,17 +2406,17 @@
         </node>
         <node id="11">
             <value>329400.43805067346</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>117623.54427477592</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>392158.28737037926</value>
+            <value>409510.6966425932</value>
+            <value>293473.5585116802</value>
+            <value>32105.957561117557</value>
+            <value>9817.595342024459</value>
+            <value>295124.5975696637</value>
+            <value>350146.09241890657</value>
+            <value>63302.825422921334</value>
+            <value>385130.472097551</value>
             <value>324925.773464514</value>
-            <value>0.0</value>
+            <value>1595.3720438862301</value>
             <value>295175.0136740926</value>
             <value>393645.4335228138</value>
             <value>365502.8674330639</value>
@@ -2513,7 +2513,7 @@
             <value>144545.01889660765</value>
             <value>406035.34140558116</value>
             <value>281193.0607844089</value>
-            <value>0.0</value>
+            <value>112928.06260044602</value>
             <value>212261.3539803477</value>
             <value>355786.2464663103</value>
             <value>245375.621948357</value>
@@ -2549,7 +2549,7 @@
             <value>322454.4796490955</value>
             <value>326002.6500324791</value>
             <value>17115.49820968111</value>
-            <value>291553.52758854587</value>
+            <value>41774.480273799316</value>
             <value>20857.165542867588</value>
             <value>38410.736437368236</value>
             <value>338166.9275441109</value>
@@ -2558,29 +2558,29 @@
             <value>63298.58957538715</value>
             <value>7517.593851895978</value>
             <value>396249.2373508371</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>407966.837665205</value>
+            <value>98447.16693801395</value>
             <value>149704.80541832544</value>
             <value>128350.47736229254</value>
             <value>224414.5557539319</value>
             <value>340708.00503885536</value>
             <value>387654.2459416919</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>3284.87765082526</value>
+            <value>414728.72943637765</value>
+            <value>40340.700149123455</value>
+            <value>149066.79400132888</value>
+            <value>170783.59045317405</value>
+            <value>102649.30839761587</value>
+            <value>243964.86477418378</value>
+            <value>278941.81714604975</value>
             <value>411382.66204948386</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>391857.3224520865</value>
+            <value>329976.00992820173</value>
+            <value>128981.30924550362</value>
+            <value>422081.91824437684</value>
+            <value>96150.30221480249</value>
+            <value>17869.447269974607</value>
+            <value>194144.23509979635</value>
             <value>175494.7192765278</value>
             <value>28136.371637616576</value>
             <value>18505.65224698625</value>
@@ -2609,10 +2609,10 @@
         <node id="12">
             <value>29.224378411513484</value>
             <value>36.748560554220404</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>36.74428475963463</value>
+            <value>27.182286551266387</value>
+            <value>3.1355109801021985</value>
+            <value>0.9925424174167352</value>
             <value>27.970067739012805</value>
             <value>32.19747857322139</value>
             <value>6.049284085366962</value>
@@ -2760,7 +2760,7 @@
             <value>5.766941405029411</value>
             <value>0.6958403638063437</value>
             <value>35.15655643453864</value>
-            <value>0.0</value>
+            <value>38.483744442447495</value>
             <value>9.642073222632582</value>
             <value>14.111793782776871</value>
             <value>11.400156506270394</value>
@@ -2768,21 +2768,21 @@
             <value>30.924784967619615</value>
             <value>39.220449058702016</value>
             <value>0.33280967992718846</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>39.66489173685051</value>
+            <value>4.074236193923473</value>
+            <value>13.812068726546588</value>
+            <value>15.23954153874663</value>
             <value>9.642050728507176</value>
             <value>20.988499347425652</value>
             <value>25.60973811866797</value>
             <value>39.98307070895961</value>
             <value>38.279440405813304</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>31.879906679481994</value>
+            <value>12.57774235571745</value>
+            <value>38.34002217938</value>
+            <value>9.06097096434786</value>
+            <value>1.683278461597899</value>
+            <value>18.341990741435232</value>
             <value>16.917505829983416</value>
             <value>2.6930635983349083</value>
             <value>1.6955071172142722</value>
@@ -2810,12 +2810,12 @@
         </node>
         <node id="13">
             <value>27.793987911427486</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>26.050861853710444</value>
+            <value>27.86528681537132</value>
+            <value>26.540277403131313</value>
+            <value>27.046107450269467</value>
+            <value>27.037765267466433</value>
+            <value>26.196411564658963</value>
             <value>27.16371501751361</value>
             <value>26.205952085292203</value>
             <value>26.88740504992457</value>
@@ -2962,29 +2962,29 @@
             <value>25.716200484577282</value>
             <value>25.87460058814094</value>
             <value>27.352419216340884</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>26.38252011288379</value>
+            <value>26.032254602673923</value>
             <value>26.057879740908493</value>
             <value>29.2388170967089</value>
             <value>25.770082620694183</value>
             <value>25.717900883936583</value>
             <value>26.13525324488947</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>25.796451000902643</value>
+            <value>26.748744588633645</value>
+            <value>25.442040150926257</value>
+            <value>26.993826953324128</value>
+            <value>27.265845610595225</value>
+            <value>27.344355476754973</value>
+            <value>27.639507123702955</value>
+            <value>26.590304269063246</value>
             <value>25.928857452776818</value>
             <value>25.96797832678988</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>26.917304141402695</value>
+            <value>26.760275734474313</value>
+            <value>28.127387202588693</value>
+            <value>26.741677247759245</value>
+            <value>25.844453139550364</value>
+            <value>25.70330049256207</value>
             <value>26.102003480433595</value>
             <value>27.44526757270765</value>
             <value>26.93561737500405</value>
@@ -3013,10 +3013,10 @@
         <node id="14">
             <value>0.6561292114687354</value>
             <value>0.43330430104184314</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.7525666229055777</value>
+            <value>0.06108217399558134</value>
+            <value>0.20621957979760067</value>
+            <value>0.5681819462312008</value>
             <value>0.3906837594149927</value>
             <value>1.1263703012872002</value>
             <value>0.007662067267712292</value>
@@ -3164,7 +3164,7 @@
             <value>0.09872823025762008</value>
             <value>0.09652717979199109</value>
             <value>0.033457364977661386</value>
-            <value>0.0</value>
+            <value>0.21448227594508146</value>
             <value>0.5484556735894911</value>
             <value>0.18456980092379544</value>
             <value>0.13514121583345806</value>
@@ -3172,21 +3172,21 @@
             <value>0.7257797934382532</value>
             <value>0.006821130851513353</value>
             <value>0.3961461978032175</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.29162916213896783</value>
+            <value>0.19154416187092432</value>
+            <value>0.6284618386122907</value>
+            <value>1.5637246512207457</value>
             <value>0.5353345525936791</value>
             <value>0.215961602662063</value>
             <value>0.7174495766379503</value>
             <value>0.5619724404263793</value>
             <value>1.777977691193752</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.5798904116375087</value>
+            <value>0.3074874267143211</value>
+            <value>0.47830198424235904</value>
+            <value>1.0195551874881648</value>
+            <value>0.3400277221135908</value>
+            <value>0.20635825005767083</value>
             <value>0.5488758461166541</value>
             <value>0.39191391783998014</value>
             <value>0.536908903703886</value>
@@ -3214,11 +3214,11 @@
         </node>
         <node id="15">
             <value>2.4903464832691156</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>1.3420559383937418</value>
+            <value>1.170158289952984</value>
+            <value>2.8015877301862115</value>
+            <value>0.6684823943751832</value>
+            <value>1.5622497231542862</value>
             <value>0.5659972965434751</value>
             <value>1.4304045051517258</value>
             <value>0.8756706376445366</value>
@@ -3366,29 +3366,29 @@
             <value>0.9275274533599092</value>
             <value>1.6770182603298929</value>
             <value>3.060611302684482</value>
-            <value>0.0</value>
+            <value>2.4458946313834984</value>
             <value>0.37682923222123493</value>
             <value>0.36958645114667465</value>
             <value>0.7243403656906499</value>
             <value>0.6679105162606004</value>
             <value>0.03608738988673071</value>
             <value>1.1176571369180819</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.6048768554594098</value>
+            <value>1.6660702691447646</value>
+            <value>0.7544081607544983</value>
+            <value>0.6567755990476591</value>
+            <value>0.6729761226329777</value>
             <value>1.358117136639729</value>
             <value>1.7680115709654245</value>
             <value>1.0808278651897476</value>
             <value>1.4592480271726052</value>
             <value>0.21766709100568932</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>1.5316777712603866</value>
+            <value>0.425088223527899</value>
+            <value>0.37075436592335353</value>
+            <value>0.24467085864155785</value>
+            <value>1.1130395449638069</value>
+            <value>1.3601415893688098</value>
             <value>1.2366691241683356</value>
             <value>1.718627246430498</value>
             <value>0.544927468869876</value>
@@ -3416,11 +3416,11 @@
         </node>
         <node id="16">
             <value>8.029475950972099</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>2.4280871754061932</value>
+            <value>9.538422348626726</value>
+            <value>3.298439708343459</value>
+            <value>7.309727826905082</value>
+            <value>6.0206294004802405</value>
             <value>3.8289652026773795</value>
             <value>6.09808526361551</value>
             <value>3.9404756362565694</value>
@@ -3568,29 +3568,29 @@
             <value>1.838546254691601</value>
             <value>1.7248569124418676</value>
             <value>6.315608197701395</value>
-            <value>0.0</value>
+            <value>2.869703544206579</value>
             <value>3.203733504884962</value>
             <value>3.677362711563501</value>
             <value>16.095786805311494</value>
             <value>1.131833845707188</value>
             <value>2.109736352421348</value>
             <value>3.41653471178828</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>2.18478095034794</value>
+            <value>5.037278923250853</value>
+            <value>0.8222082810796028</value>
+            <value>6.69007037563656</value>
+            <value>6.826681668527174</value>
             <value>7.48397021778649</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>8.574055321184339</value>
+            <value>4.562939634425285</value>
             <value>1.6942093435082923</value>
             <value>1.8762685249600712</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>5.557648382712892</value>
+            <value>6.308527287655029</value>
+            <value>11.660492460189053</value>
+            <value>5.702482944907259</value>
+            <value>1.92474529112406</value>
+            <value>1.246702130821802</value>
             <value>2.622468951449391</value>
             <value>7.670529126560116</value>
             <value>6.660633127442433</value>
@@ -3618,12 +3618,6 @@
         </node>
         <node id="17">
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
@@ -3770,29 +3764,35 @@
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>100.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
@@ -3820,17 +3820,17 @@
         </node>
         <node id="20">
             <value>405.53470410156683</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>409.63680393071917</value>
+            <value>399.95574054139036</value>
+            <value>406.7968055039452</value>
+            <value>378.5929585413413</value>
+            <value>365.83500468957425</value>
             <value>402.7820285474991</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>400.3485461113423</value>
+            <value>399.3182614697895</value>
+            <value>387.3058141799429</value>
             <value>405.228910271078</value>
-            <value>0.0</value>
+            <value>422.5605945484053</value>
             <value>391.2625256589236</value>
             <value>388.84875483576116</value>
             <value>431.8572314132325</value>
@@ -3927,7 +3927,7 @@
             <value>432.6465097760081</value>
             <value>408.3425574678779</value>
             <value>391.669161799151</value>
-            <value>0.0</value>
+            <value>386.70314191425746</value>
             <value>378.741794717467</value>
             <value>395.6244514591836</value>
             <value>390.1251813487668</value>
@@ -3972,29 +3972,29 @@
             <value>426.816982848074</value>
             <value>417.53759631218094</value>
             <value>412.0656051230318</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>401.819734365716</value>
+            <value>392.2121240083452</value>
             <value>407.1125066019626</value>
             <value>385.0586431254905</value>
             <value>397.4157270053758</value>
             <value>428.3907954409062</value>
             <value>378.18584573597536</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>382.61614154361587</value>
+            <value>390.88989551671926</value>
+            <value>389.17532368373867</value>
+            <value>399.81374552908414</value>
+            <value>411.01272358223355</value>
+            <value>389.33094539960155</value>
+            <value>420.54802944963427</value>
+            <value>409.6237992883787</value>
             <value>396.8135184318825</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>394.2069223205734</value>
+            <value>384.53313054963104</value>
+            <value>383.20706083417866</value>
+            <value>391.3947501611273</value>
+            <value>396.81426124220786</value>
+            <value>410.759679002687</value>
+            <value>411.8026488091131</value>
             <value>397.423802947434</value>
             <value>380.67469883644713</value>
             <value>405.2078454848164</value>
@@ -4022,15 +4022,15 @@
         </node>
         <node id="18">
             <value>20.1378922457532</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>20.239486256590585</value>
+            <value>19.998893482925258</value>
+            <value>20.169204384505235</value>
+            <value>19.45746536785666</value>
+            <value>19.126813762087355</value>
             <value>20.069430199871125</value>
             <value>20.008711755416495</value>
             <value>19.98294926855867</value>
-            <value>0.0</value>
+            <value>19.680086742185434</value>
             <value>20.13029831550139</value>
             <value>20.556278713531913</value>
             <value>19.780357066011817</value>
@@ -4129,7 +4129,7 @@
             <value>20.800156484411556</value>
             <value>20.207487658486343</value>
             <value>19.79063318338125</value>
-            <value>0.0</value>
+            <value>19.664769053163514</value>
             <value>19.461289646821122</value>
             <value>19.89031049177422</value>
             <value>19.75158680584339</value>
@@ -4174,29 +4174,29 @@
             <value>20.65954943477892</value>
             <value>20.433736719263585</value>
             <value>20.299399132068707</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>20.045441735360086</value>
+            <value>19.804346088885268</value>
             <value>20.177029181769118</value>
             <value>19.62291117865773</value>
             <value>19.9352884856321</value>
             <value>20.697603615899745</value>
             <value>19.447000944515207</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>19.56057620684053</value>
+            <value>19.770935625728978</value>
+            <value>19.72752705444194</value>
+            <value>19.995343096058246</value>
+            <value>20.2734487342986</value>
+            <value>19.731470938569217</value>
+            <value>20.507267722679057</value>
+            <value>20.23916498495871</value>
             <value>19.920178674697738</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>19.854644855060325</value>
+            <value>19.609516326254226</value>
+            <value>19.575675233160634</value>
+            <value>19.78369910206702</value>
+            <value>19.92019731935926</value>
+            <value>20.267206985736514</value>
+            <value>20.292921150221648</value>
             <value>19.93549103853311</value>
             <value>19.510886674788697</value>
             <value>20.1297750977207</value>
@@ -4224,15 +4224,9 @@
         </node>
         <node id="19">
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
@@ -4331,7 +4325,6 @@
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
@@ -4376,29 +4369,36 @@
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
@@ -4426,27 +4426,27 @@
         </node>
         <node id="21">
             <value>1048310.8932423445</value>
-            <value>0.0</value>
-            <value>1329225.8419309615</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>795154.3877619368</value>
+            <value>1097755.627248973</value>
+            <value>173192.63718309725</value>
+            <value>531754.0523405708</value>
+            <value>935212.1667958423</value>
             <value>737646.3558216303</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>333915.1921962022</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>460889.5579452827</value>
-            <value>243843.95257466906</value>
-            <value>252053.1653212134</value>
+            <value>1258741.0228385935</value>
+            <value>25749.332802457713</value>
+            <value>1310215.1971541115</value>
+            <value>773729.26663881</value>
+            <value>791741.5208495778</value>
+            <value>659420.6630745105</value>
+            <value>1399607.692601321</value>
+            <value>945594.2379537012</value>
             <value>774687.2938981433</value>
             <value>340552.8370864783</value>
             <value>970279.8497706067</value>
             <value>470916.59365007747</value>
             <value>679282.1130619702</value>
-            <value>1423561.8290605103</value>
-            <value>1051692.71609191</value>
+            <value>566151.607877803</value>
+            <value>168608.99377629746</value>
             <value>377305.6995736405</value>
             <value>448695.59367905883</value>
             <value>987123.6116463613</value>
@@ -4474,7 +4474,7 @@
             <value>327017.8307073078</value>
             <value>870844.1936833895</value>
             <value>274507.8002245195</value>
-            <value>634844.0384428538</value>
+            <value>971618.0085509404</value>
             <value>762978.8605751653</value>
             <value>196434.2685188696</value>
             <value>1120239.9887922006</value>
@@ -4533,7 +4533,7 @@
             <value>740770.6410402515</value>
             <value>1166841.4439069377</value>
             <value>221897.23910686286</value>
-            <value>0.0</value>
+            <value>355509.89912773215</value>
             <value>641676.3008856853</value>
             <value>1148240.8066780611</value>
             <value>514368.2683921203</value>
@@ -4575,32 +4575,32 @@
             <value>239768.5538993326</value>
             <value>436845.5544951823</value>
             <value>460889.5579452827</value>
-            <value>580584.080501218</value>
-            <value>1375406.2988286398</value>
-            <value>918372.8191568577</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>470916.59365007747</value>
-            <value>0.0</value>
-            <value>563915.4676823576</value>
-            <value>165223.27899770875</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>235625.199559322</value>
+            <value>245683.90473722224</value>
+            <value>90394.32544727887</value>
+            <value>507861.4737081087</value>
+            <value>931646.4591975545</value>
+            <value>430089.26287888695</value>
+            <value>322119.1247555652</value>
+            <value>1442598.3962587912</value>
+            <value>1153953.770752485</value>
+            <value>18599.534806268082</value>
+            <value>760038.8067629591</value>
+            <value>619505.4561056537</value>
+            <value>455360.1003660753</value>
+            <value>965852.697039691</value>
+            <value>1358865.4031559331</value>
+            <value>881600.2160074745</value>
+            <value>488439.7515251728</value>
+            <value>1083514.7647666542</value>
+            <value>967030.1352613962</value>
+            <value>1354145.010504959</value>
+            <value>1100109.4428312774</value>
+            <value>636456.2042522639</value>
+            <value>859225.5712728044</value>
+            <value>1211230.467249766</value>
+            <value>644851.167875669</value>
+            <value>460829.6140851095</value>
             <value>941542.9174552739</value>
             <value>806186.5615317187</value>
             <value>911740.140740688</value>
@@ -4628,17 +4628,17 @@
         </node>
         <node id="22">
             <value>43.847317429934826</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>34.77751243877505</value>
+            <value>46.680737224298895</value>
+            <value>6.89982551401364</value>
+            <value>20.277991568992707</value>
+            <value>40.74095790329237</value>
             <value>32.53322634648116</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>53.69335424184064</value>
+            <value>0.9124390472344612</value>
+            <value>55.9749070985895</value>
+            <value>31.163681311896244</value>
+            <value>33.96833624008597</value>
             <value>26.490744381693325</value>
             <value>59.38374703604517</value>
             <value>41.11166513201099</value>
@@ -4735,7 +4735,7 @@
             <value>29.773563196084247</value>
             <value>50.33003863332711</value>
             <value>8.735823485180923</value>
-            <value>0.0</value>
+            <value>15.205050864476062</value>
             <value>27.445336450737013</value>
             <value>50.40888244451823</value>
             <value>22.511852811831805</value>
@@ -4780,29 +4780,29 @@
             <value>10.751047334992133</value>
             <value>10.533770588392288</value>
             <value>3.883503067598031</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>20.929019281269483</value>
+            <value>39.96595222178709</value>
+            <value>18.520266424637537</value>
+            <value>14.210164665755718</value>
             <value>55.36714957783714</value>
             <value>45.94771557140428</value>
             <value>0.812977666483774</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>32.8316642968945</value>
+            <value>26.515379698253877</value>
+            <value>19.094839099269223</value>
+            <value>42.92832111382037</value>
+            <value>57.37023297193661</value>
+            <value>39.4332548756383</value>
+            <value>21.044445934608945</value>
+            <value>45.711637297201776</value>
+            <value>40.50028828977593</value>
+            <value>58.28675509117043</value>
+            <value>41.1867061627619</value>
+            <value>27.56073055529352</value>
+            <value>36.948275235480246</value>
+            <value>52.191333651410005</value>
+            <value>29.604665750601445</value>
+            <value>20.28900656394916</value>
             <value>39.982780662916674</value>
             <value>32.60072025027503</value>
             <value>39.497911585895515</value>
@@ -4830,26 +4830,26 @@
         </node>
         <node id="23">
             <value>26.475011221250547</value>
-            <value>0.0</value>
-            <value>25.431130022222185</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>25.564862053026882</value>
+            <value>26.819975899953864</value>
+            <value>27.469689212791465</value>
+            <value>29.0676043376422</value>
+            <value>26.016361301266798</value>
             <value>25.97525523928895</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>25.150824069134426</value>
-            <value>26.31838077019106</value>
+            <value>27.308769247944007</value>
+            <value>31.728743434446145</value>
+            <value>26.489408090253416</value>
+            <value>27.59860580406383</value>
+            <value>25.50359512874225</value>
+            <value>27.064946214186087</value>
+            <value>26.13543465574866</value>
+            <value>25.298257914833357</value>
             <value>25.772687035955297</value>
             <value>29.271588969789782</value>
             <value>26.05816469195817</value>
             <value>25.707852739791345</value>
             <value>25.681654351467433</value>
-            <value>28.706428713798214</value>
+            <value>26.39217277434302</value>
             <value>25.917033529694773</value>
             <value>25.539083295694343</value>
             <value>26.660862628420478</value>
@@ -4937,7 +4937,7 @@
             <value>26.563725210984803</value>
             <value>26.311633639052417</value>
             <value>28.078675064500896</value>
-            <value>0.0</value>
+            <value>26.242968707897056</value>
             <value>27.080793909155545</value>
             <value>25.543124442625174</value>
             <value>25.727723332225686</value>
@@ -4980,31 +4980,31 @@
             <value>25.661175429647987</value>
             <value>25.569025259453877</value>
             <value>25.150824069134426</value>
-            <value>26.13543465574866</value>
-            <value>25.569762808745615</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>26.39217277434302</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>26.31838077019106</value>
+            <value>26.64343778378129</value>
+            <value>25.464245320802917</value>
+            <value>25.895617784843434</value>
+            <value>25.877052777514038</value>
+            <value>25.947723933496714</value>
+            <value>28.706428713798214</value>
+            <value>28.15128492152013</value>
+            <value>26.53257969625311</value>
+            <value>26.221711540815033</value>
+            <value>25.703411730058942</value>
+            <value>25.99684453848304</value>
+            <value>26.28351155589006</value>
+            <value>25.419158697629943</value>
+            <value>25.850260488699647</value>
+            <value>25.708984757466485</value>
+            <value>25.856078141852688</value>
+            <value>26.05647379979039</value>
+            <value>26.058195403371975</value>
+            <value>28.81699201769927</value>
+            <value>25.735645313286124</value>
+            <value>25.462405992366342</value>
+            <value>26.406874272543693</value>
+            <value>25.42645491285666</value>
+            <value>25.347369335228816</value>
             <value>25.471551566558087</value>
             <value>25.830135386271646</value>
             <value>25.419981918601863</value>
@@ -5032,18 +5032,18 @@
         </node>
         <node id="24">
             <value>0.436643945892524</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.48476637311589227</value>
+            <value>0.49002858117724024</value>
+            <value>0.2979786355264162</value>
+            <value>0.8837681504855618</value>
+            <value>0.16438722595557148</value>
             <value>0.2986903445665144</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.2892114914640372</value>
+            <value>0.2252950575276276</value>
+            <value>0.780254429530753</value>
+            <value>0.1566344098661662</value>
+            <value>0.03382091474413195</value>
+            <value>0.213961359743728</value>
             <value>0.1553093560970951</value>
             <value>0.3693378939421574</value>
             <value>0.08236269482388511</value>
@@ -5139,7 +5139,7 @@
             <value>0.5037726047431678</value>
             <value>0.36555598342190754</value>
             <value>0.010042392183138982</value>
-            <value>0.0</value>
+            <value>0.5671711686374893</value>
             <value>0.3977316110413068</value>
             <value>0.03162995071490562</value>
             <value>0.03605749514246538</value>
@@ -5184,29 +5184,29 @@
             <value>0.01943827737441781</value>
             <value>0.04336156601056199</value>
             <value>0.17836485016419867</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.2279205616202787</value>
+            <value>0.37818356281337606</value>
+            <value>1.0998858134571892</value>
+            <value>0.7861152318573902</value>
             <value>0.31418705313050543</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.5224943653851222</value>
+            <value>0.7606505309405026</value>
+            <value>0.05856842842550065</value>
+            <value>0.6696499593976243</value>
+            <value>0.27432550575342407</value>
+            <value>0.8413932998132712</value>
+            <value>0.19508340575841795</value>
+            <value>0.4020218001564115</value>
+            <value>0.2051743244230634</value>
+            <value>0.6030375111019611</value>
+            <value>0.5553478868798621</value>
+            <value>0.18205667824410798</value>
+            <value>0.28395313743869904</value>
+            <value>0.20060813471566616</value>
+            <value>0.5629000369145093</value>
+            <value>0.0419284975189543</value>
+            <value>0.8168701433604498</value>
+            <value>0.10016524540727934</value>
             <value>0.12578749419636417</value>
             <value>0.699282455031617</value>
             <value>0.23279398053239664</value>
@@ -5234,18 +5234,18 @@
         </node>
         <node id="25">
             <value>1.7813813884654284</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.1594304798900039</value>
+            <value>0.33823464660931163</value>
+            <value>0.588920632292237</value>
+            <value>0.9709160842803258</value>
+            <value>1.3572589683570084</value>
             <value>0.06309807727294141</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>2.7763528158904256</value>
+            <value>0.31674544958988776</value>
+            <value>0.011959601177834308</value>
+            <value>1.451866705365599</value>
+            <value>0.6353249378982743</value>
+            <value>3.860915113888949</value>
             <value>0.06588667730483456</value>
             <value>0.20592761904258014</value>
             <value>0.6478638056362785</value>
@@ -5341,7 +5341,7 @@
             <value>2.3452590344602484</value>
             <value>0.6327445470211347</value>
             <value>0.29102009466185536</value>
-            <value>0.0</value>
+            <value>1.4612467460871275</value>
             <value>0.09850875180391037</value>
             <value>0.025862278323976425</value>
             <value>0.9819533937784454</value>
@@ -5385,30 +5385,30 @@
             <value>0.35164529324969906</value>
             <value>0.09020039730565975</value>
             <value>2.0083195353275154</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>4.69160056296325</value>
+            <value>0.5359744732498904</value>
+            <value>0.24686392001984303</value>
+            <value>0.14669997539296</value>
+            <value>1.303195831079796</value>
             <value>0.12008549850886714</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>2.0473664736426933</value>
+            <value>0.332166824898849</value>
+            <value>2.0945799846888398</value>
+            <value>1.6446732592724629</value>
+            <value>0.4890505462155644</value>
+            <value>1.540797973367574</value>
+            <value>0.41736799800341184</value>
+            <value>0.11988206718375018</value>
+            <value>0.6642466400152798</value>
+            <value>0.0541583815335682</value>
+            <value>2.8081425001417513</value>
+            <value>0.8491836591435532</value>
+            <value>0.9559324465472876</value>
+            <value>0.21514259413057601</value>
+            <value>0.4155995618676004</value>
+            <value>0.6978757931112434</value>
+            <value>0.05322108253314282</value>
+            <value>0.1303614175407913</value>
             <value>1.0771517119044367</value>
             <value>0.33382717476454377</value>
             <value>0.0978848199276529</value>
@@ -5436,20 +5436,20 @@
         </node>
         <node id="26">
             <value>3.682019550644235</value>
-            <value>0.0</value>
-            <value>1.1838367053844951</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>1.6152513591016378</value>
+            <value>6.451640372028909</value>
+            <value>8.991857583347212</value>
+            <value>14.415733115802913</value>
+            <value>2.543799010754616</value>
             <value>3.539232535316339</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>3.2218419794261597</value>
+            <value>6.169512684421564</value>
+            <value>26.37293323066706</value>
+            <value>5.165418330305072</value>
+            <value>8.785922101023557</value>
+            <value>1.3452346623266038</value>
+            <value>4.184908383111676</value>
+            <value>4.32054258959272</value>
+            <value>0.6177661463486933</value>
             <value>2.3605216433610257</value>
             <value>17.036789575899853</value>
             <value>0.5930226539735098</value>
@@ -5543,7 +5543,7 @@
             <value>3.405869204735791</value>
             <value>4.24823402576663</value>
             <value>12.013637771158587</value>
-            <value>0.0</value>
+            <value>2.943456916863607</value>
             <value>7.8269352737769715</value>
             <value>2.1150055414618163</value>
             <value>1.892882439981832</value>
@@ -5586,31 +5586,31 @@
             <value>1.7240643798391901</value>
             <value>1.8941600886570842</value>
             <value>0.4936576018576313</value>
-            <value>4.32054258959272</value>
+            <value>3.2218419794261597</value>
             <value>1.7037857219977182</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>1.0930862483414987</value>
+            <value>2.957423656540523</value>
+            <value>2.261625321206</value>
+            <value>1.7015846710496725</value>
             <value>14.391442303553488</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>10.035278847052712</value>
+            <value>5.037501429173086</value>
+            <value>2.733697750145793</value>
+            <value>0.4993237015656762</value>
+            <value>3.2240021019631615</value>
+            <value>2.7518549503793843</value>
+            <value>1.0641833867579402</value>
+            <value>2.879138087458419</value>
+            <value>1.9665180654275956</value>
+            <value>2.7671166747752203</value>
+            <value>0.862404812139936</value>
+            <value>3.2015412761002398</value>
+            <value>14.028082486811103</value>
+            <value>2.526830524298248</value>
+            <value>0.8711243706832553</value>
+            <value>4.887692799544571</value>
+            <value>0.8357284255330472</value>
+            <value>1.1589506779671968</value>
             <value>0.6832670601315507</value>
             <value>2.287431915290419</value>
             <value>1.349248873947401</value>
@@ -5638,19 +5638,8 @@
         </node>
         <node id="27">
             <value>100.0</value>
-            <value>0.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
@@ -5745,7 +5734,6 @@
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
-            <value>0.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
@@ -5790,29 +5778,41 @@
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
@@ -5840,18 +5840,18 @@
         </node>
         <node id="30">
             <value>903.0481709971665</value>
-            <value>0.0</value>
+            <value>894.3540778700881</value>
             <value>876.8182540000192</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>913.7714211510639</value>
+            <value>902.1455890689178</value>
+            <value>882.3326638919752</value>
             <value>872.893466229869</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>912.1646687307667</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>928.253755207257</value>
+            <value>858.4474662488889</value>
+            <value>889.4248211934088</value>
+            <value>883.6433165497202</value>
+            <value>899.6076225563708</value>
+            <value>913.9190708943602</value>
+            <value>919.7318397042029</value>
             <value>901.79743578193</value>
             <value>909.1784517295091</value>
             <value>868.8648077610464</value>
@@ -5888,7 +5888,7 @@
             <value>916.0043901549885</value>
             <value>923.2667199249518</value>
             <value>876.270918148088</value>
-            <value>879.5711642287243</value>
+            <value>896.3993133586571</value>
             <value>893.6547410736176</value>
             <value>878.6815126361421</value>
             <value>911.7874236015906</value>
@@ -5947,7 +5947,7 @@
             <value>936.6211706262634</value>
             <value>881.1234686793686</value>
             <value>904.6309402555072</value>
-            <value>0.0</value>
+            <value>890.9449247456056</value>
             <value>863.3483204608248</value>
             <value>891.7680087408424</value>
             <value>888.0993895068592</value>
@@ -5992,29 +5992,29 @@
             <value>871.4023805988598</value>
             <value>886.2039555789246</value>
             <value>873.6294283681992</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>883.3713755297975</value>
-            <value>0.0</value>
+            <value>952.9400524037135</value>
+            <value>900.1910620823479</value>
+            <value>897.4216840891254</value>
+            <value>873.6110752588845</value>
+            <value>907.6410151854517</value>
             <value>892.1261391063757</value>
             <value>862.2714160518913</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>882.8396572593977</value>
+            <value>908.9845719089401</value>
+            <value>917.3146592246984</value>
+            <value>856.0193958162589</value>
+            <value>931.8127649537371</value>
+            <value>864.8566683538655</value>
+            <value>902.7938228862439</value>
+            <value>916.7383613536067</value>
+            <value>916.3602684766482</value>
+            <value>891.5607877462276</value>
+            <value>926.8942433301286</value>
+            <value>897.3104728531589</value>
+            <value>913.3002674218214</value>
+            <value>878.8431949312029</value>
+            <value>856.6699158591936</value>
+            <value>896.0798356549703</value>
             <value>924.5102405460797</value>
             <value>957.3741059754958</value>
             <value>908.0749700575791</value>
@@ -6042,18 +6042,18 @@
         </node>
         <node id="28">
             <value>30.050759907149878</value>
-            <value>0.0</value>
+            <value>29.905753257025445</value>
             <value>29.611117067750403</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>30.228652321118517</value>
+            <value>30.035738530439332</value>
+            <value>29.704084969781096</value>
             <value>29.544770539468892</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>30.467257100160115</value>
+            <value>29.299274159079246</value>
+            <value>29.823226203638814</value>
+            <value>29.726138608129382</value>
+            <value>29.993459663006046</value>
+            <value>30.231094437587934</value>
+            <value>30.32708096246988</value>
             <value>30.029942320656062</value>
             <value>30.15258615325573</value>
             <value>29.47651281547813</value>
@@ -6149,7 +6149,7 @@
             <value>30.60426719636109</value>
             <value>29.683723969195114</value>
             <value>30.077083306988182</value>
-            <value>0.0</value>
+            <value>29.848700553719347</value>
             <value>29.382789528239567</value>
             <value>29.862484972634853</value>
             <value>29.800996451576232</value>
@@ -6194,29 +6194,29 @@
             <value>29.519525412832433</value>
             <value>29.769177945971645</value>
             <value>29.55722294749964</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>30.869727119035463</value>
+            <value>30.003184199053738</value>
+            <value>29.956997247540105</value>
+            <value>29.55691247845222</value>
+            <value>30.127081093020806</value>
             <value>29.868480696318915</value>
             <value>29.364458381722134</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>29.712617812293107</value>
+            <value>30.14937100353737</value>
+            <value>30.287202895359922</value>
+            <value>29.257809142453898</value>
+            <value>30.52560834698855</value>
+            <value>29.408445527668842</value>
+            <value>30.046527634424645</value>
+            <value>30.277687516612076</value>
+            <value>30.27144311850111</value>
+            <value>29.85901518379713</value>
+            <value>30.444937893353117</value>
+            <value>29.95514100873436</value>
+            <value>30.22085815164456</value>
+            <value>29.645289590948558</value>
+            <value>29.268924063914504</value>
+            <value>29.934592625505534</value>
             <value>30.40575998961512</value>
             <value>30.94146257007732</value>
             <value>30.13428230533422</value>
@@ -6244,17 +6244,9 @@
         </node>
         <node id="29">
             <value>2.0</value>
-            <value>0.0</value>
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
@@ -6351,7 +6343,6 @@
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
@@ -6396,29 +6387,38 @@
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
@@ -6446,16 +6446,16 @@
         </node>
         <node id="31">
             <value>2488723.5239508185</value>
-            <value>0.0</value>
+            <value>1935968.5242080535</value>
             <value>678274.1375397576</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>2652092.2345359195</value>
+            <value>1843409.1503266955</value>
+            <value>2362971.5074931416</value>
             <value>43030.0356806083</value>
-            <value>285832.9183424349</value>
-            <value>1487875.8663647587</value>
+            <value>2208778.4177551945</value>
+            <value>1538914.1485226536</value>
             <value>3036578.9044605074</value>
-            <value>2883974.367245791</value>
+            <value>811807.0069416759</value>
             <value>2826115.354121697</value>
             <value>1147953.137477366</value>
             <value>2913478.1083161454</value>
@@ -6553,7 +6553,7 @@
             <value>2983023.9788914444</value>
             <value>382538.1374215796</value>
             <value>2564141.072126208</value>
-            <value>2564141.072126208</value>
+            <value>991886.64200202</value>
             <value>2157912.6862576567</value>
             <value>2179631.9439475313</value>
             <value>3512078.4221857674</value>
@@ -6598,29 +6598,29 @@
             <value>251791.2478137659</value>
             <value>2255251.942644007</value>
             <value>1647746.9564078497</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>2835677.400653208</value>
+            <value>608697.5969769361</value>
+            <value>1495888.5026789964</value>
+            <value>1424515.132106186</value>
             <value>1215351.0975001713</value>
-            <value>2235627.638001221</value>
+            <value>2608094.1896869275</value>
             <value>2560930.584334647</value>
             <value>3004716.1312719802</value>
-            <value>2711944.6342612877</value>
-            <value>177828.5893730882</value>
-            <value>822508.7973856702</value>
-            <value>0.0</value>
-            <value>556173.804230001</value>
-            <value>199996.60116149197</value>
-            <value>2334232.532855623</value>
-            <value>193104.54281369713</value>
-            <value>440573.1527842002</value>
-            <value>1593605.6500163686</value>
-            <value>331263.69693563617</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>3087639.364224204</value>
+            <value>316124.6932481078</value>
+            <value>2283057.853830654</value>
+            <value>1971081.7661775248</value>
+            <value>753896.0104569192</value>
+            <value>1337417.171829403</value>
+            <value>2864272.33854119</value>
+            <value>1285968.223105023</value>
+            <value>2087870.4518848243</value>
+            <value>3511686.990376147</value>
+            <value>59544.47535239791</value>
+            <value>82076.84270853476</value>
+            <value>2104330.513193987</value>
+            <value>3054360.810890403</value>
+            <value>466529.659583338</value>
+            <value>2299919.9659302216</value>
             <value>3224598.010174963</value>
             <value>388577.67915397446</value>
             <value>2623423.219371515</value>
@@ -6648,16 +6648,16 @@
         </node>
         <node id="32">
             <value>58.42009065592138</value>
-            <value>0.0</value>
+            <value>47.75132657897694</value>
             <value>15.983743818436968</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>64.69418579565483</value>
+            <value>44.73842050453976</value>
+            <value>57.31269532734917</value>
             <value>1.065134984700844</value>
-            <value>0.0</value>
-            <value>32.739479663225275</value>
+            <value>50.00259107690081</value>
+            <value>33.86253491166944</value>
             <value>72.63303120715784</value>
-            <value>71.82288121929885</value>
+            <value>20.217349673689824</value>
             <value>70.22914254532586</value>
             <value>26.09957577681203</value>
             <value>71.13616693734788</value>
@@ -6755,7 +6755,7 @@
             <value>70.54299188200555</value>
             <value>9.542189793384432</value>
             <value>60.84187774051045</value>
-            <value>0.0</value>
+            <value>24.67398921104624</value>
             <value>53.00476606857903</value>
             <value>50.094965003021095</value>
             <value>79.8898396966431</value>
@@ -6800,29 +6800,29 @@
             <value>5.932191254383223</value>
             <value>56.08498847255152</value>
             <value>40.58333161906333</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>15.09174737920679</value>
+            <value>31.276567936456168</value>
+            <value>35.28338556429446</value>
             <value>30.507164211421333</value>
-            <value>0.0</value>
+            <value>63.82873039413318</value>
             <value>63.02146708988005</value>
             <value>73.15475390825536</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>10.95121308984714</value>
-            <value>33.69255937678212</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>74.44575209575157</value>
+            <value>7.281671225759387</value>
+            <value>53.52584384797044</value>
+            <value>48.39689177327769</value>
+            <value>18.44996249940838</value>
+            <value>32.696955651821824</value>
+            <value>69.81247359226337</value>
+            <value>31.760731636988872</value>
+            <value>51.89765667311475</value>
+            <value>74.24529552509202</value>
+            <value>1.4482224507673624</value>
+            <value>1.9711750377077841</value>
+            <value>51.51139911499933</value>
+            <value>75.188933664808</value>
+            <value>11.153891858371514</value>
+            <value>55.94792932893274</value>
             <value>74.88428296917732</value>
             <value>9.223124012997355</value>
             <value>64.84527728213803</value>
@@ -6850,13 +6850,13 @@
         </node>
         <node id="33">
             <value>26.557338670754184</value>
-            <value>0.0</value>
+            <value>25.221952539482164</value>
             <value>26.33694495239356</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>25.544506788422947</value>
+            <value>25.55554463307813</value>
+            <value>25.467566788733468</value>
             <value>25.100721814142016</value>
-            <value>0.0</value>
+            <value>27.765793477593014</value>
             <value>28.688970918324596</value>
             <value>25.7567277718662</value>
             <value>25.336382763052477</value>
@@ -6957,7 +6957,7 @@
             <value>26.135093770655256</value>
             <value>25.262588383738333</value>
             <value>26.18767462609384</value>
-            <value>0.0</value>
+            <value>25.695336694130184</value>
             <value>25.343981513623838</value>
             <value>27.118581823154138</value>
             <value>27.383687251775072</value>
@@ -7002,29 +7002,29 @@
             <value>26.835629822486894</value>
             <value>25.658902209012496</value>
             <value>25.33870457489477</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>26.002975081493187</value>
+            <value>30.079072022472538</value>
             <value>25.40264759754531</value>
             <value>25.814660522636817</value>
             <value>25.213886813939546</value>
             <value>26.20213745022028</value>
             <value>26.15764291847892</value>
-            <value>26.394212216106126</value>
-            <value>0.0</value>
-            <value>27.71667578689565</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>25.58775026858037</value>
-            <value>27.217174928896018</value>
-            <value>25.824894896305402</value>
+            <value>26.367374452720274</value>
+            <value>27.91714263036625</value>
+            <value>26.53827916827779</value>
+            <value>25.70012421745249</value>
+            <value>25.503208341318555</value>
+            <value>25.577234971174438</value>
+            <value>25.994573335064576</value>
+            <value>25.069263394133923</value>
             <value>25.238871016618724</value>
             <value>29.74019943210648</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>25.52856844137248</value>
+            <value>25.39591970404332</value>
+            <value>25.4298308221735</value>
+            <value>25.662989022118712</value>
+            <value>25.88169537047759</value>
+            <value>26.395293026015118</value>
             <value>27.223216164691607</value>
             <value>26.137725555101877</value>
             <value>25.648201953536855</value>
@@ -7052,13 +7052,13 @@
         </node>
         <node id="34">
             <value>0.3272340960916131</value>
-            <value>0.0</value>
+            <value>0.08041975734893621</value>
             <value>0.16395634199212528</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.6943399458571325</value>
+            <value>0.010224449325715194</value>
+            <value>0.13106378165878574</value>
             <value>0.09914244709925378</value>
-            <value>0.0</value>
+            <value>0.14725437117893272</value>
             <value>0.2971325564871076</value>
             <value>0.5546638401161308</value>
             <value>0.33831001184960835</value>
@@ -7159,7 +7159,7 @@
             <value>0.15974128927348225</value>
             <value>0.09140716332082015</value>
             <value>0.45371776019160215</value>
-            <value>0.0</value>
+            <value>0.10581681786841396</value>
             <value>0.40150816286823854</value>
             <value>0.16519246731609863</value>
             <value>0.1337112578913523</value>
@@ -7204,29 +7204,29 @@
             <value>0.0010349471111459234</value>
             <value>0.12142299366391955</value>
             <value>0.03644998453249922</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.13412138039320423</value>
+            <value>0.1946013154200041</value>
             <value>0.18837817025232778</value>
             <value>0.16236641206622945</value>
             <value>0.012273403596190412</value>
             <value>0.40539923728006944</value>
             <value>0.47155757538983667</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.47903083625677695</value>
+            <value>0.052809762731198986</value>
+            <value>0.0673918532732371</value>
+            <value>0.4999184464436556</value>
+            <value>0.02091620683011064</value>
+            <value>0.2147252771304702</value>
+            <value>0.06230751498910524</value>
+            <value>0.041742447048126</value>
             <value>0.08840727149924474</value>
             <value>0.5735213120183986</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.0683487909205227</value>
+            <value>0.3318515075860365</value>
+            <value>0.09985252238067555</value>
+            <value>0.2647510970525873</value>
+            <value>0.06754743967501863</value>
+            <value>0.7039719864160205</value>
             <value>0.14908200245467387</value>
             <value>0.044557940434988536</value>
             <value>0.21612878933617954</value>
@@ -7254,13 +7254,13 @@
         </node>
         <node id="35">
             <value>0.7570705843205197</value>
-            <value>0.0</value>
+            <value>0.12019282377180754</value>
             <value>1.3786719287590925</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.40289897950206616</value>
+            <value>1.3554722633781582</value>
+            <value>0.6158189110620396</value>
             <value>0.24217471460210693</value>
-            <value>0.0</value>
+            <value>1.1976008171796724</value>
             <value>0.9456047110625487</value>
             <value>0.2847762356464213</value>
             <value>0.028118571673368235</value>
@@ -7361,7 +7361,7 @@
             <value>0.7256549382361952</value>
             <value>0.4779645266309476</value>
             <value>1.101239493336815</value>
-            <value>0.0</value>
+            <value>1.426028140483916</value>
             <value>0.0027337158099610837</value>
             <value>3.5981864388345564</value>
             <value>0.30930063035257827</value>
@@ -7406,29 +7406,29 @@
             <value>0.033413984344224705</value>
             <value>0.28887391035598553</value>
             <value>0.08915802438883602</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>8.191085088121447E-4</value>
+            <value>0.04142136220651068</value>
             <value>0.39055188949754355</value>
             <value>1.1857007591033826</value>
             <value>0.5143574684478883</value>
             <value>4.25243665352369</value>
             <value>2.6464588734500882</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.24153346684107563</value>
+            <value>0.13801410423551574</value>
+            <value>0.41648859851221404</value>
+            <value>1.036434371712817</value>
+            <value>1.205919070816245</value>
             <value>0.9864444172152378</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>1.2194807284825386</value>
+            <value>0.12334907553590425</value>
             <value>0.06961672744118583</value>
             <value>2.0431921401935624</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.13277847875704163</value>
+            <value>5.695724471506295E-5</value>
+            <value>0.09139516594124299</value>
+            <value>1.1182104459120303</value>
+            <value>0.4174792264492809</value>
+            <value>0.6408996475921904</value>
             <value>2.8571239728915576</value>
             <value>3.9193565801863532</value>
             <value>0.8076966701570859</value>
@@ -7456,13 +7456,13 @@
         </node>
         <node id="36">
             <value>5.145050002604597</value>
-            <value>0.0</value>
+            <value>0.6871975768079065</value>
             <value>3.805151538823013</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>1.0807882283325905</value>
+            <value>0.8564818196086488</value>
+            <value>1.123384462213046</value>
             <value>0.061570094866707205</value>
-            <value>0.0</value>
+            <value>9.718318722013452</value>
             <value>13.51314640574873</value>
             <value>2.187471011702249</value>
             <value>0.9791024686869317</value>
@@ -7563,7 +7563,7 @@
             <value>3.654978855111343</value>
             <value>0.4809818450015607</value>
             <value>3.1957412508469454</value>
-            <value>0.0</value>
+            <value>1.249501818168405</value>
             <value>0.9716841758171485</value>
             <value>4.7109483864659</value>
             <value>9.091737118856356</value>
@@ -7608,29 +7608,29 @@
             <value>7.308070358492199</value>
             <value>2.2253119320300767</value>
             <value>1.2292102906577402</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>3.8769598370707294</value>
+            <value>20.08026541226363</value>
             <value>1.031660330431378</value>
             <value>1.9105749193776604</value>
             <value>0.3289163837140976</value>
             <value>0.15071391007736532</value>
             <value>1.512555225075759</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>4.748933507783245</value>
+            <value>11.477746654498286</value>
+            <value>5.669236221325709</value>
+            <value>1.2641440516534859</value>
+            <value>0.7859980876278565</value>
             <value>1.1077701903520478</value>
-            <value>7.871178124663362</value>
-            <value>2.726377032082587</value>
+            <value>2.6965050967866655</value>
+            <value>0.11196205395166006</value>
             <value>0.797460067534459</value>
             <value>16.34408427621395</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>1.9131464958123678</value>
+            <value>1.251770351342526</value>
+            <value>1.528075600372076</value>
+            <value>1.2689945455102274</value>
+            <value>3.0417548157860583</value>
+            <value>4.236300470052259</value>
             <value>5.886658683420192</value>
             <value>0.5869876997861604</value>
             <value>1.568982354654152</value>
@@ -7658,13 +7658,8 @@
         </node>
         <node id="37">
             <value>100.0</value>
-            <value>0.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>100.0</value>
-            <value>0.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
@@ -7765,7 +7760,6 @@
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
-            <value>0.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
@@ -7810,29 +7804,35 @@
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
-            <value>0.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
@@ -7860,13 +7860,13 @@
         </node>
         <node id="40">
             <value>1604.0942215550456</value>
-            <value>0.0</value>
+            <value>1607.4376885558152</value>
             <value>1611.244142657592</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>1604.8182358634267</value>
+            <value>1612.3374842239978</value>
+            <value>1618.900652371017</value>
             <value>1609.462440677858</value>
-            <value>1592.493818942231</value>
+            <value>1590.9244323769426</value>
             <value>1584.0903796200018</value>
             <value>1623.1539528367923</value>
             <value>1584.8346634808338</value>
@@ -7967,7 +7967,7 @@
             <value>1618.001078207511</value>
             <value>1586.8973781867774</value>
             <value>1609.3198565594876</value>
-            <value>1609.3198565594876</value>
+            <value>1564.4740298556626</value>
             <value>1606.3645189470224</value>
             <value>1604.434944881243</value>
             <value>1605.3906490605468</value>
@@ -8012,29 +8012,29 @@
             <value>1581.6620461529387</value>
             <value>1567.149249606088</value>
             <value>1602.3537947409343</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>1551.0972237221213</value>
+            <value>1590.0680089107811</value>
             <value>1589.3437301159902</value>
             <value>1543.240099795235</value>
             <value>1620.568028470824</value>
             <value>1550.8599377072312</value>
             <value>1570.2264477074116</value>
             <value>1572.9675398674801</value>
-            <value>0.0</value>
+            <value>1555.0930817115038</value>
             <value>1607.239642661471</value>
-            <value>0.0</value>
-            <value>1591.238896211159</value>
+            <value>1584.7178415846404</value>
+            <value>1602.2162736969472</value>
             <value>1599.2117923620835</value>
             <value>1578.3328266017288</value>
             <value>1615.0953453565658</value>
             <value>1593.9910377651256</value>
             <value>1590.3876036880984</value>
-            <value>1620.8776551740373</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>1610.5704834129529</value>
+            <value>1639.5758237588432</value>
+            <value>1606.4497141653446</value>
+            <value>1582.9207603755247</value>
+            <value>1616.0697773705813</value>
+            <value>1557.4073434427291</value>
             <value>1581.7777937871651</value>
             <value>1611.8774081617228</value>
             <value>1577.3682022915607</value>
@@ -8062,13 +8062,13 @@
         </node>
         <node id="38">
             <value>40.05114507170857</value>
-            <value>0.0</value>
+            <value>40.09286331201371</value>
             <value>40.140305712059444</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>40.060182673864915</value>
+            <value>40.15392240147901</value>
+            <value>40.235564521589815</value>
             <value>40.11810614520404</value>
-            <value>0.0</value>
+            <value>39.88639407588686</value>
             <value>39.80063290476675</value>
             <value>40.28838483777666</value>
             <value>39.80998195780593</value>
@@ -8169,7 +8169,7 @@
             <value>40.22438412465144</value>
             <value>39.8358805373595</value>
             <value>40.116329051391126</value>
-            <value>0.0</value>
+            <value>39.553432592578645</value>
             <value>40.079477528368834</value>
             <value>40.05539844866411</value>
             <value>40.06732645261656</value>
@@ -8214,29 +8214,29 @@
             <value>39.77011498792704</value>
             <value>39.587235942991626</value>
             <value>40.029411621218394</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>39.383971660081734</value>
+            <value>39.875656846135854</value>
             <value>39.86657409555015</value>
             <value>39.28409474323209</value>
             <value>40.256279366961174</value>
             <value>39.38095907551302</value>
             <value>39.626082921573406</value>
             <value>39.66065480885912</value>
-            <value>0.0</value>
+            <value>39.43466852544223</value>
             <value>40.09039339619245</value>
-            <value>0.0</value>
-            <value>39.890335874885274</value>
+            <value>39.80851468699429</value>
+            <value>40.02769383435607</value>
             <value>39.9901461908066</value>
             <value>39.728237144400566</value>
             <value>40.188248846603976</value>
             <value>39.92481731661556</value>
             <value>39.87966403680074</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>40.13191352792629</value>
+            <value>40.49167598110559</value>
+            <value>40.080540342731716</value>
+            <value>39.785936716075</value>
+            <value>40.20037036359965</value>
+            <value>39.4640006010887</value>
             <value>39.77157016999914</value>
             <value>40.14819308713311</value>
             <value>39.71609500305337</value>
@@ -8264,11 +8264,7 @@
         </node>
         <node id="39">
             <value>2.0</value>
-            <value>0.0</value>
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
@@ -8371,7 +8367,6 @@
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
@@ -8416,29 +8411,34 @@
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
             <value>2.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
@@ -8466,11 +8466,11 @@
         </node>
         <node id="41">
             <value>4767333.8700190475</value>
-            <value>0.0</value>
+            <value>1642088.6392721413</value>
             <value>370749.25274062314</value>
-            <value>397495.7587558308</value>
-            <value>0.0</value>
-            <value>181247.06929376404</value>
+            <value>1501428.0660200242</value>
+            <value>5213880.005753398</value>
+            <value>2470341.7029567584</value>
             <value>5371854.897082094</value>
             <value>6235964.514042917</value>
             <value>1835199.6021716685</value>
@@ -8618,8 +8618,8 @@
             <value>858289.5725055725</value>
             <value>5500516.468801874</value>
             <value>5301494.835839152</value>
-            <value>5310632.351881876</value>
-            <value>2830632.132905115</value>
+            <value>3803739.0181413023</value>
+            <value>5286778.314323191</value>
             <value>2592050.078137967</value>
             <value>2134080.8189713014</value>
             <value>1225190.290863768</value>
@@ -8637,10 +8637,10 @@
             <value>5971700.47696161</value>
             <value>5740536.811566353</value>
             <value>1068387.2069215972</value>
-            <value>4902416.485099846</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>5069908.733157017</value>
+            <value>1953810.2046978541</value>
+            <value>3960766.806448703</value>
+            <value>3716668.0527258087</value>
+            <value>3879243.7793808603</value>
             <value>1181233.864518193</value>
             <value>4022924.0586514156</value>
             <value>2763636.272951388</value>
@@ -8668,11 +8668,11 @@
         </node>
         <node id="42">
             <value>73.04302967434272</value>
-            <value>0.0</value>
+            <value>25.78027905957804</value>
             <value>5.9201965811244595</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>24.411725056425315</value>
+            <value>81.88090228552316</value>
+            <value>37.061112601364144</value>
             <value>85.62829329414598</value>
             <value>71.49846763958975</value>
             <value>28.72568868144405</value>
@@ -8820,8 +8820,8 @@
             <value>10.916296290276284</value>
             <value>85.92291899516069</value>
             <value>69.31027855014594</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>57.53702341012167</value>
+            <value>81.60044574351777</value>
             <value>39.69185820615513</value>
             <value>33.31717326497632</value>
             <value>17.28346854494309</value>
@@ -8839,10 +8839,10 @@
             <value>94.25261021044915</value>
             <value>90.75502163602404</value>
             <value>16.954162343214186</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>30.119652171099588</value>
+            <value>58.31929724593983</value>
+            <value>59.075279743421504</value>
+            <value>57.894944257377</value>
             <value>17.949558398157038</value>
             <value>59.13078126098392</value>
             <value>42.64768145279605</value>
@@ -8870,11 +8870,11 @@
         </node>
         <node id="43">
             <value>26.05796338697711</value>
-            <value>0.0</value>
+            <value>25.564007382561453</value>
             <value>25.228802462819758</value>
-            <value>25.200133515512825</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>25.214431323867657</value>
+            <value>25.567846242752097</value>
+            <value>26.275993101849075</value>
             <value>25.25538730478835</value>
             <value>34.627248999094604</value>
             <value>25.48097370435855</value>
@@ -9022,7 +9022,7 @@
             <value>31.38569792133786</value>
             <value>25.43428392259943</value>
             <value>30.340494583641277</value>
-            <value>26.41836587234249</value>
+            <value>26.33521125941039</value>
             <value>25.442729364909937</value>
             <value>26.255184983699365</value>
             <value>25.357205556513247</value>
@@ -9041,10 +9041,10 @@
             <value>25.512764009751617</value>
             <value>25.405483577965647</value>
             <value>25.21031978242177</value>
-            <value>26.029371601830174</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>27.786042722463</value>
+            <value>25.953275618682447</value>
+            <value>27.282222178531324</value>
+            <value>25.26040461785046</value>
+            <value>26.824299332565968</value>
             <value>26.078075605244685</value>
             <value>27.05835715087865</value>
             <value>26.196573427424216</value>
@@ -9072,11 +9072,11 @@
         </node>
         <node id="44">
             <value>0.26185361840919474</value>
-            <value>0.0</value>
+            <value>0.02230361683750319</value>
             <value>0.48312625918399793</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.03380623653921039</value>
+            <value>0.2216489885866893</value>
+            <value>0.26568438175572984</value>
             <value>0.27634978462547766</value>
             <value>0.13470967916401183</value>
             <value>0.1974064293244578</value>
@@ -9224,7 +9224,7 @@
             <value>0.004374805311149677</value>
             <value>0.6638062031366034</value>
             <value>0.051903153927515586</value>
-            <value>0.35560227794182975</value>
+            <value>0.022983826213422296</value>
             <value>0.05844140677602046</value>
             <value>0.0014508362615842912</value>
             <value>0.6140535926183209</value>
@@ -9243,10 +9243,10 @@
             <value>0.10430194821244691</value>
             <value>0.23035934845306602</value>
             <value>0.0734278349568296</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.03437995430807803</value>
+            <value>0.12881987972005626</value>
+            <value>0.12413923086225087</value>
+            <value>0.09559058434884798</value>
             <value>0.014705725336511408</value>
             <value>0.10258586917148357</value>
             <value>0.4355426544476546</value>
@@ -9274,11 +9274,11 @@
         </node>
         <node id="45">
             <value>1.3817860518595881</value>
-            <value>0.0</value>
+            <value>1.5816461452707362</value>
             <value>0.10395595082226229</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.5982587097861933</value>
+            <value>0.4574870203770044</value>
+            <value>1.3317221879175927</value>
             <value>0.5907705807255699</value>
             <value>1.1069423149575321</value>
             <value>1.2734586127747436</value>
@@ -9445,10 +9445,10 @@
             <value>0.3753109476823451</value>
             <value>0.6677913222043459</value>
             <value>0.1586734228035633</value>
-            <value>1.0344252820548026</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.7754660869990225</value>
+            <value>5.859277344250802</value>
+            <value>0.42276984921024496</value>
+            <value>4.135384587063678</value>
             <value>4.119231216607091</value>
             <value>0.07907364020641848</value>
             <value>0.5977336055695364</value>
@@ -9476,11 +9476,11 @@
         </node>
         <node id="46">
             <value>2.588213877639655</value>
-            <value>0.0</value>
+            <value>0.6520797681375671</value>
             <value>0.32812764127276617</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>0.22566034914521926</value>
+            <value>1.592248962044694</value>
+            <value>3.506565837722975</value>
             <value>0.1544288538023579</value>
             <value>37.267344002256884</value>
             <value>0.45302977533499544</value>
@@ -9648,9 +9648,9 @@
             <value>0.7237836412051782</value>
             <value>0.6091778719266943</value>
             <value>3.0032564334226923</value>
-            <value>0.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>3.1407914901544394</value>
+            <value>0.4947093913293525</value>
+            <value>3.06622215885135</value>
             <value>0.1783654790351417</value>
             <value>8.051769094136688</value>
             <value>3.753017449679675</value>
@@ -9678,11 +9678,8 @@
         </node>
         <node id="47">
             <value>100.0</value>
-            <value>0.0</value>
             <value>100.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
@@ -9850,8 +9847,11 @@
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
             <value>100.0</value>
@@ -9880,11 +9880,11 @@
         </node>
         <node id="50">
             <value>2504.7034835965487</value>
-            <value>0.0</value>
+            <value>2491.609901588452</value>
             <value>2482.261436295458</value>
             <value>2439.2531930464224</value>
-            <value>0.0</value>
-            <value>2504.05990438504</value>
+            <value>2490.48692638947</value>
+            <value>2536.7603312429164</value>
             <value>2484.007782379643</value>
             <value>2518.772315347344</value>
             <value>2507.2453659778303</value>
@@ -10052,8 +10052,8 @@
             <value>2489.742172794979</value>
             <value>2499.6199781887294</value>
             <value>2499.425765570331</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>2489.3573829181178</value>
+            <value>2490.621226154734</value>
             <value>2497.9172406864213</value>
             <value>2523.519010097128</value>
             <value>2514.356140648032</value>
@@ -10082,11 +10082,11 @@
         </node>
         <node id="48">
             <value>50.04701273399391</value>
-            <value>0.0</value>
+            <value>49.91602850376272</value>
             <value>49.82229858502574</value>
             <value>49.38879622997935</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>49.90477859273068</value>
+            <value>50.36626183511058</value>
             <value>49.83982125148166</value>
             <value>50.18737207054524</value>
             <value>50.07240124038221</value>
@@ -10254,8 +10254,8 @@
             <value>49.897316288503724</value>
             <value>49.99619963745974</value>
             <value>49.99425732592025</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>49.89346032215162</value>
+            <value>49.90612413476661</value>
             <value>49.97916806716996</value>
             <value>50.23463954381606</value>
             <value>50.14335589734728</value>
@@ -10284,10 +10284,8 @@
         </node>
         <node id="49">
             <value>2.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
@@ -10456,8 +10454,10 @@
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
-            <value>0.0</value>
-            <value>0.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>
             <value>2.0</value>

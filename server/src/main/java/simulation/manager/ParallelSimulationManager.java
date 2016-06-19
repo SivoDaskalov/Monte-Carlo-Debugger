@@ -8,10 +8,11 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import javafx.util.Pair;
 import node.Node;
+import simulation.StochasticVariableRegistry;
+import simulation.context.SimulationContextImpl;
 import simulation.listeners.CompositeCompletionListener;
 import simulation.listeners.LatchLoweringCompletionListener;
 import tree.utils.TreeUtilities;
-import simulation.StochasticVariableRegistry;
 
 /**
  *
@@ -76,7 +77,7 @@ public class ParallelSimulationManager extends AbstractSimulationManager {
             for (Pair<Integer, Integer> simulationRange
                     : calculateSimulationRanges(runCount, poolSize)) {
                 SingleThreadSimulationManager worker = new SingleThreadSimulationManager(
-                        root, valueRegistry, context, simulationRange);
+                        root, valueRegistry, new SimulationContextImpl(context), simulationRange);
                 worker.setCompletionListener(compositeCompletionListener);
                 Thread thread = new Thread(worker);
                 thread.start();

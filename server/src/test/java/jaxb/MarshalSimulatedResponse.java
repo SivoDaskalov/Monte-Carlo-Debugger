@@ -16,6 +16,7 @@ import org.slf4j.LoggerFactory;
 import simulation.SimulationProperties;
 import simulation.SimulationResponse;
 import simulation.StochasticVariableRegistry;
+import simulation.interfaces.SimulationManager;
 import simulation.manager.ParallelSimulationManager;
 import util.TestHelper;
 
@@ -65,7 +66,7 @@ public class MarshalSimulatedResponse {
     }
 
     protected SimulationResponse doSimulate(SimulationProperties configuration, Node root, StochasticVariableRegistry variables) {
-        ParallelSimulationManager simulationManager = new ParallelSimulationManager(root, variables, configuration.getSimulationRuns(), 10000);
+        SimulationManager simulationManager = new ParallelSimulationManager(root, variables, configuration.getSimulationRuns(), 10000);
         simulationManager.run();
         simulationManager.await();
         return new SimulationResponse(configuration, variables, root, simulationManager);
