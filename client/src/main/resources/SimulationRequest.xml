@@ -3,72 +3,179 @@
     <properties>
         <title>Test simulation</title>
         <description>This configuration exists to test the marshaling and unmarshaling of requests</description>
-        <simulationRuns>1000</simulationRuns>
+        <simulationRuns>20000</simulationRuns>
     </properties>
     <variables>
-        <gaussian id="X0">
-            <mean>5.0</mean>
-            <deviation>0.3333333333333333</deviation>
+        <gaussian id="GAU1">
+            <mean>10.0</mean>
+            <deviation>1.0</deviation>
         </gaussian>
-        <uniform id="Y0">
+        <uniform id="UNI1">
             <lowerBound>0.0</lowerBound>
-            <upperBound>10.0</upperBound>
-        </uniform>
-        <exponential id="Z0">
-            <lambda>1.0</lambda>
-        </exponential>
-        <gaussian id="X1">
-            <mean>15.0</mean>
-            <deviation>0.3333333333333333</deviation>
-        </gaussian>
-        <uniform id="Y1">
-            <lowerBound>10.0</lowerBound>
             <upperBound>20.0</upperBound>
         </uniform>
-        <exponential id="Z1">
+        <exponential id="EXP1">
             <lambda>1.0</lambda>
         </exponential>
-        <gaussian id="X2">
-            <mean>25.0</mean>
+        <gamma id="GAM1">
+            <scale>3.0</scale>
+            <shape>0.3333333333333333</shape>
+        </gamma>
+        <logNormal id="LOGN1">
+            <scale>3.0</scale>
+            <shape>0.3333333333333333</shape>
+        </logNormal>
+        <gaussian id="GAU2">
+            <mean>20.0</mean>
+            <deviation>0.5</deviation>
+        </gaussian>
+        <uniform id="UNI2">
+            <lowerBound>0.0</lowerBound>
+            <upperBound>40.0</upperBound>
+        </uniform>
+        <exponential id="EXP2">
+            <lambda>2.0</lambda>
+        </exponential>
+        <gamma id="GAM2">
+            <scale>1.5</scale>
+            <shape>0.6666666666666666</shape>
+        </gamma>
+        <logNormal id="LOGN2">
+            <scale>1.5</scale>
+            <shape>0.6666666666666666</shape>
+        </logNormal>
+        <gaussian id="GAU3">
+            <mean>30.0</mean>
             <deviation>0.3333333333333333</deviation>
         </gaussian>
-        <uniform id="Y2">
-            <lowerBound>20.0</lowerBound>
-            <upperBound>30.0</upperBound>
+        <uniform id="UNI3">
+            <lowerBound>0.0</lowerBound>
+            <upperBound>60.0</upperBound>
         </uniform>
-        <exponential id="Z2">
-            <lambda>1.0</lambda>
+        <exponential id="EXP3">
+            <lambda>3.0</lambda>
         </exponential>
+        <gamma id="GAM3">
+            <scale>1.0</scale>
+            <shape>1.0</shape>
+        </gamma>
+        <logNormal id="LOGN3">
+            <scale>1.0</scale>
+            <shape>1.0</shape>
+        </logNormal>
+        <gaussian id="GAU4">
+            <mean>40.0</mean>
+            <deviation>0.25</deviation>
+        </gaussian>
+        <uniform id="UNI4">
+            <lowerBound>0.0</lowerBound>
+            <upperBound>80.0</upperBound>
+        </uniform>
+        <exponential id="EXP4">
+            <lambda>4.0</lambda>
+        </exponential>
+        <gamma id="GAM4">
+            <scale>0.75</scale>
+            <shape>1.3333333333333333</shape>
+        </gamma>
+        <logNormal id="LOGN4">
+            <scale>0.75</scale>
+            <shape>1.3333333333333333</shape>
+        </logNormal>
+        <gaussian id="GAU5">
+            <mean>50.0</mean>
+            <deviation>0.2</deviation>
+        </gaussian>
+        <uniform id="UNI5">
+            <lowerBound>0.0</lowerBound>
+            <upperBound>100.0</upperBound>
+        </uniform>
+        <exponential id="EXP5">
+            <lambda>5.0</lambda>
+        </exponential>
+        <gamma id="GAM5">
+            <scale>0.6</scale>
+            <shape>1.6666666666666667</shape>
+        </gamma>
+        <logNormal id="LOGN5">
+            <scale>0.6</scale>
+            <shape>1.6666666666666667</shape>
+        </logNormal>
     </variables>
     <formula>
-        <sum nodeId="0" description="This is the sum of all the trucks I give" index="0">
-            <product nodeId="1" index="1">
-                <variable name="X0" nodeId="2" index="2"/>
-                <variable name="Y0" nodeId="3" index="3"/>
-                <exponentiation nodeId="6" index="4">
+        <sum nodeId="0" description="This is the sum of all the trucks I give">
+            <product nodeId="1">
+                <variable name="UNI1" nodeId="2"/>
+                <average nodeId="3">
+                    <variable name="EXP1" nodeId="4"/>
+                    <variable name="GAM1" nodeId="5"/>
+                    <variable name="LOGN1" nodeId="6"/>
+                    <constant value="100.0" nodeId="7" description="Raise the average a little"/>
+                </average>
+                <exponentiation nodeId="10">
                     <arguments>
-                        <variable name="Z0" nodeId="4" role="base" index="5"/>
-                        <constant value="2.0" nodeId="5" role="exponent" index="6"/>
+                        <variable name="GAU1" nodeId="8" role="base"/>
+                        <constant value="2.0" nodeId="9" role="exponent"/>
                     </arguments>
                 </exponentiation>
             </product>
-            <product nodeId="7" index="7">
-                <variable name="X1" nodeId="8" index="8"/>
-                <variable name="Y1" nodeId="9" index="9"/>
-                <exponentiation nodeId="12" index="10">
+            <product nodeId="11">
+                <variable name="UNI2" nodeId="12"/>
+                <average nodeId="13">
+                    <variable name="EXP2" nodeId="14"/>
+                    <variable name="GAM2" nodeId="15"/>
+                    <variable name="LOGN2" nodeId="16"/>
+                    <constant value="100.0" nodeId="17" description="Raise the average a little"/>
+                </average>
+                <exponentiation nodeId="20">
                     <arguments>
-                        <variable name="Z1" nodeId="10" role="base" index="11"/>
-                        <constant value="2.0" nodeId="11" role="exponent" index="12"/>
+                        <variable name="GAU2" nodeId="18" role="base"/>
+                        <constant value="2.0" nodeId="19" role="exponent"/>
                     </arguments>
                 </exponentiation>
             </product>
-            <product nodeId="13" index="13">
-                <variable name="X2" nodeId="14" index="14"/>
-                <variable name="Y2" nodeId="15" index="15"/>
-                <exponentiation nodeId="18" index="16">
+            <product nodeId="21">
+                <variable name="UNI3" nodeId="22"/>
+                <average nodeId="23">
+                    <variable name="EXP3" nodeId="24"/>
+                    <variable name="GAM3" nodeId="25"/>
+                    <variable name="LOGN3" nodeId="26"/>
+                    <constant value="100.0" nodeId="27" description="Raise the average a little"/>
+                </average>
+                <exponentiation nodeId="30">
                     <arguments>
-                        <variable name="Z2" nodeId="16" role="base" index="17"/>
-                        <constant value="2.0" nodeId="17" role="exponent" index="18"/>
+                        <variable name="GAU3" nodeId="28" role="base"/>
+                        <constant value="2.0" nodeId="29" role="exponent"/>
+                    </arguments>
+                </exponentiation>
+            </product>
+            <product nodeId="31">
+                <variable name="UNI4" nodeId="32"/>
+                <average nodeId="33">
+                    <variable name="EXP4" nodeId="34"/>
+                    <variable name="GAM4" nodeId="35"/>
+                    <variable name="LOGN4" nodeId="36"/>
+                    <constant value="100.0" nodeId="37" description="Raise the average a little"/>
+                </average>
+                <exponentiation nodeId="40">
+                    <arguments>
+                        <variable name="GAU4" nodeId="38" role="base"/>
+                        <constant value="2.0" nodeId="39" role="exponent"/>
+                    </arguments>
+                </exponentiation>
+            </product>
+            <product nodeId="41">
+                <variable name="UNI5" nodeId="42"/>
+                <average nodeId="43">
+                    <variable name="EXP5" nodeId="44"/>
+                    <variable name="GAM5" nodeId="45"/>
+                    <variable name="LOGN5" nodeId="46"/>
+                    <constant value="100.0" nodeId="47" description="Raise the average a little"/>
+                </average>
+                <exponentiation nodeId="50">
+                    <arguments>
+                        <variable name="GAU5" nodeId="48" role="base"/>
+                        <constant value="2.0" nodeId="49" role="exponent"/>
                     </arguments>
                 </exponentiation>
             </product>

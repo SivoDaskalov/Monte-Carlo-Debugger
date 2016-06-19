@@ -20,7 +20,7 @@ import util.TestHelper;
 public class SimulationManagerTestCase {
 
     private static final Logger log = LoggerFactory.getLogger(SimulationManagerTestCase.class);
-    private static final int TREE_SIZE_SCALE = 250;
+    private static final int TREE_SIZE_SCALE = 100;
 
     private static StochasticVariableRegistry makeVariableRegistry() {
         return TestHelper.makeVariableRegistry(TREE_SIZE_SCALE);
@@ -39,9 +39,8 @@ public class SimulationManagerTestCase {
     public void setUp() {
         root = buildNodeTree();
         registry = makeVariableRegistry();
-//        runs = 100000;
         runs = 10000;
-        threadload = 100000 * 1001 / 4;
+        threadload = 10000 * 1001 / 4;
     }
 
     @Test

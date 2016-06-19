@@ -25,7 +25,7 @@ public class SimulationServiceClientTestCase {
     private static final Logger logger = LoggerFactory.getLogger(SimulationServiceClientTestCase.class);
     private SimulationServiceClient client;
     private SimulationRequest request;
-    private final int runs = 100;
+    private final int runs = 2000;
 
     @Before
     public void setUp() {
@@ -36,8 +36,8 @@ public class SimulationServiceClientTestCase {
                         "Test simulation",
                         "This simulation has been created by the client in order to test the simulation service endpoint",
                         runs),
-                TestHelper.makeVariableRegistry(3),
-                TestHelper.buildNodeTree(3));
+                TestHelper.makeVariableRegistry(5),
+                TestHelper.buildNodeTree(5));
     }
 
     @After

@@ -15,7 +15,8 @@ import util.TestHelper;
  */
 public class SimulationRequestJaxbTestCase extends JaxbTestCase {
 
-    private final int TREE_SIZE = 3;
+    private final int TREE_SIZE = 5;
+    private final int RUNS = 20000;
     private SimulationRequest request;
 
     public SimulationRequestJaxbTestCase() {
@@ -29,7 +30,7 @@ public class SimulationRequestJaxbTestCase extends JaxbTestCase {
         properties.setTitle("Test simulation");
         properties.setDescription(
                 "This configuration exists to test the marshaling and unmarshaling of requests");
-        properties.setSimulationRuns(10000);
+        properties.setSimulationRuns(RUNS);
 
         request = new SimulationRequest();
         request.setProperties(properties);

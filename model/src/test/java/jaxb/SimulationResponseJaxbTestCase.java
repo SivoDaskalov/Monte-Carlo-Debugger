@@ -19,7 +19,8 @@ import util.TestHelper;
  */
 public class SimulationResponseJaxbTestCase extends JaxbTestCase {
 
-    private final int TREE_SIZE = 3;
+    private final int TREE_SIZE = 5;
+    private final int RUNS = 20000;
     private SimulationResponse response;
 
     @Before
@@ -30,7 +31,7 @@ public class SimulationResponseJaxbTestCase extends JaxbTestCase {
         properties.setTitle("Test simulation");
         properties.setDescription(
                 "This configuration exists to test the marshaling and unmarshaling of requests");
-        properties.setSimulationRuns(10);
+        properties.setSimulationRuns(RUNS);
 
         Node formula = TestHelper.buildNodeTree(TREE_SIZE);
         StochasticVariableRegistry variables = TestHelper.makeVariableRegistry(TREE_SIZE);

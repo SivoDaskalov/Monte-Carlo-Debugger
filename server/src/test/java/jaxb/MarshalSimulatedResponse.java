@@ -26,9 +26,9 @@ import util.TestHelper;
 public class MarshalSimulatedResponse {
 
     private static final Logger log = LoggerFactory.getLogger(MarshalSimulatedResponse.class);
-    private final int TREE_SIZE = 3;
-    private final int TREE_DEPTH = 3;
-    private final int RUNS = 100;
+    private final int TREE_SIZE = 5;
+    private final int TREE_DEPTH = 5;
+    private final int RUNS = 200;
     private Marshaller marshaller;
     private SimulationResponse defaultResponse;
     private SimulationResponse deepTreeResponse;
@@ -37,19 +37,25 @@ public class MarshalSimulatedResponse {
     public void setUp() {
         setupJaxbContext(SimulationResponse.class);
 
-        SimulationProperties configuration = new SimulationProperties();
-        configuration.setTitle("Test simulation");
-        configuration.setDescription(
-                "This configuration exists to test the marshaling and unmarshaling of requests");
-        configuration.setSimulationRuns(RUNS);
+        SimulationProperties defaultConfiguration = new SimulationProperties();
+        defaultConfiguration.setTitle("Example simulation");
+        defaultConfiguration.setDescription(
+                "This configuration exists to test performance with a moderate tree of 50 various nodes");
+        defaultConfiguration.setSimulationRuns(RUNS);
+
+        SimulationProperties deepConfiguration = new SimulationProperties();
+        deepConfiguration.setTitle("Large tree simulation");
+        deepConfiguration.setDescription(
+                "This configuration tests performance on a massive calculation tree of 781 nodes");
+        deepConfiguration.setSimulationRuns(RUNS);
 
         StochasticVariableRegistry variableRegistry = TestHelper.makeVariableRegistry(TREE_SIZE);
 
         Node defaultFormula = TestHelper.buildNodeTree(TREE_SIZE);
         Node deepTreeFormula = TestHelper.buildDeepNodeTree(TREE_DEPTH, TREE_SIZE);
 
-        defaultResponse = doSimulate(configuration, defaultFormula, variableRegistry);
-        deepTreeResponse = doSimulate(configuration, deepTreeFormula, variableRegistry);
+        defaultResponse = doSimulate(defaultConfiguration, defaultFormula, variableRegistry);
+        deepTreeResponse = doSimulate(deepConfiguration, deepTreeFormula, variableRegistry);
     }
 
     @Test
