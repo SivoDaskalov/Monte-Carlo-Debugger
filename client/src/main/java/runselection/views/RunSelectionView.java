@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package view;
+package runselection.views;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -11,20 +11,20 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.event.ListSelectionListener;
 import model.DebugContext;
-import view.styles.Styles;
+import view.Styles;
 
 /**
  *
  * @author sdaskalov
  */
-public class RunSelectorPanel extends JPanel {
+public class RunSelectionView extends JPanel {
 
     private static final Dimension preferredSize = new Dimension(150, 600);
     private final DebugContext context;
     private final JLabel title;
     private final JList<Integer> runList;
 
-    public RunSelectorPanel(DebugContext context) {
+    public RunSelectionView(DebugContext context) {
         this.context = context;
         this.setLayout(new BorderLayout());
         this.setBackground(Styles.defaultPanelBackgroundColor);

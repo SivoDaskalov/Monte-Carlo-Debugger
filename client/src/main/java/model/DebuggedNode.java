@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package tree;
+package model;
 
 import node.Node;
 

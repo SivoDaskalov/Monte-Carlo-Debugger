@@ -1,15 +1,16 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package view.renderers;
+package tree.renderers;
 
+import tree.renderers.AbstractNodeRenderer;
 import javax.swing.JPanel;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
 import model.DebugContext;
 import node.impl.VariableNode;
-import tree.DebuggedNode;
-import view.styles.Styles;
+import model.DebuggedNode;
+import view.Styles;
 
 /**
  *

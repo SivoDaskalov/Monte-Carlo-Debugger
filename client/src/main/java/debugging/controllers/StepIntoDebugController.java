@@ -1,14 +1,14 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package controller.debugging;
+package debugging.controllers;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 import model.DebugContext;
-import view.DebugTreePanel;
+import debugging.views.DebuggingView;
 
 /**
  *
@@ -16,7 +16,7 @@ import view.DebugTreePanel;
  */
 public class StepIntoDebugController extends AbstractDebugController implements ActionListener {
 
-    public StepIntoDebugController(DebugContext context, DebugTreePanel panel) {
+    public StepIntoDebugController(DebugContext context, DebuggingView panel) {
         super(context, panel);
         hook();
     }

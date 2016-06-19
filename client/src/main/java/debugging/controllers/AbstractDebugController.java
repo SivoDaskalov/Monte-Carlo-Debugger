@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package controller.debugging;
+package debugging.controllers;
 
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -11,8 +11,8 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreePath;
 import model.DebugContext;
-import tree.DebuggedNode;
-import view.DebugTreePanel;
+import model.DebuggedNode;
+import debugging.views.DebuggingView;
 
 /**
  *
@@ -21,9 +21,9 @@ import view.DebugTreePanel;
 public abstract class AbstractDebugController {
 
     protected final DebugContext context;
-    protected final DebugTreePanel panel;
+    protected final DebuggingView panel;
 
-    public AbstractDebugController(DebugContext context, DebugTreePanel panel) {
+    public AbstractDebugController(DebugContext context, DebuggingView panel) {
         this.context = context;
         this.panel = panel;
     }

@@ -4,7 +4,7 @@
 package demo;
 
 import model.DebugContext;
-import view.factory.ViewFactory;
+import view.ViewFactory;
 
 /**
  *

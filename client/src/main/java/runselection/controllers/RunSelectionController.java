@@ -1,29 +1,29 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package controller.runselector;
+package runselection.controllers;
 
 import javax.swing.JList;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import model.DebugContext;
-import view.DebugTreePanel;
+import debugging.views.DebuggingView;
 
 /**
  *
  * @author sdaskalov
  */
-public class RunSelectorListener implements ListSelectionListener {
+public class RunSelectionController implements ListSelectionListener {
 
     private final DebugContext context;
-    private final DebugTreePanel panel;
+    private final DebuggingView panel;
 
-    public RunSelectorListener(DebugContext context) {
+    public RunSelectionController(DebugContext context) {
         this.context = context;
         this.panel = null;
     }
 
-    public RunSelectorListener(DebugContext context, DebugTreePanel panel) {
+    public RunSelectionController(DebugContext context, DebuggingView panel) {
         this.context = context;
         this.panel = panel;
     }

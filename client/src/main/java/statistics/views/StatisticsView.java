@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package view;
+package statistics.views;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -23,13 +23,13 @@ import org.jfree.data.Range;
 import org.jfree.data.statistics.HistogramDataset;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
-import view.styles.Styles;
+import view.Styles;
 
 /**
  *
  * @author sdaskalov
  */
-public class NodeStatisticsPanel extends JPanel {
+public class StatisticsView extends JPanel {
 
     private static final Dimension preferredSize = new Dimension(400, 600);
     private static final Dimension preferredFieldSize = new Dimension(100, 30);
@@ -44,7 +44,7 @@ public class NodeStatisticsPanel extends JPanel {
     private final JFreeChart valueChart;
     private final JPanel histogramPanel;
 
-    public NodeStatisticsPanel(DebugContext context) {
+    public StatisticsView(DebugContext context) {
         this.context = context;
         this.setLayout(new BorderLayout(30, 30));
         this.setBackground(Styles.defaultPanelBackgroundColor);

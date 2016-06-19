@@ -1,31 +1,31 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package controller.debugging;
+package debugging.controllers;
 
 import javax.swing.JTree;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import model.DebugContext;
-import tree.DebuggedNode;
-import view.NodeStatisticsPanel;
+import model.DebuggedNode;
+import statistics.views.StatisticsView;
 
 /**
  *
  * @author sdaskalov
  */
-public class SelectionListener implements TreeSelectionListener {
+public class NodeSelectionController implements TreeSelectionListener {
 
     private final DebugContext context;
-    private final NodeStatisticsPanel panel;
+    private final StatisticsView panel;
 
-    public SelectionListener(DebugContext context) {
+    public NodeSelectionController(DebugContext context) {
         this.context = context;
         this.panel = null;
     }
 
-    public SelectionListener(DebugContext context, NodeStatisticsPanel panel) {
+    public NodeSelectionController(DebugContext context, StatisticsView panel) {
         this.context = context;
         this.panel = panel;
     }

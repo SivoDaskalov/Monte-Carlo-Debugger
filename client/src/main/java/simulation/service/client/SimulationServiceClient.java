@@ -39,7 +39,6 @@ public class SimulationServiceClient {
             simulationService = service.getPort(SimulationService.class);
         } catch (Exception ex) {
             logger.info("Unable to connect to service");
-//            logger.error("Unable to connect to service", ex);
             simulationService = null;
         }
     }

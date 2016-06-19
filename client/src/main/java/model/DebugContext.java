@@ -11,7 +11,6 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import node.Node;
 import simulation.NodeValues;
 import simulation.SimulationResponse;
-import tree.DebuggedNode;
 import tree.JTreeBuilder;
 
 /**

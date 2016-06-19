@@ -3,6 +3,10 @@
  */
 package view;
 
+import menu.views.MenuView;
+import runselection.views.RunSelectionView;
+import statistics.views.StatisticsView;
+import debugging.views.DebuggingView;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -16,16 +20,16 @@ import model.DebugContext;
 public class SimulationFrame extends JFrame {
 
     private final DebugContext context;
-    private final MainMenuPanel mainMenuPanel;
-    private final RunSelectorPanel runSelectorPanel;
-    private final DebugTreePanel debugTreePanel;
-    private final NodeStatisticsPanel nodeStatisticsPanel;
+    private final MenuView mainMenuPanel;
+    private final RunSelectionView runSelectorPanel;
+    private final DebuggingView debugTreePanel;
+    private final StatisticsView nodeStatisticsPanel;
 
     public SimulationFrame(String title, DebugContext context,
-            MainMenuPanel mainMenuPanel,
-            RunSelectorPanel runSelectorPanel,
-            DebugTreePanel debugTreePanel,
-            NodeStatisticsPanel nodeStatisticsPanel) {
+            MenuView mainMenuPanel,
+            RunSelectionView runSelectorPanel,
+            DebuggingView debugTreePanel,
+            StatisticsView nodeStatisticsPanel) {
 
         this.mainMenuPanel = mainMenuPanel;
         this.runSelectorPanel = runSelectorPanel;
@@ -53,19 +57,19 @@ public class SimulationFrame extends JFrame {
         this.setLocation(x, y);
     }
 
-    public MainMenuPanel getMainMenuPanel() {
+    public MenuView getMainMenuPanel() {
         return mainMenuPanel;
     }
 
-    public RunSelectorPanel getRunSelectorPanel() {
+    public RunSelectionView getRunSelectorPanel() {
         return runSelectorPanel;
     }
 
-    public DebugTreePanel getDebugTreePanel() {
+    public DebuggingView getDebugTreePanel() {
         return debugTreePanel;
     }
 
-    public NodeStatisticsPanel getNodeStatisticsPanel() {
+    public StatisticsView getNodeStatisticsPanel() {
         return nodeStatisticsPanel;
     }
 

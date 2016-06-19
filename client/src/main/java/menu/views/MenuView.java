@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package view;
+package menu.views;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -11,13 +11,13 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import view.styles.Styles;
+import view.Styles;
 
 /**
  *
  * @author sdaskalov
  */
-public class MainMenuPanel extends JPanel {
+public class MenuView extends JPanel {
 
     private static final Dimension preferredSize = new Dimension(1200, 40);
     private static final Dimension preferredFilenameSize = new Dimension(770, 30);
@@ -28,7 +28,7 @@ public class MainMenuPanel extends JPanel {
     private final JButton simulate;
     private final JButton save;
 
-    public MainMenuPanel() {
+    public MenuView() {
         this.setLayout(new FlowLayout(FlowLayout.LEFT));
         this.setPreferredSize(preferredSize);
         this.setBackground(Styles.defaultPanelBackgroundColor);

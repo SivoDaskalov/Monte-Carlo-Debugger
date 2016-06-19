@@ -1,13 +1,13 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package controller.debugging;
+package debugging.controllers;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import model.DebugContext;
-import view.DebugTreePanel;
+import debugging.views.DebuggingView;
 
 /**
  *
@@ -15,7 +15,7 @@ import view.DebugTreePanel;
  */
 public class StepOverDebugController extends AbstractDebugController implements ActionListener {
 
-    public StepOverDebugController(DebugContext context, DebugTreePanel panel) {
+    public StepOverDebugController(DebugContext context, DebuggingView panel) {
         super(context, panel);
         hook();
     }

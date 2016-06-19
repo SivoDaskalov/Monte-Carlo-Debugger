@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package view.styles;
+package view;
 
 import java.awt.Color;
 import java.awt.Font;

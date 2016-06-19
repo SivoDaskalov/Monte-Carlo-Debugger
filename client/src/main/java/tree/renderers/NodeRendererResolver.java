@@ -1,8 +1,9 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package view.renderers;
+package tree.renderers;
 
+import tree.renderers.AbstractNodeRenderer;
 import java.awt.Component;
 import java.util.HashMap;
 import java.util.Map;
@@ -12,7 +13,7 @@ import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.TreeCellRenderer;
 import model.DebugContext;
 import node.impl.VariableNode;
-import tree.DebuggedNode;
+import model.DebuggedNode;
 
 /**
  *

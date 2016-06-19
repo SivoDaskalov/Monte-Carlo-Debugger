@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package controller.mainmenu;
+package menu.controllers;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,12 +15,12 @@ import view.SimulationFrame;
  *
  * @author sdaskalov
  */
-public class SimulateButtonListener implements ActionListener {
+public class SimulateController implements ActionListener {
 
     private final SimulationServiceClient service;
     private final SimulationFrame frame;
 
-    public SimulateButtonListener(SimulationFrame frame) {
+    public SimulateController(SimulationFrame frame) {
         this.frame = frame;
         service = new SimulationServiceClient();
     }

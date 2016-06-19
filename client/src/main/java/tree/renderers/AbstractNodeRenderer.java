@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package view.renderers;
+package tree.renderers;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -13,8 +13,8 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeCellRenderer;
 import model.DebugContext;
 import node.Node;
-import tree.DebuggedNode;
-import view.styles.Styles;
+import model.DebuggedNode;
+import view.Styles;
 
 /**
  *

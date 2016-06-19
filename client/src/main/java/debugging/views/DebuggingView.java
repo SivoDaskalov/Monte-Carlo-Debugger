@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package view;
+package debugging.views;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -17,14 +17,14 @@ import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.TreeModel;
 import model.DebugContext;
 import tree.JTreeUtils;
-import view.renderers.NodeRendererResolver;
-import view.styles.Styles;
+import tree.renderers.NodeRendererResolver;
+import view.Styles;
 
 /**
  *
  * @author sdaskalov
  */
-public class DebugTreePanel extends JPanel {
+public class DebuggingView extends JPanel {
 
     private static final Dimension preferredSize = new Dimension(600, 600);
     private final JLabel title;
@@ -34,7 +34,7 @@ public class DebugTreePanel extends JPanel {
     private final JButton stepOutButton;
     private final JTree tree;
 
-    public DebugTreePanel(DebugContext context) {
+    public DebuggingView(DebugContext context) {
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         this.setBorder(Styles.padding);
         this.setBackground(Styles.defaultPanelBackgroundColor);

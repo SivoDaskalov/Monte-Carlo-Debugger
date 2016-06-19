@@ -3,6 +3,7 @@
  */
 package tree;
 
+import model.DebuggedNode;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
