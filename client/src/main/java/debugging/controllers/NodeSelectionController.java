@@ -20,11 +20,6 @@ public class NodeSelectionController implements TreeSelectionListener {
     private final DebugContext context;
     private final StatisticsView panel;
 
-    public NodeSelectionController(DebugContext context) {
-        this.context = context;
-        this.panel = null;
-    }
-
     public NodeSelectionController(DebugContext context, StatisticsView panel) {
         this.context = context;
         this.panel = panel;
