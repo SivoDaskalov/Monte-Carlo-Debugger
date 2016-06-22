@@ -33,9 +33,9 @@ public class ViewFactory {
         return instance;
     }
 
-    public RunSelectionView makeRunSelectionView(DebugContext context, DebuggingView treePanel) {
+    public RunSelectionView makeRunSelectionView(DebugContext context, DebuggingView debuggingView) {
         RunSelectionView panel = new RunSelectionView(context);
-        panel.setListSelectionListener(new RunSelectionController(context, treePanel));
+        panel.setListSelectionListener(new RunSelectionController(context, debuggingView));
         return panel;
     }
 

@@ -3,15 +3,15 @@
  */
 package view;
 
-import menu.views.MenuView;
-import runselection.views.RunSelectionView;
-import statistics.views.StatisticsView;
 import debugging.views.DebuggingView;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.JFrame;
+import menu.views.MenuView;
 import model.DebugContext;
+import runselection.views.RunSelectionView;
+import statistics.views.StatisticsView;
 
 /**
  *
@@ -20,27 +20,27 @@ import model.DebugContext;
 public class SimulationFrame extends JFrame {
 
     private final DebugContext context;
-    private final MenuView mainMenuPanel;
-    private final RunSelectionView runSelectorPanel;
-    private final DebuggingView debugTreePanel;
-    private final StatisticsView nodeStatisticsPanel;
+    private final MenuView menuView;
+    private final RunSelectionView runSelectionView;
+    private final DebuggingView debuggingView;
+    private final StatisticsView statisticsView;
 
     public SimulationFrame(String title, DebugContext context,
-            MenuView mainMenuPanel,
-            RunSelectionView runSelectorPanel,
-            DebuggingView debugTreePanel,
-            StatisticsView nodeStatisticsPanel) {
+            MenuView menuView,
+            RunSelectionView runSelectionView,
+            DebuggingView debuggingView,
+            StatisticsView statisticsView) {
 
-        this.mainMenuPanel = mainMenuPanel;
-        this.runSelectorPanel = runSelectorPanel;
-        this.debugTreePanel = debugTreePanel;
-        this.nodeStatisticsPanel = nodeStatisticsPanel;
+        this.menuView = menuView;
+        this.runSelectionView = runSelectionView;
+        this.debuggingView = debuggingView;
+        this.statisticsView = statisticsView;
 
         this.setLayout(new BorderLayout(20, 20));
-        this.add(mainMenuPanel, BorderLayout.NORTH);
-        this.add(runSelectorPanel, BorderLayout.WEST);
-        this.add(debugTreePanel, BorderLayout.CENTER);
-        this.add(nodeStatisticsPanel, BorderLayout.EAST);
+        this.add(menuView, BorderLayout.NORTH);
+        this.add(runSelectionView, BorderLayout.WEST);
+        this.add(debuggingView, BorderLayout.CENTER);
+        this.add(statisticsView, BorderLayout.EAST);
 
         this.context = context;
         this.setTitle(title);
@@ -49,7 +49,7 @@ public class SimulationFrame extends JFrame {
         this.setVisible(true);
         this.repaint();
         this.setResizable(false);
-        
+
         // Center frame on screen
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
         int x = (int) ((dimension.getWidth() - this.getWidth()) / 2);
@@ -57,23 +57,23 @@ public class SimulationFrame extends JFrame {
         this.setLocation(x, y);
     }
 
-    public MenuView getMainMenuPanel() {
-        return mainMenuPanel;
+    public MenuView getMenuView() {
+        return menuView;
     }
 
-    public RunSelectionView getRunSelectorPanel() {
-        return runSelectorPanel;
+    public RunSelectionView getRunSelectionView() {
+        return runSelectionView;
     }
 
-    public DebuggingView getDebugTreePanel() {
-        return debugTreePanel;
+    public DebuggingView getDebuggingView() {
+        return debuggingView;
     }
 
-    public StatisticsView getNodeStatisticsPanel() {
-        return nodeStatisticsPanel;
+    public StatisticsView getStatisticsView() {
+        return statisticsView;
     }
 
-    public DebugContext getContext() {
+    public DebugContext getDebugContext() {
         return context;
     }
 

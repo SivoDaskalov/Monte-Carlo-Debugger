@@ -30,15 +30,15 @@ public class SimulateController implements ActionListener {
         if(!service.isConnected()){
             service.reconnect();
         }
-        SimulationResponse currentSimulation = frame.getContext().getCurrentSimulation();
+        SimulationResponse currentSimulation = frame.getDebugContext().getCurrentSimulation();
         if (currentSimulation != null && service.isConnected()) {
             SimulationResponse response = service.simulate(currentSimulation);
-            frame.getMainMenuPanel().setFilename(response.getProperties().getTitle());
-            DebugContext context = frame.getContext();
+            frame.getMenuView().setFilename(response.getProperties().getTitle());
+            DebugContext context = frame.getDebugContext();
             context.setup(response);
-            frame.getRunSelectorPanel().updateRunList();
-            frame.getDebugTreePanel().setTreeModel(new DefaultTreeModel(context.getRoot()));
-            frame.getNodeStatisticsPanel().update();
+            frame.getRunSelectionView().updateRunList();
+            frame.getDebuggingView().setTreeModel(new DefaultTreeModel(context.getRoot()));
+            frame.getStatisticsView().update();
         }
     }
 

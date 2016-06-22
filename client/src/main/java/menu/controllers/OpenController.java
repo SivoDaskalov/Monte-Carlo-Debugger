@@ -37,12 +37,12 @@ public class OpenController implements ActionListener {
                     .getInstance()
                     .unmarshal(file.getPath());
             if (unboxed != null) {
-                frame.getMainMenuPanel().setFilename(file.getPath());
-                DebugContext context = frame.getContext();
+                frame.getMenuView().setFilename(file.getPath());
+                DebugContext context = frame.getDebugContext();
                 context.setup(unboxed);
-                frame.getRunSelectorPanel().updateRunList();
-                frame.getDebugTreePanel().setTreeModel(new DefaultTreeModel(context.getRoot()));
-                frame.getNodeStatisticsPanel().update();
+                frame.getRunSelectionView().updateRunList();
+                frame.getDebuggingView().setTreeModel(new DefaultTreeModel(context.getRoot()));
+                frame.getStatisticsView().update();
             } else {
                 JOptionPane.showMessageDialog(frame, "Selected file is not a simulation");
             }

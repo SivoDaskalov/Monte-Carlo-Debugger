@@ -26,14 +26,14 @@ public class SaveController implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (frame.getContext().getCurrentSimulation() != null) {
+        if (frame.getDebugContext().getCurrentSimulation() != null) {
             if (fileChooser.showDialog(frame, "Select file to save the current simulation")
                     == JFileChooser.APPROVE_OPTION) {
                 File file = fileChooser.getSelectedFile();
                 JaxbUtils
                         .getInstance()
                         .marshal(
-                                frame.getContext().getCurrentSimulation(),
+                                frame.getDebugContext().getCurrentSimulation(),
                                 file.getPath());
             }
         }

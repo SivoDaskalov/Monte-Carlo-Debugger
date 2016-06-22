@@ -3,11 +3,11 @@
  */
 package runselection.controllers;
 
+import debugging.views.DebuggingView;
 import javax.swing.JList;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import model.DebugContext;
-import debugging.views.DebuggingView;
 
 /**
  *
@@ -17,11 +17,6 @@ public class RunSelectionController implements ListSelectionListener {
 
     private final DebugContext context;
     private final DebuggingView panel;
-
-    public RunSelectionController(DebugContext context) {
-        this.context = context;
-        this.panel = null;
-    }
 
     public RunSelectionController(DebugContext context, DebuggingView panel) {
         this.context = context;
