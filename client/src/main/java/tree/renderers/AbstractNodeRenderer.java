@@ -12,8 +12,8 @@ import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeCellRenderer;
 import model.DebugContext;
-import node.Node;
 import model.DebuggedNode;
+import node.Node;
 import view.Styles;
 
 /**
@@ -34,10 +34,6 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
         descriptionLabel = makeLabel("description =", Styles.labelFont, Styles.labelColor);
     }
 
-    public void setContext(DebugContext context) {
-        this.context = context;
-    }
-
     protected final JLabel makeLabel(String text, Font font, Color color) {
         JLabel label = new JLabel(text);
         if (font != null) {
@@ -49,16 +45,16 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
         return label;
     }
 
-    public String getNodeName(Node node) {
+    private String getNodeName(Node node) {
         String className = node.getClass().getSimpleName();
         return className.trim().replace("Node", "");
     }
 
-    public JLabel getName(Node node) {
+    private JLabel getName(Node node) {
         return makeLabel(getNodeName(node), Styles.valueFont, Styles.valueColor);
     }
 
-    public JLabel getValue(Node node) {
+    private JLabel getValue(Node node) {
         String id = node.getId();
         Double value = context.getValue(id);
         if (value == null) {
@@ -67,7 +63,7 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
         return makeLabel(String.format(Styles.valueFormat, value), Styles.valueFont, Styles.valueColor);
     }
 
-    public JLabel getRole(Node node) {
+    private JLabel getRole(Node node) {
         String role = node.getRole();
         if (role == null || role.equals("")) {
             return null;
@@ -75,7 +71,7 @@ public class AbstractNodeRenderer implements TreeCellRenderer {
         return makeLabel(role, Styles.valueFont, Styles.valueColor);
     }
 
-    public JLabel getDescription(Node node) {
+    private JLabel getDescription(Node node) {
         String description = node.getDescription();
         if (description == null || description.equals("")) {
             return null;

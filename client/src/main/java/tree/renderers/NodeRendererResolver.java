@@ -3,7 +3,6 @@
  */
 package tree.renderers;
 
-import tree.renderers.AbstractNodeRenderer;
 import java.awt.Component;
 import java.util.HashMap;
 import java.util.Map;
@@ -12,8 +11,8 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.TreeCellRenderer;
 import model.DebugContext;
-import node.impl.VariableNode;
 import model.DebuggedNode;
+import node.impl.VariableNode;
 
 /**
  *
@@ -32,12 +31,7 @@ public class NodeRendererResolver implements TreeCellRenderer {
         renderers.put(VariableNode.class, new VariableNodeRenderer(context));
     }
 
-    public void setViewContext(DebugContext context) {
-        renderers.values().forEach(r -> r.setContext(context));
-        abstractNodeRenderer.setContext(context);
-    }
-
-    public TreeCellRenderer getRenderer(Object object) {
+    private TreeCellRenderer getRenderer(Object object) {
         DebuggedNode node = (DebuggedNode) object;
         TreeCellRenderer renderer = renderers.get(node.getNode().getClass());
         if (renderer != null) {
