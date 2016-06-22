@@ -89,7 +89,7 @@ public class DebugContext {
         currentlyDebuggedNode = currentlyDebugged;
     }
 
-    public Double getValue(String nodeId) {
+    public double getValue(String nodeId) {
         NodeStatistics nodeStats = statistics.get(nodeId);
         return nodeStats == null ? null : nodeStats.getValue(currentRun - 1);
     }

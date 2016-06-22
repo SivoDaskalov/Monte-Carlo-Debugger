@@ -4,7 +4,6 @@
 package debugging.controllers;
 
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 import model.DebugContext;
@@ -14,7 +13,7 @@ import debugging.views.DebuggingView;
  *
  * @author sdaskalov
  */
-public class StepIntoDebugController extends AbstractDebugController implements ActionListener {
+public class StepIntoDebugController extends AbstractDebugController {
 
     public StepIntoDebugController(DebugContext context, DebuggingView panel) {
         super(context, panel);

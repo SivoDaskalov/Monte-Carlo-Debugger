@@ -3,6 +3,8 @@
  */
 package debugging.controllers;
 
+import debugging.views.DebuggingView;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
@@ -12,13 +14,12 @@ import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreePath;
 import model.DebugContext;
 import model.DebuggedNode;
-import debugging.views.DebuggingView;
 
 /**
  *
  * @author sdaskalov
  */
-public abstract class AbstractDebugController {
+public abstract class AbstractDebugController implements ActionListener {
 
     protected final DebugContext context;
     protected final DebuggingView panel;

@@ -4,7 +4,6 @@
 package debugging.controllers;
 
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import model.DebugContext;
 import debugging.views.DebuggingView;
@@ -13,7 +12,7 @@ import debugging.views.DebuggingView;
  *
  * @author sdaskalov
  */
-public class StepOverDebugController extends AbstractDebugController implements ActionListener {
+public class StepOverDebugController extends AbstractDebugController {
 
     public StepOverDebugController(DebugContext context, DebuggingView panel) {
         super(context, panel);

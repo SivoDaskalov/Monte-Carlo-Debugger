@@ -3,17 +3,15 @@
  */
 package debugging.controllers;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import model.DebugContext;
 import debugging.views.DebuggingView;
+import java.awt.event.ActionEvent;
+import model.DebugContext;
 
 /**
  *
  * @author sdaskalov
  */
-public class ResetDebugController extends AbstractDebugController implements ActionListener
-{
+public class ResetDebugController extends AbstractDebugController {
 
     public ResetDebugController(DebugContext context, DebuggingView panel) {
         super(context, panel);
@@ -30,5 +28,5 @@ public class ResetDebugController extends AbstractDebugController implements Act
         context.resetDebugging();
         after(context.getRoot());
     }
-    
+
 }
