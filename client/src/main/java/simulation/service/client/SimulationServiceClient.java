@@ -22,16 +22,20 @@ public class SimulationServiceClient {
     private static final String defaultHost = "localhost";
     private static final String defaultPort = "9999";
     private SimulationService simulationService;
+    private String host;
+    private String port;
 
     public SimulationServiceClient() {
         this(defaultHost, defaultPort);
     }
 
     public SimulationServiceClient(String host, String port) {
-        setup(host, port);
+        this.host = host;
+        this.port = port;
+        setup();
     }
 
-    private void setup(String host, String port) {
+    private void setup() {
         try {
             URL url = new URL("http://" + host + ":" + port + "/SimulationService?wsdl");
             QName qname = new QName("http://service.simulation/", "SimulationServiceImplService");
@@ -49,7 +53,7 @@ public class SimulationServiceClient {
 
     public void reconnect() {
         try {
-            setup(defaultHost, defaultPort);
+            setup();
         } catch (Exception ex) {
             // Nothing meaningful to do here
         }
