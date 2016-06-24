@@ -43,7 +43,7 @@ public class ValueLoggingTestCase {
         // Assert that all values have managed to be logged
         double[] constValues = doSimulate(configuration, root, variables).getValues().get(0).getValues();
         for (double value : constValues) {
-            Assert.assertEquals(constValue, value, 0.1);
+            Assert.assertEquals(constValue, value, 0.0);
         }
     }
 
