@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simulation>
+    <properties>
+        <title>Example simulation</title>
+        <description>This is a more detailed description of the simulation</description>
+        <simulationRuns>5</simulationRuns>
+    </properties>
+    <variables>
+        <gaussian id="GAU">
+            <mean>10.0</mean>
+            <deviation>1.0</deviation>
+        </gaussian>
+        <uniform id="UNI">
+            <lowerBound>0.0</lowerBound>
+            <upperBound>20.0</upperBound>
+        </uniform>
+        <exponential id="EXP">
+            <lambda>1.0</lambda>
+        </exponential>
+        <gamma id="GAM">
+            <scale>3.0</scale>
+            <shape>0.3333333333333333</shape>
+        </gamma>
+        <logNormal id="LOGN">
+            <scale>3.0</scale>
+            <shape>0.3333333333333333</shape>
+        </logNormal>
+    </variables>
+    <formula>
+        <sum nodeId="0" description="This is the sum of all the trucks I have" index="0">
+            <product nodeId="1" index="1">
+                <variable name="UNI" nodeId="2" index="2"/>
+                <exponentiation nodeId="3" index="3">
+                    <arguments>
+                        <variable name="GAU" nodeId="4" role="base" index="4"/>
+                        <constant value="2.0" nodeId="5" role="exponent" index="5"/>
+                    </arguments>
+                </exponentiation>
+            </product>
+            <product nodeId="6" index="6">
+                <min nodeId="7" index="7">
+                    <variable name="EXP" nodeId="8" index="8"/>
+                    <variable name="GAM" nodeId="9" index="9"/>
+                </min>
+                <max nodeId="10" index="10">
+                    <variable name="LOGN" nodeId="11" index="11"/>
+                    <constant value="100.0" nodeId="12" description="We need at least 100 trucks" index="12"/>
+                </max>
+            </product>
+        </sum>
+    </formula>
+    <values>
+        <node id="0">
+            <value>576.2732651628518</value>
+            <value>2299.478145391311</value>
+            <value>916.6774631319674</value>
+            <value>1367.0970297055203</value>
+            <value>879.2801379424327</value>
+        </node>
+        <node id="1">
+            <value>563.605818515702</value>
+            <value>2182.933213688667</value>
+            <value>885.5450822610028</value>
+            <value>1295.6059801124675</value>
+            <value>846.7711626984554</value>
+        </node>
+        <node id="2">
+            <value>7.189951690700413</value>
+            <value>16.80990959090194</value>
+            <value>8.320724407093689</value>
+            <value>12.211478555470908</value>
+            <value>11.73779431551562</value>
+        </node>
+        <node id="3">
+            <value>78.38798405901362</value>
+            <value>129.85990209430634</value>
+            <value>106.42644064812995</value>
+            <value>106.09738814404407</value>
+            <value>72.14056916802076</value>
+        </node>
+        <node id="4">
+            <value>8.85369889136815</value>
+            <value>11.395608895285338</value>
+            <value>10.316319142413633</value>
+            <value>10.300358641525259</value>
+            <value>8.493560452956155</value>
+        </node>
+        <node id="5">
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+            <value>2.0</value>
+        </node>
+        <node id="6">
+            <value>12.667446647149779</value>
+            <value>116.54493170264399</value>
+            <value>31.132380870964692</value>
+            <value>71.49104959305281</value>
+            <value>32.50897524397729</value>
+        </node>
+        <node id="7">
+            <value>0.1266744664714978</value>
+            <value>1.16544931702644</value>
+            <value>0.31132380870964693</value>
+            <value>0.7149104959305281</value>
+            <value>0.3250897524397729</value>
+        </node>
+        <node id="8">
+            <value>0.4448033454643892</value>
+            <value>1.16544931702644</value>
+            <value>0.31132380870964693</value>
+            <value>0.7380903794998437</value>
+            <value>0.5761517333842789</value>
+        </node>
+        <node id="9">
+            <value>0.1266744664714978</value>
+            <value>2.568378918337204</value>
+            <value>2.2625232906381467</value>
+            <value>0.7149104959305281</value>
+            <value>0.3250897524397729</value>
+        </node>
+        <node id="10">
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+        </node>
+        <node id="11">
+            <value>0.5033716643541511</value>
+            <value>0.25040425637179026</value>
+            <value>0.7476884358445595</value>
+            <value>1.8548060810929041</value>
+            <value>0.299311868657266</value>
+        </node>
+        <node id="12">
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+            <value>100.0</value>
+        </node>
+    </values>
+</simulation>

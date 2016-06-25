@@ -27,6 +27,7 @@ public class JaxbUtils {
             JAXBContext context = JAXBContext.newInstance(SimulationResponse.class);
             unmarshaller = context.createUnmarshaller();
             marshaller = context.createMarshaller();
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
         } catch (JAXBException ex) {
             log.error("JAXB context creation error", ex);
         }

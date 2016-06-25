@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simulation>
+    <properties>
+        <title>Example simulation</title>
+        <description>This is a more detailed description of the simulation</description>
+        <simulationRuns>5</simulationRuns>
+    </properties>
+    <variables>
+        <gaussian id="GAU">
+            <mean>10.0</mean>
+            <deviation>1.0</deviation>
+        </gaussian>
+        <uniform id="UNI">
+            <lowerBound>0.0</lowerBound>
+            <upperBound>20.0</upperBound>
+        </uniform>
+        <exponential id="EXP">
+            <lambda>1.0</lambda>
+        </exponential>
+        <gamma id="GAM">
+            <scale>3.0</scale>
+            <shape>0.3333333333333333</shape>
+        </gamma>
+        <logNormal id="LOGN">
+            <scale>3.0</scale>
+            <shape>0.3333333333333333</shape>
+        </logNormal>
+    </variables>
+    <formula>
+        <sum nodeId="0" description="This is the sum of all the trucks I have">
+            <product nodeId="1">
+                <variable name="UNI" nodeId="2"/>
+                <exponentiation nodeId="3">
+                    <arguments>
+                        <variable name="GAU" nodeId="4" role="base"/>
+                        <constant value="2.0" nodeId="5" role="exponent"/>
+                    </arguments>
+                </exponentiation>
+            </product>
+            <product nodeId="6">
+                <min nodeId="7">
+                    <variable name="EXP" nodeId="8"/>
+                    <variable name="GAM" nodeId="9"/>
+                </min>
+                <max nodeId="10">
+                    <variable name="LOGN" nodeId="11"/>
+                    <constant value="100.0" nodeId="12" description="We need at least 100 trucks"/>
+                </max>
+            </product>
+        </sum>
+    </formula>
+</simulation>
