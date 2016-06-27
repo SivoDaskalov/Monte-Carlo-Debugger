@@ -1,5 +1,5 @@
 /*
- * EuroRisk Systems (c) Ltd. All rights reserved.
+ * Sivo Daskalov, Monte Carlo Simulation Debugger (2016)
  */
 package service;
 

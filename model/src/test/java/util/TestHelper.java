@@ -1,7 +1,7 @@
 package util;
 
 /*
- * EuroRisk Systems (c) Ltd. All rights reserved.
+ * Sivo Daskalov, Monte Carlo Simulation Debugger (2016)
  */
 import node.Node;
 import node.impl.ConstantNode;
