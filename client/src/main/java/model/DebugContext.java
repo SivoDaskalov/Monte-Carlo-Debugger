@@ -133,6 +133,7 @@ public class DebugContext {
 
     private void setupTree(Node formula) {
         root = (DefaultMutableTreeNode) JTreeBuilder.buildTreeModel(formula).getRoot();
+        nodes.clear();
         currentlyDebuggedNode = root;
         mapNodes(root);
     }
