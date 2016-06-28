@@ -35,6 +35,7 @@ public class SaveController implements ActionListener {
                         .marshal(
                                 frame.getDebugContext().getCurrentSimulation(),
                                 file.getPath());
+                frame.getMenuView().setFilename(file.getPath());
             }
         }
     }
