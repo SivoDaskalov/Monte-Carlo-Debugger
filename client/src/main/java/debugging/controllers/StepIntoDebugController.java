@@ -3,11 +3,10 @@
  */
 package debugging.controllers;
 
-import java.awt.event.ActionEvent;
+import debugging.views.DebuggingView;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 import model.DebugContext;
-import debugging.views.DebuggingView;
 
 /**
  *
@@ -26,7 +25,7 @@ public class StepIntoDebugController extends AbstractDebugController {
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public DefaultMutableTreeNode handle() {
         DefaultMutableTreeNode node = (DefaultMutableTreeNode) context
                 .getCurrentlyDebuggedNode();
         if (node != null && node.getChildCount() > 0) {
@@ -34,7 +33,7 @@ public class StepIntoDebugController extends AbstractDebugController {
             context.setCurrentlyDebuggedNode(
                     (DefaultMutableTreeNode) node.getFirstChild());
         }
-        after(node);
+        return node;
     }
 
 }

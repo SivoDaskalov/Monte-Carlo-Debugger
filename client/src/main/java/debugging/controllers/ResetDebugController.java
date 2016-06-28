@@ -4,7 +4,7 @@
 package debugging.controllers;
 
 import debugging.views.DebuggingView;
-import java.awt.event.ActionEvent;
+import javax.swing.tree.DefaultMutableTreeNode;
 import model.DebugContext;
 
 /**
@@ -24,9 +24,9 @@ public class ResetDebugController extends AbstractDebugController {
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public DefaultMutableTreeNode handle() {
         context.resetDebugging();
-        after(context.getRoot());
+        return context.getRoot();
     }
 
 }

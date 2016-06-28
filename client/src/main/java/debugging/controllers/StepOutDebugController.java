@@ -3,10 +3,9 @@
  */
 package debugging.controllers;
 
-import java.awt.event.ActionEvent;
+import debugging.views.DebuggingView;
 import javax.swing.tree.DefaultMutableTreeNode;
 import model.DebugContext;
-import debugging.views.DebuggingView;
 
 /**
  *
@@ -25,7 +24,7 @@ public class StepOutDebugController extends AbstractDebugController {
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public DefaultMutableTreeNode handle() {
         DefaultMutableTreeNode node = context.getCurrentlyDebuggedNode();
         if (node != null) {
             DefaultMutableTreeNode parent = (DefaultMutableTreeNode) node.getParent();
@@ -37,8 +36,9 @@ public class StepOutDebugController extends AbstractDebugController {
                 debugChildren(node);
                 node = node.getNextSibling();
             } while (node != null);
-            after((DefaultMutableTreeNode) parent);
+            return (DefaultMutableTreeNode) parent;
         }
+        return null;
     }
 
 }

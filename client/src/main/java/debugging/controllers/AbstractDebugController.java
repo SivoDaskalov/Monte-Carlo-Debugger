@@ -4,6 +4,7 @@
 package debugging.controllers;
 
 import debugging.views.DebuggingView;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -39,7 +40,17 @@ public abstract class AbstractDebugController implements ActionListener {
 
     abstract void hook();
 
-    protected void after(DefaultMutableTreeNode changedBranch) {
+    abstract DefaultMutableTreeNode handle();
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        DefaultMutableTreeNode changed = handle();
+        if (changed != null) {
+            after(changed);
+        }
+    }
+
+    private void after(DefaultMutableTreeNode changedBranch) {
         JTree tree = panel.getTree();
         List<Integer> expandedRows = new ArrayList<>();
         for (int i = 0; i < tree.getRowCount(); i++) {
