@@ -1,7 +1,7 @@
 /*
  * EuroRisk Systems (c) Ltd. All rights reserved.
  */
-package simulation;
+package statistics;
 
 import node.Node;
 import node.impl.VariableNode;
@@ -10,6 +10,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import simulation.SimulationProperties;
+import simulation.StochasticVariableRegistry;
 import simulation.interfaces.SimulationManager;
 import simulation.manager.ParallelSimulationManager;
 import variable.impl.UniformVariable;

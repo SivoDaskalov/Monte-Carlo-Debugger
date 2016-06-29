@@ -42,12 +42,13 @@ public class ValueLoggingTestCase {
     public void testValueLogging() {
         // Assert that all values have managed to be logged
         double[] constValues = doSimulate(configuration, root, variables).getValues().get(0).getValues();
+        Assert.assertEquals(100, constValues.length);
         for (double value : constValues) {
             Assert.assertEquals(constValue, value, 0.0);
         }
     }
 
-    protected SimulationResponse doSimulate(SimulationProperties configuration, Node root, StochasticVariableRegistry variables) {
+    private SimulationResponse doSimulate(SimulationProperties configuration, Node root, StochasticVariableRegistry variables) {
         SimulationManager simulationManager = new ParallelSimulationManager(root, variables, configuration.getSimulationRuns(), RUNS / THREADS);
         simulationManager.run();
         simulationManager.await();

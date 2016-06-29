@@ -3,14 +3,15 @@
  */
 package simulation;
 
-import tree.utils.TreeUtilities;
-import simulation.manager.ParallelSimulationManager;
 import java.util.List;
 import javafx.util.Pair;
 import node.Node;
+import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import simulation.manager.ParallelSimulationManager;
+import tree.utils.TreeUtilities;
 
 /**
  *
@@ -19,9 +20,6 @@ import org.slf4j.LoggerFactory;
 public class ThreadWorkloadDivisionTestCase {
 
     private static final Logger log = LoggerFactory.getLogger(ThreadWorkloadDivisionTestCase.class);
-
-    public ThreadWorkloadDivisionTestCase() {
-    }
 
     private List<Pair<Integer, Integer>> doTest(Node root, int runs, int threadLoad) {
         return doTest(TreeUtilities.getTreeSize(root), runs, threadLoad);
@@ -37,10 +35,15 @@ public class ThreadWorkloadDivisionTestCase {
         for (Pair<Integer, Integer> range : ranges) {
             log.info(range.getKey() + " - " + range.getValue());
         }
+        log.info("");
     }
 
     @Test
     public void testCorrectWorkloadDivision() {
-        printSimulationRanges(doTest(100, 1000, 10000));
+        for (int i = 1; i <= 10; i++) {
+            List<Pair<Integer, Integer>> ranges = doTest(100, 1000, 100000 / i);
+            printSimulationRanges(ranges);
+            Assert.assertEquals(i + (100000 % i > 0 ? 1 : 0), ranges.size());
+        }
     }
 }

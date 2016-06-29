@@ -39,8 +39,8 @@ public class SimulationManagerTestCase {
     public void setUp() {
         root = buildNodeTree();
         registry = makeVariableRegistry();
-        runs = 10000;
-        threadload = 10000 * 1001 / 4;
+        runs = 100000;
+        threadload = 100000 * 1001 / 4;
     }
 
     @Test
