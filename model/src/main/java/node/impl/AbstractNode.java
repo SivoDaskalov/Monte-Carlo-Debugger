@@ -3,6 +3,7 @@
  */
 package node.impl;
 
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicLong;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -91,5 +92,24 @@ public abstract class AbstractNode implements Node {
     }
 
     abstract protected double calculate(SimulationContext context);
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 83 * hash + Objects.hashCode(this.id);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final AbstractNode other = (AbstractNode) obj;
+        return Objects.equals(this.id, other.id);
+    }
 
 }

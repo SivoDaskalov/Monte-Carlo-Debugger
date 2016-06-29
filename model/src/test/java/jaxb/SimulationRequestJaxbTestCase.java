@@ -41,6 +41,7 @@ public class SimulationRequestJaxbTestCase extends JaxbTestCase {
     @Test
     public void testRequestMarshalling() {
         SimulationRequest unmarshaled = doMarhshalUnmarshal(request, "target/SimulationRequest.xml");
+        assertEquals(request, unmarshaled);
     }
 
 }
