@@ -73,7 +73,7 @@ public class ParallelSimulationManager extends AbstractSimulationManager {
                         .putCompletionListener(completionListener);
             }
 
-            log.info(String.format("Size:%d\tRuns:%d\tThreads:%d", treeSize, runCount, poolSize));
+//            log.info(String.format("Size:%d\tRuns:%d\tThreads:%d", treeSize, runCount, poolSize));
             for (Pair<Integer, Integer> simulationRange
                     : calculateSimulationRanges(runCount, poolSize)) {
                 SingleThreadSimulationManager worker = new SingleThreadSimulationManager(
