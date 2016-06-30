@@ -29,8 +29,8 @@ public class SimulationServiceClientTestCase {
 
     @Before
     public void setUp() {
-        SimulationServicePublisher.getInstance().publish();
-        client = new SimulationServiceClient();
+        SimulationServicePublisher.getInstance().setPort(10000).publish();
+        client = new SimulationServiceClient("localhost", "10000");
         request = new SimulationRequest(
                 new SimulationProperties(
                         "Test simulation",
