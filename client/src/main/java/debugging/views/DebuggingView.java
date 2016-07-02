@@ -47,15 +47,15 @@ public class DebuggingView extends JPanel {
 
         JPanel controlPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
         controlPanel.setBackground(Styles.defaultPanelBackgroundColor);
-        stepIntoButton = new JButton("Step into");// (F5)
+        stepIntoButton = new JButton("Step into");
         stepIntoButton.setFont(Styles.labelFont);
         controlPanel.add(stepIntoButton);
 
-        stepOverButton = new JButton("Step over");// (F6)
+        stepOverButton = new JButton("Step over");
         stepOverButton.setFont(Styles.labelFont);
         controlPanel.add(stepOverButton);
 
-        stepOutButton = new JButton("Step out");// (F7)
+        stepOutButton = new JButton("Step out");
         stepOutButton.setFont(Styles.labelFont);
         controlPanel.add(stepOutButton);
 
