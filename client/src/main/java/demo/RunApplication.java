@@ -13,7 +13,8 @@ import view.ViewFactory;
 public class RunApplication {
 
     public static void main(String argv[]) {
-        ViewFactory.getInstance().makeSimulationFrame("Monte Carlo simulation debugger", new DebugContext());
+        ViewFactory.getInstance()
+                .makeSimulationFrame("Monte Carlo simulation debugger", new DebugContext());
     }
 
 }
