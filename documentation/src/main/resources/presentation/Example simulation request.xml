@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simulation>
+    <properties>
+        <title>Example simulation</title>
+        <description>This is a more detailed description of the simulation</description>
+        <simulationRuns>5</simulationRuns>
+    </properties>
+    <variables>
+        <gaussian id="GAU">
+            <mean>10.0</mean>
+            <deviation>1.0</deviation>
+        </gaussian>
+        <uniform id="UNI">
+            <lowerBound>0.0</lowerBound>
+            <upperBound>20.0</upperBound>
+        </uniform>
+        <exponential id="EXP">
+            <lambda>1.0</lambda>
+        </exponential>
+        <gamma id="GAM">
+            <scale>3.0</scale>
+            <shape>0.3333333333333333</shape>
+        </gamma>
+        <logNormal id="LOGN">
+            <scale>3.0</scale>
+            <shape>0.3333333333333333</shape>
+        </logNormal>
+    </variables>
+    <formula>
+        <sum description="This is the sum of all my things of interest">
+            <product>
+                <variable name="UNI"/>
+                <exponentiation>
+                    <arguments>
+                        <variable name="GAU" role="base"/>
+                        <constant value="2.0" role="exponent"/>
+                    </arguments>
+                </exponentiation>
+            </product>
+            <product>
+                <min>
+                    <variable name="EXP"/>
+                    <variable name="GAM"/>
+                </min>
+                <max nodeId="10">
+                    <variable name="LOGN"/>
+                    <constant value="100.0" description="We need at least 100 things"/>
+                </max>
+            </product>
+        </sum>
+    </formula>
+</simulation>
