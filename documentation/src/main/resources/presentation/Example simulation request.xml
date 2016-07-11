@@ -3,7 +3,7 @@
     <properties>
         <title>Example simulation</title>
         <description>This is a more detailed description of the simulation</description>
-        <simulationRuns>5</simulationRuns>
+        <simulationRuns>500</simulationRuns>
     </properties>
     <variables>
         <gaussian id="GAU">
